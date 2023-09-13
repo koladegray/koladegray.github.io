@@ -1,0 +1,51 @@
+```{=html}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+
+<style>
+  .btn-xs {
+    padding: 1px 5px;
+    font-size: 15px;
+  }
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+</style>
+
+<ul class="list">
+  <% for (const item of items) { %>
+    <li <%= metadataAttrs(item) %>>
+      <%= item.title %> 
+      <br/>
+      <p>
+      <!-- template info for r projects -->
+      <% if (item.type === 'r') { %>
+        <small class="text-muted">
+          <%= item.date %>. <%= item.author %>. <%= item.status %>.
+        </small>
+      <% } %>
+      
+      <!-- tenplate info for others -->
+      <% if (item.type !== 'r') { %>
+        <small class="text-muted">
+          <%= item.date %>. <%= item.author %>. <%= item.status %>.
+        </small>
+      <% } %>
+      
+       <br/>
+      
+      <% if (item.pdf) { %>
+        <a role="button" href="<%= item.pdf %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-file-earmark-pdf ai-lg"></i> PDF 
+        </a> 
+      <% } %>
+      
+      
+      <% if (item.github) { %>
+        <a role="button" href="<%= item.github %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-github ai-lg"></i> GitHub 
+        </a>
+      <% } %>
+      
+```
+      

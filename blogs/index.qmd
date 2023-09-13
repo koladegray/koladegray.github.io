@@ -1,0 +1,28 @@
+---
+title: "Blogs"
+listing:
+  #title: "Blogs"
+  type: default
+  contents: 
+    - "2023-08-18-test/index.qmd"
+  sort: 
+    - "date desc"
+    - "title desc"
+  filter-ui: [title, date]
+  page-size: 10
+  max-items: 10
+  image-align: right
+  image-height: 75px
+  #image-placeholder:
+  date-format: medium
+  fields: [date, author, title, description, categories, image]
+  categories: true
+comments: false
+format: 
+  html: 
+    footer: false
+---
+
+----------------------------------------
+
+Documenting Blogs Bordering on Medical Writing et al

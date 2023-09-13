@@ -1,0 +1,24 @@
+[
+  {
+    "listing": "/blogs/index.html",
+    "items": [
+      "/blogs/2023-08-18-test/index.html"
+    ]
+  },
+  {
+    "listing": "/copies/index.html",
+    "items": []
+  },
+  {
+    "listing": "/data/index.html",
+    "items": []
+  },
+  {
+    "listing": "/journals/index.html",
+    "items": []
+  },
+  {
+    "listing": "/papers/index.html",
+    "items": []
+  }
+]

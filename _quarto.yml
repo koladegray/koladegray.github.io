@@ -1,0 +1,55 @@
+project:
+  type: website
+  output-dir: docs
+  #render: 
+  #   - "*.qmd"
+website:
+  title: "'Kolade Gracious"
+  favicon: favicon.io
+  back-to-top-navigation: true
+  #reader-mode: true
+  sidebar: 
+    style: "docked"
+  page-footer: 
+    center: "Copyright 2023, 'Kolade Gracious"
+    background: light  
+  navbar:
+    #right:
+    tools:    
+      #- icon: rss
+      #  href: blog/index.xml
+        #text: Blog RSS
+      - icon: twitter
+        href: https://twitter.com/DrealOtunba
+      - icon: github
+        href: https://github.com/koladegray
+      - icon: linkedin
+        href: https://linkedin.com/gracious-ogunkolade
+      - icon: medium
+        href: https://medium.com/teteuf
+        
+    left:
+      - href: index.qmd
+        text: About
+      - href: data/index.qmd
+        text: Data Projects
+      - href: papers/index.qmd
+        text: Papers
+      - href: blogs/index.qmd
+        text: Blog Posts
+      - href: journals/index.qmd
+        text: Journal Articles
+      - href: copies/index.qmd
+        text: Copies
+
+format:
+  html:
+    theme: 
+      light: Flatly
+      dark: Darkly
+    css: styles.css
+    toc: true
+    #theme: flatly Darkly
+#Superhero United Sandstone Journal
+editor: source
+

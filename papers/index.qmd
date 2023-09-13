@@ -1,0 +1,14 @@
+---
+title: "Talks"
+listing:
+  id: grids
+  type: grid
+  sort: "date"
+  grid-columns: 2
+  image-height: 180px
+---
+
+::: {#grids}
+:::
+
+Documenting technical e-books and continuing education courses in healthcare 

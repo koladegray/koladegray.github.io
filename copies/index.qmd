@@ -1,0 +1,39 @@
+---
+title: "Copies"
+subtitle: "You can find my collection of gap analysis and website copies here"
+editor: source
+description: "" 
+listing:
+  - id: gap-analysis
+    include: 
+      type: "gap"
+    contents: copies.yaml
+    #template: copies.ejs
+    filter-ui: false
+    sort: "date desc"
+    sort-ui: false
+    #categories: true
+  - id: web-copies
+    include: 
+      type: "web"
+    contents: copies.yaml
+    #template: copies.ejs
+    filter-ui: false
+    sort: "date desc"
+    sort-ui: false
+    #categories: true  
+toc: false    
+#page-layout: full
+---
+
+
+
+## Gap Analysis
+
+:::{#gap-analysis}
+:::
+
+## Website Copies
+
+:::{#web-copies}
+:::

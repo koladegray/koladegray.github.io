@@ -1,0 +1,13 @@
+- title: "When BLUE Is Not Best: Non-Normal Errors and the Linear Model"
+  type: "r"
+  author: 
+    - Gtyr Baissa
+    - Locke Rainey
+  date: 2020-07-01
+  year: 2020
+  #journal: "<em>Political Science Research and Methods</em>"
+  pdf: "../data/projects/test.pdf"
+  #pubclosed: "https://doi.org/10.1017/psrm.2018.34"
+  #github: "https://doi.org/10.7910/DVN/WZSUS3"
+  categories: 
+    - Political Methodology

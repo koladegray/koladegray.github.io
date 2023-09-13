@@ -1,0 +1,55 @@
+---
+title: "Data Analysis Projects"
+subtitle: "Data analsysis essentials in R, SQL and Ms.Excel"
+editor: source
+page-layout: full
+description: "" 
+listing:
+  - id: r-language
+    include: 
+      type: "r"
+    contents: data.yaml
+    #template: data.ejs
+    filter-ui: false
+    sort: "date desc"
+    sort-ui: false
+    #categories: true
+  - id: sql-documentation
+    include: 
+      type: "sql"
+    contents: data.yaml
+    #template: data.ejs
+    filter-ui: false
+    sort: "date desc"
+    sort-ui: true
+    #categories: true  
+  - id: ms-excel
+    include: 
+      type: "excel"
+    contents: data.yaml
+    #template: data.ejs
+    #filter-ui: true
+    sort: "date desc" 
+    sort-ui: false
+    #categories: true
+toc: false    
+#page-layout: full
+---
+
+
+
+## R
+
+:::{#r-langauage}
+:::
+
+## SQL (PostgreSQL)
+
+:::{#sql-documentation}
+:::
+
+
+## Microsoft Excel
+
+:::{#ms-excel}
+:::
