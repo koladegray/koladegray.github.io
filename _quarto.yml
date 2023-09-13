@@ -45,8 +45,8 @@ website:
 format:
   html:
     theme: 
+      dark: Darkly #Dark mode as default appearance
       light: Flatly
-      dark: Darkly
     css: styles.css
     toc: true
     #theme: flatly Darkly
