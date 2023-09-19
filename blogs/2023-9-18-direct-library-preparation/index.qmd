@@ -6,10 +6,10 @@ date: "2023-09-18"
 categories: [Cell, Sequencing, Biotechnology]
 description: "Cell-based studies are important in biotechnology. But, how can a scientist avoid the usual errors and get the best result?"
 css: styles.css
-image: "RollupFac.jpg"
 reference-location: margin
 toc: true
 bibliography: ref.bib
+image: "/images/image4.jpg"
 #twitter-card:
 # card-style: summary_large_image
 #image: "twitter-card.png"

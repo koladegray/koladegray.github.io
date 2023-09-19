@@ -5,7 +5,7 @@ author: "Carlisle Rainey"
 date: "2023-08-18"
 categories: [Equivalence tests, TOSTs, negligible effects, computing, R, marginaleffects]
 description: "Using {marginaleffects} package to conduct two one-sided tests (TOSTs) to test a hypothesis)."
-image: "RollupFac.jpg"
+image: "frontpic.jpg"
 reference-location: margin
 toc: false
 #twitter-card:
