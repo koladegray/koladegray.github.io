@@ -5,6 +5,7 @@ listing:
   type: default
   contents: 
     - "2023-08-18-test/index.qmd"
+    - "2023-9-18-direct-library-preparation/index.qmd"
   sort: 
     - "date desc"
     - "title desc"
