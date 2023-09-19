@@ -9,7 +9,7 @@ css: styles.css
 reference-location: margin
 toc: true
 bibliography: ref.bib
-image: "/images/image4.jpg"
+image: "frontpic.jpg"
 #twitter-card:
 # card-style: summary_large_image
 #image: "twitter-card.png"
