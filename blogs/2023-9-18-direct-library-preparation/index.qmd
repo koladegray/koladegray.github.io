@@ -21,7 +21,6 @@ image: "frontpic.jpg"
   # issue: 1
   # issued: 2023-07
   # author: Gracious Kolade
-  # title: "Direct Library Preparation: Latest Innovation in Single-Cell Whole Genome Sequencing"
 bibliography: references.bib
 ---
 
