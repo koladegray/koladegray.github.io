@@ -5,22 +5,8 @@ author: "'Kolade Gracious"
 date: "2023-09-18"
 categories: [Cell, Sequencing, Biotechnology]
 description: "Cell-based studies are important in biotechnology. But, how can a scientist avoid the usual errors and get the best result?"
-# css: styles.css
-# reference-location: margin
 toc: true
 image: "frontpic.jpg"
-# code-annotations: hover
-# code-fold: false
-# execute:
-  # cache: false
-  # draft: false
-# citation:
-  # type: post
-  # container-title: "Blogpost @ koladegray.github.io"
-  # volume: 1
-  # issue: 1
-  # issued: 2023-07
-  # author: Gracious Kolade
 bibliography: references.bib
 ---
 
@@ -200,7 +186,4 @@ To a large extent, DLP solved the myriads of shortcomings associated with the ea
 
 This is coming at a time when [Direct Library Preparation in human medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7418798/) is increasingly becoming a topic of global scientific interest. With time, more adoption of Direct Library Preparation method is expected to be recorded in many research facilities around the world.
 
-
 ***
-### Referecnes
-
