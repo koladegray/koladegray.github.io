@@ -5,32 +5,23 @@ author: "'Kolade Gracious"
 date: "2023-09-18"
 categories: [Cell, Sequencing, Biotechnology]
 description: "Cell-based studies are important in biotechnology. But, how can a scientist avoid the usual errors and get the best result?"
-css: styles.css
-reference-location: margin
+# css: styles.css
+# reference-location: margin
 toc: true
 image: "frontpic.jpg"
-#twitter-card:
-# card-style: summary_large_image
-#image: "twitter-card.png"
-#title: "Equivalence Tests with {marginaleffects}" \# less than 55 chars
-# description: "Reproducing the Clark and Golder (2006) example from Rainey (2014)" \# less than 125 chars
-#open-graph:
-# image: "twitter-card.png"
-#title: "Equivalence Tests with {marginaleffects}" \# less than 55 chars
-#description: "Reproducing the Clark and Golder (2006) example from Rainey (2014)" \# less than 125 chars
-code-annotations: hover
-code-fold: false
-execute:
-  cache: false
-  draft: false
-citation:
-  type: post
-  container-title: "Blogpost @ koladegray.github.io"
-  volume: 1
-  issue: 1
-  issued: 2023-07
-  author: Gracious Kolade
-  title: "Direct Library Preparation: Latest Innovation in Single-Cell Whole Genome Sequencing"
+# code-annotations: hover
+# code-fold: false
+# execute:
+  # cache: false
+  # draft: false
+# citation:
+  # type: post
+  # container-title: "Blogpost @ koladegray.github.io"
+  # volume: 1
+  # issue: 1
+  # issued: 2023-07
+  # author: Gracious Kolade
+  # title: "Direct Library Preparation: Latest Innovation in Single-Cell Whole Genome Sequencing"
 bibliography: references.bib
 ---
 
