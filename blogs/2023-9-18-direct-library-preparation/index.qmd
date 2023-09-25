@@ -8,7 +8,6 @@ description: "Cell-based studies are important in biotechnology. But, how can a 
 css: styles.css
 reference-location: margin
 toc: true
-bibliography: ref.bib
 image: "frontpic.jpg"
 #twitter-card:
 # card-style: summary_large_image
@@ -32,6 +31,7 @@ citation:
   issued: 2023-07
   author: Gracious Kolade
   title: "Direct Library Preparation: Latest Innovation in Single-Cell Whole Genome Sequencing"
+bibliography: references.bib
 ---
 
 ------------------------------------------------------------------------
