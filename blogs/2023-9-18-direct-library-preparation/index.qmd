@@ -186,8 +186,6 @@ To a large extent, DLP solved the myriads of shortcomings associated with the ea
 
 This is coming at a time when [Direct Library Preparation in human medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7418798/) is increasingly becoming a topic of global scientific interest. With time, more adoption of Direct Library Preparation method is expected to be recorded in many research facilities around the world.
 
-End
 
-Updated Blogfile
 
-***
+Still Testing
