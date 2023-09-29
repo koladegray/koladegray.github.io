@@ -1,0 +1,122 @@
+---
+title: "HOBRASIO: A Novel Therapy Regimen for Early Stage Andrigenic Hair Loss"
+#subtitle: "Exploring a novel innovation in genome sequencing"
+#format: html
+author: "'Kolade Gracious"
+date: "2023-09-29"
+categories: [Therapy, Alopecia]
+description: "Evaluating the potentials of a novel multi-component integrative therapy for Androgenic Alopecia"
+toc: true
+bibliography: ref.bib
+---
+
+## Hair Loss in a Lifecycle
+
+At some points in their lifecycle, humans experience a distressing pattern of hair loss that is linked to multiple causes. Clinically, this condition is reviewed, diagnosed, and treated as 'Alopecia.' In many regions of the globe, alopecia is a common primary health complaint, constituting a huge portion of telemedicine services and point-of-care therapies. The pattern of hair loss in the population depends on different variables including genetic pool, healthcare efficiency index, common comorbidities, and multiple environmental triggers. The psychosocial complications arising from this condition makes prompt diagnosis and management important determinant of prognosis.
+
+### Commonly Reported Forms of Alopecia
+
+1.  **Alopecia Areata**
+
+This non-scaring form of hair loss is commonly described as Circular Hair Loss. Although it rarely occurs in clustered populations, it is considered the second most popular form of alopecia. Approximately, the lifetime prevalence of alopecia areata is pegged at 2% with an almost equal incidence on both men and women. Diagnosis for this form of alopecia is common before age 30.
+
+::: callout-note
+Research studies have confirmed multiple etiologies for alopecia areata, with the most published studies concluding on the possibility of a hereditary component. People most commonly diagnosed with alopecia areata were likely to have a few comorbidities including thyroidal dysfunctions, autoimmune conditions, atopy, and vitiligo.
+:::
+
+Alopecia areata presents as smooth, round patches with complete loss of hair and a retained follicular opening on the scalp and beard regions. Right on the edges of the affected region, short fragmented hair with thin shafts develops in isolated forms. Therapy delay may trigger a quick transition to '*alopecia totalis*' --complete scalp balding or '*alopecia universalis*' --hair loss on the body surface. The commonly adopted therapy protocols for alopecia areata involve a holistic modulation of the identified triggered for hair loss. Minoxidil, UVA therapy, and the experimental use of immunosuppressive drugs are common management options.
+
+2.  **Androgenic Alopecia**
+
+Also described as 'Patterned Hair Loss', androgenic hair loss is considered the most commonly reported form of alopecia in both men and women. Data review from early studies published by the *Southern Medical Journal* and *Dermatologic Surgery* suggests that about half of androgenic alopecia male patients were diagnosed by age 50. Whereas, about 40% of androgenic alopecia female patients were diagnosed by age 70. In men, it is presented as a receding frontline with biphasic hair loss and shaft thinning. The presentation in women is slightly different with shaft thinning observed only at the crown as the anterior hairline remains preserved. In many diagnosed cases, symptoms first occur at puberty ad progress slowly until the hair loss pattern becomes noticeable.
+
+A diagnosis for androgenic alopecia includes a review of clinical history, family history, and pattern of symptom presentation. Many times, androgenic alopecia transitions into complete baldness in men, however, this transition is rare in female patients. Adopted therapy protocols for this condition include the recent, FDA-approved medication, Minoxidil, commercially retailed as Rogaine. Other medications including Finasteride are considered as off-label therapy options for androgenic alopecia.
+
+3.  **Diffuse Alopecia Forms**
+
+Unlike the forms of alopecia mentioned already, this group of alopecia forms affects the scalp uniformly. In acute telogen effluvium, hair loss can persist for about 6 months, with shedding triggers expressed 2-4 months earlier. Diffuse alopecia forms are of multiple etiologies. The most common etiologies linked with conformed cases of this condition include endocrine diseases, thyroidal dysfunctions, malnutrition, malignancies, and stress**.** Once the trigger pattern is initiated, about 20-50% of the scalp hairs are induced to progress through the telogen phase until they are completely lost.
+
+::: callout-tip
+### Epidemiological Data
+
+Normally, only about 5 - 10% of hairs enter the telogen phase. The increased transition to the telogen phase experienced by telogen effluvium patients can cause complete balding.
+:::
+
+In anagen effluvium, hair shedding is replaced with hair breakage. The cortex cells of the hair follicles and other epidermal structures with a high mitotic division rate are most susceptible to this breakage effect. Radiation therapy and chemotherapy are widely studies causes of this formed of diffused hair loss. Within 4 weeks, hair loss becomes noticeable with over 80% of the scalp hair is already affected. Termination of the trigger factor has shown a noticeable reduction in hair breakage. Minoxidil remains the most promising therapy option for anagen effluvium.
+
+## Pathophysiology of Androgenic Alopecia
+
+Androgenic alopecia is perhaps the most discussed alopecia form in the medical world. Many studies and clinical surveys have been conducted to understand its etiologies and disease course. Globally, there is a race distribution pattern on the incidence of androgenic alopecia. It is commonly diagnosed in the White population, followed by the Asian, African Americans, Native Americans, and Eskimos.
+
+In a normal hair growth cycle, activation of the androgen receptors shortens the growth phase of each hair strand. Factors that directly modify the activation ate of this process present an overbearing effect on hair development. In androgenic alopecia, the activation trigger is excessively presented, leading to follicular miniaturization as the growth phase significantly shortens. Hair shafts produced becomes thin, short, and weakly penetrate through the epidermis. In this form, the strands are shed off easily. Hair loss occurs bi-temporarily, starting at the anterior hairline progressively moves over the scalp. At the vertex scalp, hair loss begins centrally and radiates outwards in all directions. Although hair loss is patterned, the site of hair loss is affected differently. In some men, balding is more prominent at the front, and in others, at the crown.
+
+### Conventional Therapy Methods
+
+Conventionally, many forms of alopecia are treated with the same therapy protocol. In androgenic alopecia, management plans are directed at combatting the excessive activation of the androgenic receptors. This attempt to normalize the length of the growth phase requires extensive clinical monitoring, and many times a multi-therapy approach. The conventional therapy currently available struggles to directly reduce the rate of follicular miniaturization and promote hair replacement.
+
+::: callout-tip
+### Prescription Data
+
+Current trends in prescription data suggests that the FDA-approved drugs, topical Minoxidil and Finasteride are the most prescribed medications for androgenic alopecia.
+:::
+
+Topical minoxidil is presented in different dosage strengths and is available over-the-counter. This option requires a 4 to 6-month blind administration before an improvement is expected. As the period elapses, a comprehensive clinical review is conducted to determine modifications. Patients struggle with adherence and many times, this leads to therapy failure. Many research studies suggest the use of high-strength topical minoxidil formulation on a short therapy course.
+
+Minoxidil, as a potassium channel blocker improves blood vessel dilation. This action triggers the circulation of more oxygen, blood, and nutrients to the hair follicles. A rich supply of these components reportedly promotes the anagen phase and corrects alopecia in all its forms. Finasteride is another medication conventionally used in alopecia therapy regimens. It is commonly prescribed as a 1 mg daily regimen. As a 5 alpha-reductase type 2 inhibitor, this drug has shown significant efficacy in improving hair growth at the vertex. In female alopecia patients, finasteride has however shown inconsistent results. This, in parts, explains why it is considered contraindicated in females.
+
+Other drugs used in the off-label management of alopecia forms include Dutasteride, Cyproterone, and oral antiandrogens including spironolactone, prostaglandin analogs including latanoprost. Surgical options including hair transplant and laser treatment. These non-drug therapy options are also considered effective. Many patients opt for these as they are short-course therapies and are cosmetically satisfactory.
+
+## Considering HOBRASIO as a Novel Integrative Therapy Option
+
+Currently, the therapy options available for the management of alopecia forms produce inconsistent results. To a large part, the long-course drug therapies do not guarantee recovery, as their results cannot be easily reproductive in a patient population. Novel management methods using combination therapy options are quickly gaining traction in the medical community. These methods involve the combination of proven conventional and new therapies to rapidly improve hair growth or slow down hair loss. In addition to their effectiveness, these methods have shown considerable advantages in safety, skin compatibility, and result consistency.
+
+The Hybrid Object Rejuvenation (HOBRASIO) option provides an evidence-based therapy for alopecia forms by combining different rejuvenation methods. This innovation improves hair growth in both gender and poses no medical threat to the patients. Although this method is new, there exists much research backing its usefulness in modern cosmetology.
+
+::: callout-note
+In a 2016 review published by the *Journal of Cosmetic and Laser Therapy,* researchers recommended the use of combined therapy options in a same-day management model. Studies like this explore the possibilities and provide scientific backing for novel dermatology treatments like HOBRASIO
+:::
+
+In the management of alopecia forms, HOBRASIO combines several proven strategies in a single therapy regimen. This innovation secures optimal therapy effects for epidermal rejuvenation. In addition to its regenerative effect on follicles, this novel therapy option also provides soft tissue augmentation and skin rejuvenation effects. Unlike in conventional management with fixed therapy modalities for alopecia, HOBRASIO combines different options within the limits of safety, for different skin types. This single approach makes it effective in promoting hair replacement at the vertex or the scalp. Patients are guaranteed a consistent result with a short-course therapy and no adherence problems.
+
+## Hobrasio Regimen For Alopecia Forms
+
+As a hybrid cosmetic therapy approach, HOBRASIO explores the combination of Minoxidil, low laser therapy, and Micro-needling for epidermal and superficial dermal problems. Alopecia falls right into this category. A combination of these three therapies into a single regimen triggers physiological modifications that solve alopecia. Combining these invasive procedures produces a desired clinical outcome that is considered cosmetically satisfactory. Early initiation of treatment can also effectively stop the transition to 'alopecia universalis' or 'alopecia totalis.'
+
+-   **Micro-needling**
+
+Micro-needling is a relatively new therapy option in modern cosmetology. However, since its introduction in the early 90s, micro-needling has been used for different dermatological problems including skin rejuvenation, acne scarring, melisma, and surgical scar repair. This minimally invasive procedure involves the use of multiple fine needles to create micro-punctures in the skin. This action triggers a physiologic cascade that triggers vascularization and the release of growth factors.
+
+These growth factors initiate the rapid formation of collagen and elastin. In its use for alopecia, micro-needling triggers the release of platelet-derived growth factors and epidermal factors that activate the hair bulge. Proteins releases in this cascade also stimulate dermal stems cells and subsequent hair formation.
+
+::: callout-note
+In a 2014 case study published by the *Journal of Cutaneous and Anesthetic Surgery,* a group of researchers demonstrated how micro-needling can effectively treat alopecia forms.
+:::
+
+-   **Low Laser Therapy**
+
+Low laser therapy is an innovative approach in modern dermatology that explores the physics of photons (particles of Light) for epidermal rejuvenation. Generally, this option utilizes low-intensity light at the red or near-infrared wavelength to alter the physiology of the epidermal cells. In a large part, the precise mechanism of action of low laser therapy in hair replacement has not yet been established. However, multiple research studies suggest that low laser stimulates the anagen re-entry of telogen hair follicles.
+
+By modifying the normal cycle of hair growth, the low laser stimulates the increase in hair growth rate, hair density, and diameter. Hair shedding decreases and the primary symptoms of alopecia clinically resolve.
+
+::: {.callout-important title="Important"}
+In 2007, the FDA approved the first Low laser device for use as a safe option for the treatment of alopecia. Since then, clinicians have increasingly recommended low laser therapy for many alopecia patients
+:::
+
+-   **Minoxidil**
+
+Minoxidil was originally developed as an anti-hypertensive. Post-market surveillance data suggested that this drug triggers hypertrichosis --excessive hair growth. Subsequently, topical formulations of minoxidil were developed and re-introduced for the treatment of alopecia. For several decades, minoxidil topical formulations have served primary purposes in hair growth therapies.
+
+::: {.callout-caution appearance="default" title="Clinicians Should Note"}
+Despite its wide application today, the exact mechanism of action of minoxidil for hair regeneration remain unestablished
+:::
+
+Research studies have however postulated different hypotheses for this action. Minoxidil plays a key role in cell proliferation at the early stages.
+
+Minoxidil sulfate, a metabolite of minoxidil has also been proposed to be involved in the hair rejuvenation effects of minoxidil. Minoxidil also stimulates prostaglandin E production in a cascade of reactions that ends with the stimulation of the hair follicles. This triggers the continuous growth of hair as the growth stage becomes elongated. Numerous clinical trials have been conducted to prove the efficacy of minoxidil at different concentrations for the treatment of androgenic alopecia.
+
+## Final Thoughts
+
+Alopecia forms have been consistently linked with increased risk of psychosocial complications in many patients. Uncontrolled air loss can trigger mild episodes of anxiety and depression as the patient desperately searches for effective therapy. HOBRASIO provides a comprehensive therapy approach for alopecia. The combined treatment options stimulate hair growth and also significantly reduces shedding. Compared with other treatments available today, HOBRASIO produces the desired clinical outcome within the limit of biological safety.
+
+
+## References

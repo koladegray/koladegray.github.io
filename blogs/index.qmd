@@ -6,6 +6,7 @@ listing:
   contents: 
   #  - "2023-08-18-test/index.qmd"
     - "2023-9-18-direct-library-preparation/index.qmd"
+    - "2023-09-29-hobrasio/index.qmd"
   sort: 
     - "date desc"
     - "title desc"
