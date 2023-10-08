@@ -14,10 +14,10 @@ about:
       href: mailto:mcgraccy01@gmail.com
     - icon: filetype-pdf
       text: Resume [Med.Writer]
-      href: graymed.pdf
+      href: https://www.koladegray.github.io/graymed.pdf
     - icon: filetype-pdf
       text: Resume [Data Analyst]
-      href: graydata.pdf
+      href: https://www.koladegray.github.io/graydata.pdf
     - icon: linkedin
       text: Linkedin
       href: https://www.linkedin.com/in/gracious-ogunkolade
@@ -40,7 +40,7 @@ Got writing gigs or project collaborations for me? Sounds right! [Send me a brie
 
 ```{=html}
 <div style="display: flex; justify-content: center;">
-  <a href="mcgraccy01@gmail.com">
+  <a href="mailto:mcgraccy01@gmail.com">
     <button type="button" class="btn btn-success"> <i class="bi bi-rocket-takeoff-fill"></i></i> Send Me a Brief!</button>
   </a>
 </div>
