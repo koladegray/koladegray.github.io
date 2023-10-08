@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>’Kolade Gracious - Data Analysis Projects</title>
+<title>'Kolade Gracious – index</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,20 +66,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-r-language .list');
+    const listingTargetEl = window.document.querySelector('#listing-r-lang .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-type','listing-author','listing-date','listing-year','listing-pdf','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-type','listing-author','listing-date','listing-kaggle','listing-github','listing-categories','listing-twitter','listing-quarto','listing-linkedIn',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-type","listing-author","listing-date","listing-year","listing-pdf","listing-categories"],
+      searchColumns: ["listing-title","listing-type","listing-author","listing-date","listing-kaggle","listing-github","listing-categories","listing-twitter","listing-quarto","listing-linkedIn"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-r-language'] = new List('listing-r-language', options);
+    window['quarto-listings']['listing-r-lang'] = new List('listing-r-lang', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -94,20 +94,20 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-sql-documentation .list');
+    const listingTargetEl = window.document.querySelector('#listing-sql-doc .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-type','listing-date','listing-medium','listing-linkedIn','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-author","listing-type","listing-date","listing-medium","listing-linkedIn","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-sql-documentation'] = new List('listing-sql-documentation', options);
+    window['quarto-listings']['listing-sql-doc'] = new List('listing-sql-doc', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -129,9 +129,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-type','listing-author','listing-date','listing-github','listing-twitter','listing-linkedIn','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-type","listing-author","listing-date","listing-github","listing-twitter","listing-linkedIn","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -152,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../theme.scss">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -181,27 +181,15 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Data Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../papers/index.html" rel="" target="">
- <span class="menu-text">Papers</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../blogs/index.html" rel="" target="">
- <span class="menu-text">Blog Posts</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../journals/index.html" rel="" target="">
- <span class="menu-text">Journal Articles</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../copies/index.html" rel="" target="">
- <span class="menu-text">Copies</span></a>
+ <span class="menu-text">Medical Writing</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto tools-wide">
     <a href="https://twitter.com/DrealOtunba" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
     <a href="https://github.com/koladegray" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
     <a href="https://linkedin.com/gracious-ogunkolade" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-    <a href="https://medium.com/teteuf" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-medium"></i></a>
+    <a href="https://medium.com/gray-commits" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-medium"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
           </div> <!-- /navcollapse -->
@@ -212,65 +200,188 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Data Analysis Projects</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+</nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Financial Analysis">Financial Analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Microsoft Excel">Microsoft Excel <span class="quarto-category-count">(2)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SQL">SQL <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Time Intelligence">Time Intelligence <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Data Analysis Projects</h1>
-<p class="subtitle lead">Data analsysis essentials in R, SQL and Ms.Excel</p>
+
+
+<section id="data-analytics-projects" class="level2">
+<h2 class="anchored" data-anchor-id="data-analytics-projects">Data Analytics Projects</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<section id="r" class="level2">
-<h2 class="anchored" data-anchor-id="r">R</h2>
-<div id="r-langauage">
-
+<div class="callout-title-container flex-fill">
+While Navigating…..
 </div>
-</section>
-<section id="sql-postgresql" class="level2">
-<h2 class="anchored" data-anchor-id="sql-postgresql">SQL (PostgreSQL)</h2>
-<div id="listing-sql-documentation" class="quarto-listing quarto-listing-container-default">
-<div class="listing-actions-group">
 </div>
-<div class="list quarto-listing-default">
-
+<div class="callout-body-container callout-body">
+<p>
+Access all data projects with the sub-links posted under each post. Report on issues, queries and clarification on <a href="github.com/koladegray">Github</a>
+</p>
 </div>
+</div>
+<section id="microsoft-excel" class="level4">
+<h4 class="anchored" data-anchor-id="microsoft-excel">Microsoft Excel</h4>
+<hr>
+<div id="listing-ms-excel" class="quarto-listing quarto-listing-container-custom">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+<style>
+  .btn-xs {
+    padding: 1px 5px;
+    font-size: 15px;
+  }
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+</style>
+<ul class="list">
+    <li data-index="0" data-categories="Microsoft Excel,Financial Analysis" data-listing-date-sort="1687734000000">
+      Analyzing U.S Financial Aid to Africa's 7 Largest Economies [2019 - 2022] 
+      <br>
+      <p>
+      <!-- paper info for not-yet-published papers -->
+        <small class="text-muted">
+          Jun 26, 2023. 'Kolade Gracious.
+        </small>
+      <!-- paper info for published papers -->
+      <br>
+        <a role="button" href="https://www.linkedin.com/posts/gracious-ogunkolade_over-the-past-few-months-my-interest-has-activity-7087351480017391616-XKe1?utm_source=share&amp;utm_medium=member_desktop" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-linkedin ai-lg"></i> LinkedIn 
+        </a> 
+        <a role="button" href="https://github.com/koladegray/All_Finacial_Index_Projects?search=1#1-analyzing-us-financial-aid-to-africas-7-largest-economies-2019---2022" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-github ai-lg"></i> GitHub Code 
+        </a>
+        <a role="button" href="https://x.com/DrealOtunba/status/1673338863392108544?s=20" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-twitter ai-lg"></i> Twitter Post 
+        </a> 
+      <br>
+      </p>
+      <hr>
+    </li>
+</ul>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
 </div>
 </section>
-<section id="microsoft-excel" class="level2">
-<h2 class="anchored" data-anchor-id="microsoft-excel">Microsoft Excel</h2>
-<div id="listing-ms-excel" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-
+<section id="sql-postgresql" class="level4">
+<h4 class="anchored" data-anchor-id="sql-postgresql">SQL (PostgreSQL)</h4>
+<hr>
+<div id="listing-sql-doc" class="quarto-listing quarto-listing-container-custom">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+<style>
+  .btn-xs {
+    padding: 1px 5px;
+    font-size: 15px;
+  }
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+</style>
+<ul class="list">
+    <li data-index="0" data-categories="SQL" data-listing-date-sort="1690844400000">
+      Returning Multi-Level Aggregates in PostgreSQL Using ROLLUP Function 
+      <br>
+      <p>
+      <!-- paper info for not-yet-published papers -->
+        <small class="text-muted">
+          Aug 1, 2023. 'Kolade Gracious.
+        </small>
+      <!-- paper info for published papers -->
+      <br>
+        <a role="button" href="https://www.linkedin.com/posts/gracious-ogunkolade_writing-multi-level-aggregates-in-sql-comes-activity-7092472866327207937-4cia?utm_source=share&amp;utm_medium=member_desktop" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-linkedin ai-lg"></i> LinkedIn 
+        </a> 
+        <a role="button" href="https://medium.com/@gray-commits/returning-multi-level-aggregates-in-postgresql-using-rollup-function-5f22ec3406fb" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-medium ai-lg"></i> Medium 
+        </a>
+      <br>
+      </p>
+      <hr>
+    </li>
+</ul>
+<div class="listing-no-matching d-none">
+No matching items
 </div>
+</div>
+</section>
+<section id="r" class="level4">
+<h4 class="anchored" data-anchor-id="r">R</h4>
+<hr>
+<div id="listing-r-lang" class="quarto-listing quarto-listing-container-custom">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+<style>
+  .btn-xs {
+    padding: 1px 5px;
+    font-size: 15px;
+  }
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+</style>
+<ul class="list">
+    <li data-index="0" data-categories="R,Time Intelligence" data-listing-date-sort="1696719600000">
+      Creating a Comprehensive Date Table for Time Intelligence Analysis in R 
+      <br>
+      <p>
+      <!-- paper info for not-yet-published papers -->
+      <!-- paper info for published papers -->
+        <small class="text-muted">
+          Oct 8, 2023. 'Kolade Gracious.
+        </small>
+      <br>
+        <a role="button" href="../data/projects/datetime/datetime.html" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-dataverse ai-lg"></i> Read on Quarto 
+        </a> 
+        <a role="button" href="https://www.linkedin.com/posts/gracious-ogunkolade_date-tables-are-essential-for-almost-every-activity-7113208391149232128-Fr9o?utm_source=share&amp;utm_medium=member_desktop" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-linkedin ai-lg"></i> LinkedIn 
+        </a> 
+        <a role="button" href="https://x.com/DrealOtunba/status/1706806878456418665?s=20" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-twitter ai-lg"></i> Twitter Post 
+        </a> 
+      <br>
+      </p>
+      <hr>
+    </li>
+    <li data-index="1" data-categories="Microsoft Excel,R,Financial Analysis" data-listing-date-sort="1671058800000">
+      The Bellabeat Case Study: Analyzing Trends in Smart Device Usage 
+      <br>
+      <p>
+      <!-- paper info for not-yet-published papers -->
+      <!-- paper info for published papers -->
+        <small class="text-muted">
+          Dec 15, 2022. 'Kolade Gracious.
+        </small>
+      <br>
+        <a role="button" href="https://www.kaggle.com/code/graciouso/google-capstone-project-the-bellabeat-case-study" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-kaggle ai-lg"></i> Read on Kaggle 
+        </a>
+        <a role="button" href="https://github.com/koladegray/All_Finacial_Index_Projects?search=1#2-the-bellabeat-case-study-analyzing-trends-in-smart-device-usage" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-github ai-lg"></i> GitHub Code 
+        </a>
+      <br>
+      </p>
+      <hr>
+    </li>
+</ul>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
@@ -279,51 +390,9 @@ No matching items
 
 
 </section>
+</section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-r-language">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Political Methodology" data-listing-date-sort="1593558000000">
-<div class="body">
-<a href="">
-<h3 class="no-anchor listing-title">
-When BLUE Is Not Best: Non-Normal Errors and the Linear Model
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Political Methodology'); return false;">
-Political Methodology
-</div>
-</div>
-<a href=""> </a>
-</div>
-<div class="metadata">
-<a href="">
-<div class="listing-date">
-Jul 1, 2020
-</div>
-<div class="listing-author">
-Gtyr Baissa, Locke Rainey
-</div>
-<div class="metadata-value listing-type">
-r
-</div>
-<div class="metadata-value listing-year">
-2020
-</div>
-<div class="metadata-value listing-pdf">
-../data/projects/test.pdf
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -678,7 +747,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Copyright 2023, ’Kolade Gracious</div>
+    <div class="nav-footer-center">Copyright 2023. ’Kolade Gracious</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

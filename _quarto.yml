@@ -1,8 +1,6 @@
 project:
   type: website
   output-dir: docs
-  #render: 
-  #   - "*.qmd"
 website:
   title: "'Kolade Gracious"
   favicon: favicon.io
@@ -11,7 +9,7 @@ website:
   sidebar: 
     style: "docked"
   page-footer: 
-    center: "Copyright 2023, 'Kolade Gracious"
+    center: "Copyright 2023. 'Kolade Gracious"
     background: light  
   navbar:
     #right:
@@ -26,28 +24,28 @@ website:
       - icon: linkedin
         href: https://linkedin.com/gracious-ogunkolade
       - icon: medium
-        href: https://medium.com/teteuf
+        href: https://medium.com/gray-commits
         
     left:
       - href: index.qmd
         text: About
       - href: data/index.qmd
         text: Data Projects
-      - href: papers/index.qmd
-        text: Papers
+      #- href: papers/index.qmd
+      #  text: Papers
       - href: blogs/index.qmd
-        text: Blog Posts
-      - href: journals/index.qmd
-        text: Journal Articles
-      - href: copies/index.qmd
-        text: Copies
+        text: Medical Writing
+      #- href: journals/index.qmd
+      #  text: Journal Articles
+      #- href: copies/index.qmd
+      #  text: Copies
 
 format:
   html:
     theme: 
-      dark: Darkly #Dark mode as default appearance
+      dark: [Darkly, theme.scss] #Dark mode as default appearance
       light: Flatly
-    css: styles.css
+    css: theme.scss
     toc: true
     #theme: flatly Darkly
 #Superhero United Sandstone Journal

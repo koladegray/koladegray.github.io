@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="’Kolade Gracious">
+<meta name="dcterms.date" content="2023-09-29">
+<meta name="description" content="Formuating comprehesive datetime feilds in R with the {stringi}, {zoo} and {lubridate} packages">
+
+<title>’Kolade Gracious - Creating a Comprehensive Date Table for Time Intelligence Analysis in R</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../favicon.io" rel="icon">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../theme.scss">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">’Kolade Gracious</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../data/index.html" rel="" target="">
+ <span class="menu-text">Data Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blogs/index.html" rel="" target="">
+ <span class="menu-text">Medical Writing</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto tools-wide">
+    <a href="https://twitter.com/DrealOtunba" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/koladegray" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://linkedin.com/gracious-ogunkolade" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+    <a href="https://medium.com/gray-commits" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-medium"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Creating a Comprehensive Date Table for Time Intelligence Analysis in R</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#getting-started-with-the-basics" id="toc-getting-started-with-the-basics" class="nav-link active" data-scroll-target="#getting-started-with-the-basics">Getting Started with the Basics</a></li>
+  <li><a href="#unveiling-the-artistry-to-solve-this-challenge" id="toc-unveiling-the-artistry-to-solve-this-challenge" class="nav-link" data-scroll-target="#unveiling-the-artistry-to-solve-this-challenge">Unveiling the aRtistry to Solve this Challenge</a></li>
+  <li><a href="#code-block" id="toc-code-block" class="nav-link" data-scroll-target="#code-block">Code Block</a></li>
+  <li><a href="#packages-used" id="toc-packages-used" class="nav-link" data-scroll-target="#packages-used">Packages Used</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Creating a Comprehensive Date Table for Time Intelligence Analysis in R</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">lubridate</div>
+    <div class="quarto-category">stringi</div>
+    <div class="quarto-category">zoo</div>
+    <div class="quarto-category">Time Intelligence</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Formuating comprehesive datetime feilds in R with the {stringi}, {zoo} and {lubridate} packages
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>’Kolade Gracious </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 29, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<hr>
+<p><br> Creating a Comprehensive Date Table for Time Intelligence Analysis in R Formulating comprehensive datetime fields in R with the {stringi}, {zoo} and {lubridate} package</p>
+<p>I created this post as a direct response to Malcom Okonkwo’s <a href="https://x.com/malcom_okonkwo/status/1706265412395041188?s=20">twitter post</a> challenging r-lang users to create a comprehensive date table for the year 2023 in R. He solved the challenge in SQL and had quoted <a href="https://x.com/Olaoluwa__Mercy/status/1706206895508201668?s=20">another post</a> completing the same challenge using Microsoft Excel. I decided to complete this task in R.</p>
+<p>I mean, why not? After all, R’s flexibility with datetime manipulation is notoriously underrated.</p>
+<p>Here’s a picture of the challenge prompt.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="datetimeprompt.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Date Table Challenge Prompt</figcaption>
+</figure>
+</div>
+<section id="getting-started-with-the-basics" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started-with-the-basics">Getting Started with the Basics</h2>
+<p>What are the task variables and problems?</p>
+<ul>
+<li>Comprehensive date table needed for the year 2023</li>
+<li>Fiscal year starts on July 1st</li>
+<li>Recognized holidays to be incorporated into the date table as listed in the prompt</li>
+<li>Weekends are defined as Sundays and Saturdays</li>
+<li>Variables and corresponding observations are to be generated automatically (of course!)</li>
+</ul>
+</section>
+<section id="unveiling-the-artistry-to-solve-this-challenge" class="level2">
+<h2 class="anchored" data-anchor-id="unveiling-the-artistry-to-solve-this-challenge">Unveiling the aRtistry to Solve this Challenge</h2>
+<ol type="1">
+<li>Load the required R packages needed for Time Intelligence analysis</li>
+</ol>
+<ul>
+<li><p>zoo <span class="citation" data-cites="zoo-2">(<a href="#ref-zoo-2" role="doc-biblioref">Zeileis and Grothendieck 2005</a>)</span></p></li>
+<li><p>stringi [<span class="citation" data-cites="stringi">(<a href="#ref-stringi" role="doc-biblioref">Gagolewski 2022</a>)</span>]</p></li>
+<li><p>lubridate [<span class="citation" data-cites="lubridate">(<a href="#ref-lubridate" role="doc-biblioref">Grolemund and Wickham 2011</a>)</span>]</p></li>
+<li><p>tidyverse [<span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al. 2019</a>)</span>]</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringi)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(zoo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<ol start="2" type="1">
+<li>Declare fixed dependencies stored as objects first</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>start_date <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(<span class="st">"2023/01/01"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>end_date <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(<span class="st">"2023/12/31"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Fiscal year starts in July (month_number 7) every year</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>fiscal_start_month <span class="ot">=</span> <span class="dv">7</span> </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="do">##create a date matrix for recognized holidays</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>holiday<span class="ot">&lt;-</span> <span class="fu">as.Date</span>(</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"2023/01/01"</span>, <span class="st">"2023/01/02"</span>, <span class="st">"2023/04/09"</span>, <span class="st">"2023/04/10"</span>, </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"2023/04/21"</span>, <span class="st">"2023/04/24"</span>, <span class="st">"2023/06/12"</span>, <span class="st">"2023/06/28"</span>, </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"2023/06/29"</span>, <span class="st">"2023/10/01"</span>, <span class="st">"2023/12/25"</span>, <span class="st">"2023/12/26"</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<ol start="3" type="1">
+<li>Create Date sequence automatically and store as a tibble</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>date_sequence <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(<span class="fu">seq</span>(start_date,end_date,<span class="at">by =</span> <span class="st">"day"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(date_sequence)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 1
+  value     
+  &lt;date&gt;    
+1 2023-01-01
+2 2023-01-02
+3 2023-01-03
+4 2023-01-04
+5 2023-01-05
+6 2023-01-06</code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Generated date sequences are stored as 365 observations of the variable <code>value</code>. This variable name will remain unchanged throughout this post.</p>
+</div>
+</div>
+<p><br></p>
+<ol start="4" type="1">
+<li>Mutate date_sequence to create a full date table For the sake of simplicity the sections of this stage will be discussed in three parts; Year, Quarter/Week, Fiscal Year and Weekend/Holiday wrangling</li>
+</ol>
+<ul>
+<li>Year</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>datetable_year <span class="ot">&lt;-</span> date_sequence <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="do">##Year</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">year =</span> <span class="fu">year</span>(value), <span class="co">#date_sequence is stored in [1] as "value"</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">day_of_month =</span> <span class="fu">day</span>(value),</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">day_of_week =</span> <span class="fu">stri_datetime_fields</span>(value)<span class="sc">$</span>DayOfWeek,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">day_of_week_short =</span> <span class="fu">format</span>(value,<span class="st">"%a"</span>),</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">day_of_year =</span> <span class="fu">stri_datetime_fields</span>(value)<span class="sc">$</span>DayOfYear,</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">weekday =</span> <span class="fu">weekdays.Date</span>(value),</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">month =</span> <span class="fu">months</span>(value),</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">month_number =</span> <span class="fu">stri_datetime_fields</span>(value)<span class="sc">$</span>Month,</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">month_start_date =</span> <span class="fu">floor_date</span>(<span class="fu">as.Date</span>(value, <span class="st">"%Y-%m-%d"</span>), <span class="at">unit =</span> <span class="st">"month"</span>),</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">month_end_date =</span> <span class="fu">floor_date</span>(<span class="fu">as.Date</span>(value, <span class="st">"%Y-%m-%d"</span>), <span class="at">unit =</span> <span class="st">"month"</span>) </span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>                                                     <span class="sc">+</span> <span class="fu">days_in_month</span>(value)<span class="sc">-</span><span class="dv">1</span>, </span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="do">### "-1" to make sure the exact end on the month is returned</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">week_of_month =</span> <span class="fu">paste0</span>(<span class="st">"Week "</span>, (<span class="fu">stri_datetime_fields</span>(value)<span class="sc">$</span>WeekOfMonth)),</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">week_of_year =</span>  <span class="fu">paste0</span>(<span class="st">"Week "</span>, <span class="fu">stri_datetime_fields</span>(value)<span class="sc">$</span>WeekOfYear)</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>      )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<p>Now, take a look at the first part of the datetable</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datetable_year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 13
+  value       year day_of_month day_of_week day_of_week_short day_of_year
+  &lt;date&gt;     &lt;dbl&gt;        &lt;int&gt;       &lt;int&gt; &lt;chr&gt;                   &lt;int&gt;
+1 2023-01-01  2023            1           1 Sun                         1
+2 2023-01-02  2023            2           2 Mon                         2
+3 2023-01-03  2023            3           3 Tue                         3
+4 2023-01-04  2023            4           4 Wed                         4
+5 2023-01-05  2023            5           5 Thu                         5
+6 2023-01-06  2023            6           6 Fri                         6
+# ℹ 7 more variables: weekday &lt;chr&gt;, month &lt;chr&gt;, month_number &lt;int&gt;,
+#   month_start_date &lt;date&gt;, month_end_date &lt;date&gt;, week_of_month &lt;chr&gt;,
+#   week_of_year &lt;chr&gt;</code></pre>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Quarter/Week</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>datetable_qtr_wk <span class="ot">&lt;-</span> date_sequence <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="do">##Quarter/Week</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">quarter =</span> <span class="fu">quarters.POSIXt</span>(value),</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">qtr_start_date =</span> <span class="fu">format</span>(<span class="fu">as.Date</span>(<span class="fu">as.yearqtr</span>(value, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>)),</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="st">"%d-%h-%Y"</span>),</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">qtr_end_date =</span> <span class="fu">format</span>(<span class="fu">as.Date</span>(<span class="fu">as.yearqtr</span>(value, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>), </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>                                                     <span class="at">frac =</span> <span class="dv">1</span>), <span class="st">"%d-%h-%Y"</span>),</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">week_start_date =</span> <span class="fu">format</span>(<span class="fu">floor_date</span>(<span class="fu">as.Date</span>(value, <span class="st">"%Y-%m-%d"</span>), </span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>                         <span class="at">unit =</span> <span class="st">"week"</span>, <span class="at">week_start =</span> <span class="dv">1</span>), <span class="st">"%a-%h-%y"</span>),</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>        <span class="co">#R starts weeks on Sunday, add "week_start=1 as an arg" to coarse to Monday</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">week_end_date =</span> <span class="fu">format</span>(<span class="fu">floor_date</span>(<span class="fu">as.Date</span>(value, <span class="st">"%Y-%m-%d"</span>), </span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">unit =</span> <span class="st">"week"</span>) <span class="sc">+</span> <span class="dv">6</span>, <span class="st">"%a-%h-%y"</span>),</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">year_month =</span> <span class="fu">as.yearmon</span>(value, <span class="st">"%m-%Y"</span>),</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">year_qrt =</span> <span class="fu">as.yearqtr</span>(value, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>)</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>      )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The r chunk above create multiple qtr/wk fields using the ‘value’ variable and the functionality of the loaded R packages. A look at the second part of the date table.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datetable_qtr_wk)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 8
+  value      quarter qtr_start_date qtr_end_date week_start_date week_end_date
+  &lt;date&gt;     &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;           &lt;chr&gt;        
+1 2023-01-01 Q1      01-Jan-2023    31-Mar-2023  Mon-Dec-22      Sat-Jan-23   
+2 2023-01-02 Q1      01-Jan-2023    31-Mar-2023  Mon-Jan-23      Sat-Jan-23   
+3 2023-01-03 Q1      01-Jan-2023    31-Mar-2023  Mon-Jan-23      Sat-Jan-23   
+4 2023-01-04 Q1      01-Jan-2023    31-Mar-2023  Mon-Jan-23      Sat-Jan-23   
+5 2023-01-05 Q1      01-Jan-2023    31-Mar-2023  Mon-Jan-23      Sat-Jan-23   
+6 2023-01-06 Q1      01-Jan-2023    31-Mar-2023  Mon-Jan-23      Sat-Jan-23   
+# ℹ 2 more variables: year_month &lt;yearmon&gt;, year_qrt &lt;yearqtr&gt;</code></pre>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Fiscal Year</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>datetable_fiscal_yr <span class="ot">&lt;-</span> date_sequence <span class="sc">%&gt;%</span> </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="do">##Fiscal Year</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">fiscal_year =</span> <span class="fu">paste0</span>(<span class="st">"FY-"</span>, <span class="fu">ifelse</span>(<span class="fu">month</span>(value) <span class="sc">&gt;=</span> fiscal_start_month, </span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>                                       <span class="fu">year</span>(value) <span class="sc">+</span> <span class="dv">1</span>, <span class="fu">year</span>(value))),</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">fiscal_qrt =</span> <span class="fu">quarter</span>(value, <span class="at">type=</span> <span class="st">"year.quarter"</span>, <span class="at">fiscal_start =</span> <span class="dv">10</span>),</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">fiscal_quarter_start_date =</span> <span class="fu">format</span>(<span class="fu">quarter</span>(value, <span class="at">type=</span> <span class="st">"date_first"</span>, </span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">fiscal_start =</span> <span class="dv">10</span>), <span class="st">"%a-%h-%y"</span>),</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">fiscal_quarter_end_date =</span> <span class="fu">format</span>(<span class="fu">quarter</span>(value, <span class="at">type=</span> <span class="st">"date_last"</span>, </span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">fiscal_start =</span> <span class="dv">10</span>), <span class="st">"%a-%h-%y"</span>)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>      )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now, a look at the fiscal years variables</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datetable_fiscal_yr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  value      fiscal_year fiscal_qrt fiscal_quarter_start_date
+  &lt;date&gt;     &lt;chr&gt;            &lt;dbl&gt; &lt;chr&gt;                    
+1 2023-01-01 FY-2023          2023. Sun-Jan-23               
+2 2023-01-02 FY-2023          2023. Sun-Jan-23               
+3 2023-01-03 FY-2023          2023. Sun-Jan-23               
+4 2023-01-04 FY-2023          2023. Sun-Jan-23               
+5 2023-01-05 FY-2023          2023. Sun-Jan-23               
+6 2023-01-06 FY-2023          2023. Sun-Jan-23               
+# ℹ 1 more variable: fiscal_quarter_end_date &lt;chr&gt;</code></pre>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Weekend and Holiday</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>datetable_wknd_hol <span class="ot">&lt;-</span> date_sequence <span class="sc">%&gt;%</span> </span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="do">##Weekend and Holidays</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">is_weekend =</span> <span class="fu">format</span>(value, <span class="st">"%u"</span>) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">6</span>,<span class="dv">7</span>), <span class="co">#Saturday(6) $ Sunday(7)</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">is_holiday =</span> <span class="fu">format</span>(value, <span class="st">"%Y-%m-%d"</span>) <span class="sc">%in%</span> holiday</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datetable_wknd_hol)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  value      is_weekend is_holiday
+  &lt;date&gt;     &lt;lgl&gt;      &lt;lgl&gt;     
+1 2023-01-01 TRUE       FALSE     
+2 2023-01-02 FALSE      FALSE     
+3 2023-01-03 FALSE      FALSE     
+4 2023-01-04 FALSE      FALSE     
+5 2023-01-05 FALSE      FALSE     
+6 2023-01-06 FALSE      FALSE     </code></pre>
+</div>
+</div>
+<p><br></p>
+<ol start="5" type="1">
+<li>Binding all sections together Now that all sections of the date table has been created, let’s bind them all together. This automatically merges all the code chunks above and produce a complete output.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>datetable <span class="ot">&lt;-</span> <span class="fu">bind_cols</span>(datetable_year, datetable_fiscal_yr, </span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>                       datetable_qtr_wk, datetable_wknd_hol,</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">.name_repair =</span> <span class="st">"minimal"</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>                       )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<ol start="6" type="1">
+<li>Examine the dimension, column, rows and data types for the date table.</li>
+</ol>
+<ul>
+<li>View date table</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">view</span>(datetable)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Examine date table dimension</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datetable)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 365  29</code></pre>
+</div>
+</div>
+<p>The code chunk above reveal [datetable] as a tibble with 365 rows (total days of the year) and 29 columns (feilds generated automatically).</p>
+<ul>
+<li>Examine data types in date table</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(datetable)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 365
+Columns: 29
+$ value                     &lt;date&gt; 2023-01-01, 2023-01-02, 2023-01-03, 2023-01…
+$ year                      &lt;dbl&gt; 2023, 2023, 2023, 2023, 2023, 2023, 2023, 20…
+$ day_of_month              &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1…
+$ day_of_week               &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1,…
+$ day_of_week_short         &lt;chr&gt; "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "S…
+$ day_of_year               &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1…
+$ weekday                   &lt;chr&gt; "Sunday", "Monday", "Tuesday", "Wednesday", …
+$ month                     &lt;chr&gt; "January", "January", "January", "January", …
+$ month_number              &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ month_start_date          &lt;date&gt; 2023-01-01, 2023-01-01, 2023-01-01, 2023-01…
+$ month_end_date            &lt;date&gt; 2023-01-31, 2023-01-31, 2023-01-31, 2023-01…
+$ week_of_month             &lt;chr&gt; "Week 1", "Week 1", "Week 1", "Week 1", "Wee…
+$ week_of_year              &lt;chr&gt; "Week 1", "Week 1", "Week 1", "Week 1", "Wee…
+$ value                     &lt;date&gt; 2023-01-01, 2023-01-02, 2023-01-03, 2023-01…
+$ fiscal_year               &lt;chr&gt; "FY-2023", "FY-2023", "FY-2023", "FY-2023", …
+$ fiscal_qrt                &lt;dbl&gt; 2023.2, 2023.2, 2023.2, 2023.2, 2023.2, 2023…
+$ fiscal_quarter_start_date &lt;chr&gt; "Sun-Jan-23", "Sun-Jan-23", "Sun-Jan-23", "S…
+$ fiscal_quarter_end_date   &lt;chr&gt; "Fri-Mar-23", "Fri-Mar-23", "Fri-Mar-23", "F…
+$ value                     &lt;date&gt; 2023-01-01, 2023-01-02, 2023-01-03, 2023-01…
+$ quarter                   &lt;chr&gt; "Q1", "Q1", "Q1", "Q1", "Q1", "Q1", "Q1", "Q…
+$ qtr_start_date            &lt;chr&gt; "01-Jan-2023", "01-Jan-2023", "01-Jan-2023",…
+$ qtr_end_date              &lt;chr&gt; "31-Mar-2023", "31-Mar-2023", "31-Mar-2023",…
+$ week_start_date           &lt;chr&gt; "Mon-Dec-22", "Mon-Jan-23", "Mon-Jan-23", "M…
+$ week_end_date             &lt;chr&gt; "Sat-Jan-23", "Sat-Jan-23", "Sat-Jan-23", "S…
+$ year_month                &lt;yearmon&gt; Jan 2023, Jan 2023, Jan 2023, Jan 2023, …
+$ year_qrt                  &lt;yearqtr&gt; 2023 Q1, 2023 Q1, 2023 Q1, 2023 Q1, 2023…
+$ value                     &lt;date&gt; 2023-01-01, 2023-01-02, 2023-01-03, 2023-01…
+$ is_weekend                &lt;lgl&gt; TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRU…
+$ is_holiday                &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FA…</code></pre>
+</div>
+</div>
+</section>
+<section id="code-block" class="level2">
+<h2 class="anchored" data-anchor-id="code-block">Code Block</h2>
+<p>A screen grab of all r-chunk as one? Why not?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="datetable_code.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="packages-used" class="level2">
+
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Packages Used</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-stringi" class="csl-entry" role="listitem">
+Gagolewski, Marek. 2022. <span>“<span></span>Stringi<span></span>: <span></span>F<span></span>ast and Portable Character String Processing in <span></span>r<span></span>”</span> 103. <a href="https://doi.org/10.18637/jss.v103.i02">https://doi.org/10.18637/jss.v103.i02</a>.
+</div>
+<div id="ref-lubridate" class="csl-entry" role="listitem">
+Grolemund, Garrett, and Hadley Wickham. 2011. <span>“Dates and Times Made Easy with <span></span>Lubridate<span></span>”</span> 40. <a href="https://www.jstatsoft.org/v40/i03/">https://www.jstatsoft.org/v40/i03/</a>.
+</div>
+<div id="ref-tidyverse" class="csl-entry" role="listitem">
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the <span></span>Tidyverse<span></span>”</span> 4: 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
+</div>
+<div id="ref-zoo-2" class="csl-entry" role="listitem">
+Zeileis, Achim, and Gabor Grothendieck. 2005. <span>“Zoo: S3 Infrastructure for Regular and Irregular Time Series”</span> 14. <a href="https://doi.org/10.18637/jss.v014.i06">https://doi.org/10.18637/jss.v014.i06</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">Copyright 2023. ’Kolade Gracious</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -1,34 +1,38 @@
 ---
 title: "'Kolade Gracious"
 subtitle: "(*Medical Writer **|** Data Analyst*)"
-image: profile.jpg
+image: p2.jpg
 page-layout: full
 about:
   id: hero-heading
   template: trestles
-  image-shape: rounded
-  image-width: 200px
+  image-shape: rectangle
+  image-width: 250px
   links: 
     - icon: envelope
       text: email
-      href: mcgraccy01@gmail.com
+      href: mailto:mcgraccy01@gmail.com
     - icon: filetype-pdf
       text: Resume [Med.Writer]
-      href: resume.pdf
+      href: graymed.pdf
     - icon: filetype-pdf
       text: Resume [Data Analyst]
-      href: resume.pdf
+      href: graydata.pdf
     - icon: linkedin
       text: Linkedin
-      href: https://linkedin.com/gracious
+      href: https://www.linkedin.com/in/gracious-ogunkolade
 ---
 
 ::: {#hero-heading}
-Since completing my first degree in Pharmacy from Nigeria's Premier varsity, *University of Ibadan*, my research has appeared in the *BMJC* and on med. writing spaces as journal reviews, gap analysis, medical commentaries and continuing educations courses. Currently, I develop **medical communication solutions** in pharma, neurology, infections diseases and professional learning with deliverables designed as continuing education courses, website copies, .....
+Since completing my first degree in the Pharmaceutical Sciences, I have expanded my reach beyond primary healthcare by learning technical skills exploring the intersection of finance, healthcare and data science.
 
-When I am not writing healthcare contents, you'd find me on **RStudio,** **Microsoft Excel** or **pgAdmin** writing code syntaxes required for exploratory data analysis, inferential statistics, data modelling and data validation in **R**, **SQL** and **DAX**.
+Currently, I develop **medical communication solutions** in pharma, medicine and professional learning with deliverables designed as continuing education courses, website copies and patients education pamphlets.
 
-Other times, you would probably find me somewhere in Lagos, Nigeria, discussing politics in Africa or listening to a wierd mashed-up playlist of Billie Eilish, Jacob Banks, Lana Del Rey, Burna Boy, and the Nigerian sonic-artistry maestro, Brymo Olooforo.
+When I am not writing healthcare contents, you'd find me on **RStudio,** **Microsoft Excel** or **pgAdmin** writing code required for exploratory data analysis, inferential statistics, and data modelling in **R**, **SQL** and **DAX**.
+
+Other times, you will probably find me somewhere in Lagos, Nigeria, discussing politics or listening to a weird mashed-up playlist of Billie Eilish, Jacob Banks, Lana Del Rey, Burna Boy, and the Nigerian sonic-artistry maestro, Brymo Olooforo.
+
+Oh, I almost forgot! I am a big fan of film scores composed by Hans Zimmer and Ramin Djawadi.
 
 ### Connect
 
@@ -42,5 +46,5 @@ Got writing gigs or project collaborations for me? Sounds right! [Send me a brie
 </div>
 <br>
 ```
-You can find me on [Twitter](https://twitter.com/DrealOtunba), [Linkedin](https://linkedin.com/gracious) and [Coursera](https://coure.com). I publicly version-control many of my data analysis and writing projects on [GitHub](https://github.com/koladegray). You can find the repo for this Quarto website at `../koladegray/github.io`
+You can find me on [Twitter](https://twitter.com/DrealOtunba), [Linkedin](https://linkedin.com/gracious) and [Coursera](https://coure.com). I publicly version-control many of my data analysis and medical writing projects on [GitHub](https://github.com/koladegray). The code for this Quarto Website is Open Source can be found in a [Github repo.](https://github.com/koladegray/koladegray.github.io)
 :::

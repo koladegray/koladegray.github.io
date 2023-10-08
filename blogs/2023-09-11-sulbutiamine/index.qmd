@@ -1,0 +1,88 @@
+---
+title: "Sulbutiamine - A Drug Review"
+subtitle: "Developed as a compound that can easily increase and sustain the level of brain thiamine levels, Sulbutiamine was once a wonder drug."
+author: "'Kolade Gracious"
+date: "2023-09-11"
+categories: [Drug Review, Pharma, Sulbutiamine]
+#description: ""
+toc: true
+bibliography: references.bib
+csl: american-medical-association-alphabetical.csl
+image: "sul_vector.jpg"
+---
+
+------------------------------------------------------------------------
+
+<br>
+
+Sulbutiamine is a lipid-soluble derivative of thiamine originally developed in the 60's by Japanese scientists as an adjunctive treatment for the management of symptom spectrum linked closely with Vitamin B deficiency. Sold under the brand name 'Arcalion', Sulbutiamine has since been modified and explored in the management of asthenia, depression, erectile dysfunction, Alzheimer's disease and diabetic neuropathy.
+
+::: callout-note
+## Basic Synthesis
+
+As an entity of biomedical importance, Sulbutiamine is synthesized by binding two molecules of thiamine (Vitamin B1) with a sulfur group forming a dimer chemically nomenclated as '2 - Isobutyryl thiamine disulfide'.
+:::
+
+The rationale behind the development of Sulbutiamine is simple --a compound that can easily increase and sustain the level of brain thiamine levels was needed to reverse the symptoms of thiamine deficiency. Thiamine is polar, making it soluble in water and decreasing its rate of penetration of the blood-brain barrier. As an oxidized derivative of thiamine, Sulbutiamine is a non-polar dimer of thiamine that crosses the blood-brain barrier and metabolized to release more thiamine molecules in the brain. This profile increases the bioavailability of thiamine in the brain, decreases thiamine metabolism and combats thiamine deficiency. This is the sole basis for the cognitive-enhancing properties of Sulbutiamine.
+
+## Sulbutiamine in Clinical Care
+
+##### 1. Cognitive Enhancement
+
+Sulbutiamine is known to give an extra kick when needed. This is the primary reason for its use among millions of people. As a synthetic derivative of thiamine, it induces a mild stimulatory effect by enhancing the actions of dopamine at the expense of other catecholamine. Sulbutiamine is preferred to amphetamines and other cognitive-enhancing therapies as it presents no significant adverse effects on the users. As a non-prescription drug, it is considered a supplement therapy in Alzheimer's patients as it increases attention span and improves treatment indices.
+
+##### 2. Long-term Memory Formation
+
+Many clinical evidence and research results are currently supporting the use of Sulbutiamine in the stimulation of long-term memory formation. Sulbutiamine interacts significantly with neurotransmitters directly involved in memory formation --choline, dopamine and glutamate responds readily to the modulatory effects of Sulbutiamine in humans. Investigating the role of Sulbutiamine in long-term memory formation, a research study published by the Journal of Pharmacology Biochemistry and Behavior submitted that this compound mediates an increase in hippocampal cholinergic activity by inducing an uptick in sodium dependent high affinity choline uptake [@Micheau1985]. The steps involved are beyond the scope of this review.
+
+Summarily, Sulbutiamine increases the rate impulse transmission in the brain receptor and improves glutamate flow in a bid to enhancing memory formation. There are also studies explaining the effectiveness of Sulbutiamine in reversing the adverse effects of amnesia-inducing drugs on memory formation.
+
+##### 3. Erectile Dysfunction Suplementary Therapy
+
+Currently, there are enough claims and anecdotal evidences to fuel a clinical investigation about the usefulness of Sulbutiamine in reversing erectile dysfunction. In 2005, a study published by the Russian journal, Urologiia, detailed the usefulness of Sulbutiamine in the management of psychogenic erectile dysfunction. In this study, 20 patients with confirmed cases of psychogenic erectile dysfunction received optimal does of Sulbutiamine over a course of 30 days. In some patients with preexisting arterial disorders, an improvement in cavernous arterial blood flow was recorded.
+
+##### 4. Improved Mood and Reduction in Anxiety Levels
+
+Though not yet extensively proven by clinical research standards, there are many theories suggesting that Sulbutiamine can actively elevate mood and reduce anxiety in users. As initially discussed, Sulbutiamine significantly effects the activities of the body's excitatory neurotransmitters especially glutamate and dopamine. In normal humans, dopamine is linked with emotional response, motivation and feelings of pleasure.
+
+By increasing dopaminergic transmission, Sulbutiamine can be expected to improve mood. In the year 2000, this basis was investigated in a clinical research published by L'Encephale. The efficacy of Sulbutiamine on the symptoms of patients with Major Depressive Episode (MDE) was examined in a placebo control trial. This study confirmed that Sulbutiamine is effective in rehabilitating patients in their social and family life functioning [@starling-soares2020].
+
+##### 5. Energy Boost in Chronic Fatigue
+
+Judging from a few clinical studies, Sulbutiamine has proven to be useful in the treatment of posttraumatic fatigue characterized by low energy levels. Since its use with anti-infective medications is not contraindicated, many physicians now explore this combination posttraumatic patients to boost mood and increase energy levels. A non-randomized observational study investigating the effect of Sulbutiamine in patients with infection associated asthenia was by published by The Journal of the Association of Physicians of India in 2003.
+
+An inspection of the primary outcome data revealed that the number of patients with complete resolution of all asthenic symptoms was over 50%. In some patients, severe asthenia was significantly reduced, however, response was greater in patients with acute infection and symptom presentation [@Trovero2000]. Sulbutiamine is also effective in the management of fatigue associated with multiple sclerosis and in persistent bouts of unexplained fatigue.
+
+## Sulbutiamine's Pharmacology
+
+As an emerging drug component, different medical enquiries have been conducted to investigate the mechanism by which Sulbutiamine exerts its biochemical effects in humans. These findings revealed a multi-system mechanism amplified by Sulbutamine's interaction with neuronal cells, biological antioxidants, neurotransmitters and different regions of the brain. In addition to increasing circulating thiamine levels, other documented mechanism of action of Sulbutiamine in human subjects include:
+
+-   Sulbutiamine increases the activities of Dopamine and Glutamate in the prefrontal cortex region of the brain. A study published in 2000 by Neuroscience Letters concluded that Sulbutiamine exerts a modulatory effect on dopaminergic and glutaminergic cortical transmission by decreasing kainite binding sites and increasing Dopamine (D1) binding sites [@Trovero2000].
+
+-   Sulbutiamine decreases the rate of neuronal cell death (as induced by serum deprivation) by a dose-dependent stimulation of the activities of glutathione (GSH) and Glutathione-S-transferase. A research study published in the Biological and Pharmaceutical Bulletin revealed that Sulbutiamine inhibits oxidative stress by scavenging reactive oxidative species (ROS) in neuronal cells --an action that consequently reduces brain cell death [@Trovero2000].
+
+-   In experimental models, Sulbutiamine has been shown to increase hippocampal cholinergic activity by a direct effect on central cholinergic pathway. This mechanism is however complex and still under further scrutiny by different research groups. However, different publications have confirmed that chromic administration of Sulbutiamine directly improves the ability of experimental rats to form long term memory.
+
+Sulbutiamine has also been proven to increase energy use in the brain by directly stimulating the levels of thiamine triphosphate [@Sevim2017].
+
+## Dosage and Safety Studies on Sulbutiamine
+
+In different regions of the World, Sulbutiamine is readily available as an over-the-counter drug supplement. It is presented for sale predominantly in two forms --bulk powder packs and capsules. Currently, there exists no definitive publication or official directive about the safety profile of Sulbutiamine in humans. However, long-term usage data has suggested that Sulbutiamine is generally tolerated in humans at doses up to 600mg/day. There are no reported cases of toxicity in humans. For safety concerns, it is advisable that this drug product be taken with food.
+
+Continuous use of Sulbutiamine for a period of time exceeding 4 weeks is unadvisable as the safety of its long-term use is unknown. Anecdotal reports of tolerance in humans has also been documented. Optimal dose for use is pegged at 200-600 mg taken twice or three times daily depending on indication for use and expert recommendation.
+
+## Adverse Effects and Drug Interaction
+
+As with other popular supplements, Sulbutiamine is considered safe when used at the standard dose regimen under expert supervision. It is generally advisable that users of this product adopt a cyclic method of dosing. This involves intermittent breaks or drug-free days in between usage periods. In this usage plan, Sulbutiamine is administered consistently for 3 days before a day off. It has been found to moderately interact with antibiotics.
+
+A study published by the Journal of Association of Physicians of India reported drug interaction adverse effects in about 0.6% of patients treated with a combination of Sulbutiamine and specific anti-infective drugs. There is little documentation about the side effects of Sulbutiamine in humans. These side effects are infrequent and can include euphoria, headaches, mild agitation, nausea, insomnia, tremor drowsiness and skin allergies. Unless otherwise recommended by a physician, Sulbutiamine is contraindicated for use in pregnancy.
+
+## Metabolism and Excretion of Sulbutiamine in Humans
+
+Sulbutiamine is rapidly absorbed and distributed into the body tissues after oral administration. The lipophilic nature of the molecule ensures that it is accumulated in the tissues and also crosses the blood-brain barrier to effect neurotropic actions. Biochemical effects are noticed within 30 minutes of administration and peak effect is experienced after 3 hours. Sulbutiamine has a half-life of 5 hours and it is excreted mainly in the urine.
+
+## Sulbutiamine Stacking
+
+Sulbutiamine stacking can also be done to maximize therapeutic response in humans. This emerging practice involves the combination of Sulbutiamine with drugs and drug products that can enhance its biochemical effects. The combination of Sulbutiamine with optimal doses of Cholinergics increases the central effect of Sulbutiamine on the cholinergic system. The adverse effects of some drugs are more pronounced when used for long periods in high doses. Sulbutiamine may be co-administered with suboptimal doses of these drugs to effects the needed clinical response with any significant adverse effect.
+
+## Cited Works

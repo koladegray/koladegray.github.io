@@ -1,55 +1,60 @@
 ---
-title: "Data Analysis Projects"
-subtitle: "Data analsysis essentials in R, SQL and Ms.Excel"
+#title: "Data Analysis Projects"
+#subtitle: "Data analsysis essentials in R, SQL and Ms.Excel"
 editor: source
-page-layout: full
-description: "" 
+#page-layout: full
+#description: "" 
 listing:
-  - id: r-language
+  - id: r-lang
     include: 
-      type: "r"
+      type: "R"
     contents: data.yaml
-    #template: data.ejs
+    template: datat.ejs
     filter-ui: false
     sort: "date desc"
     sort-ui: false
     #categories: true
-  - id: sql-documentation
+  - id: sql-doc
     include: 
-      type: "sql"
+      type: "Sql"
     contents: data.yaml
-    #template: data.ejs
+    template: datat.ejs
     filter-ui: false
     sort: "date desc"
-    sort-ui: true
-    #categories: true  
+    sort-ui: false
+    categories: true  
   - id: ms-excel
     include: 
-      type: "excel"
+      type: "Excel"
     contents: data.yaml
-    #template: data.ejs
-    #filter-ui: true
+    template: datat.ejs
     sort: "date desc" 
     sort-ui: false
-    #categories: true
+    categories: true
 toc: false    
-#page-layout: full
 ---
+## Data Analytics Projects
 
-
-
-## R
-
-:::{#r-langauage}
+:::{.callout-tip}
+## While Navigating.....
+<p> 
+Access all data projects with the sub-links posted under each post. Report on issues, queries and clarification on [Github](github.com/koladegray)
+</p>
 :::
 
-## SQL (PostgreSQL)
-
-:::{#sql-documentation}
-:::
-
-
-## Microsoft Excel
-
+#### Microsoft Excel
+***
 :::{#ms-excel}
 :::
+
+#### SQL (PostgreSQL)
+***
+:::{#sql-doc}
+:::
+
+#### R
+***
+:::{#r-lang}
+:::
+
+

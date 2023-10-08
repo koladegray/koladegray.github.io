@@ -1,4 +1,4 @@
-```{=html}
+```{html}
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
 
@@ -7,9 +7,11 @@
     padding: 1px 5px;
     font-size: 15px;
   }
+  
   .ai-lg {
     font-size: 1.2em;  /* Adjust as needed */
   }
+  
 </style>
 
 <ul class="list">
@@ -18,34 +20,34 @@
       <%= item.title %> 
       <br/>
       <p>
-      <!-- template info for r projects -->
-      <% if (item.type === 'r') { %>
+      <!-- display info format for other projects except R -->
+      <% if (item.type !== 'R') { %>
         <small class="text-muted">
-          <%= item.date %>. <%= item.author %>. <%= item.status %>.
+          <%= item.date %>. <%= item.author %> <%= item.year %>.
         </small>
       <% } %>
       
-      <!-- tenplate info for others -->
-      <% if (item.type !== 'r') { %>
+      <!-- display info format info for R projects -->
+      <% if (item.type === 'R') { %>
         <small class="text-muted">
-          <%= item.date %>. <%= item.author %>. <%= item.status %>.
+          <%= item.date %>. <%= item.author %> <%= item.year %>.
         </small>
       <% } %>
       
-       <br/>
+      <br/>
       
-      <% if (item.pdf) { %>
-        <a role="button" href="<%= item.pdf %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-file-earmark-pdf ai-lg"></i> PDF 
-        </a> 
-      <% } %>
-      
-      
-      <% if (item.github) { %>
+       <% if (item.github) { %>
         <a role="button" href="<%= item.github %>" type="button" class="btn btn-outline-secondary btn-xs"> 
-          <i class="bi bi-github ai-lg"></i> GitHub 
+          <i class="bi bi-github ai-lg"></i> GitHub Repo 
         </a>
       <% } %>
-      
+      </p>
+      <hr>
+    </li>
+  <% } %>
+
+</ul>
+
+
 ```
-      
+
