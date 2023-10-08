@@ -1,13 +1,46 @@
-- title: "When BLUE Is Not Best: Non-Normal Errors and the Linear Model"
-  type: "r"
+
+- title: "The Bellabeat Case Study: Analyzing Trends in Smart Device Usage"
+  type: "R"
   author: 
-    - Gtyr Baissa
-    - Locke Rainey
-  date: 2020-07-01
-  year: 2020
-  #journal: "<em>Political Science Research and Methods</em>"
-  pdf: "../data/projects/test.pdf"
-  #pubclosed: "https://doi.org/10.1017/psrm.2018.34"
-  #github: "https://doi.org/10.7910/DVN/WZSUS3"
+    - "'Kolade Gracious"
+  date: 2022-12-15
+  kaggle: "https://www.kaggle.com/code/graciouso/google-capstone-project-the-bellabeat-case-study"
+  github: "https://github.com/koladegray/All_Finacial_Index_Projects?search=1#2-the-bellabeat-case-study-analyzing-trends-in-smart-device-usage"
   categories: 
-    - Political Methodology
+    - Microsoft Excel
+    - R
+    - Financial Analysis
+    
+- title: Analyzing U.S Financial Aid to Africa's 7 Largest Economies [2019 - 2022]
+  type: "Excel"
+  author: "'Kolade Gracious"
+  date: 2023-06-26
+  github: "https://github.com/koladegray/All_Finacial_Index_Projects?search=1#1-analyzing-us-financial-aid-to-africas-7-largest-economies-2019---2022"
+  twitter: "https://x.com/DrealOtunba/status/1673338863392108544?s=20"
+  linkedIn: "https://www.linkedin.com/posts/gracious-ogunkolade_over-the-past-few-months-my-interest-has-activity-7087351480017391616-XKe1?utm_source=share&utm_medium=member_desktop"
+  categories: 
+    - Microsoft Excel
+    - Financial Analysis  
+    
+- title: "Creating a Comprehensive Date Table for Time Intelligence Analysis in R"
+  author: "'Kolade Gracious"
+  type: "R"
+  date: 2023-10-08
+  twitter: "https://x.com/DrealOtunba/status/1706806878456418665?s=20"
+  #github: "https://github.com"
+  quarto: "projects/datetime/datetime.qmd"
+  linkedIn: "https://www.linkedin.com/posts/gracious-ogunkolade_date-tables-are-essential-for-almost-every-activity-7113208391149232128-Fr9o?utm_source=share&utm_medium=member_desktop"
+  categories:
+    - R
+    - Time Intelligence
+  
+- title: Returning Multi-Level Aggregates in PostgreSQL Using ROLLUP Function
+  author: "'Kolade Gracious"
+  type: "Sql"
+  date: 2023-08-01
+  medium: "https://medium.com/@gray-commits/returning-multi-level-aggregates-in-postgresql-using-rollup-function-5f22ec3406fb"
+  linkedIn: "https://www.linkedin.com/posts/gracious-ogunkolade_writing-multi-level-aggregates-in-sql-comes-activity-7092472866327207937-4cia?utm_source=share&utm_medium=member_desktop"
+  categories:
+    - SQL
+    
+    

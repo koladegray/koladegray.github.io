@@ -1,30 +1,45 @@
 ---
-title: "Blogs"
+#title: "Medical Blog"
 listing:
   #title: "Blogs"
+  id: blog-listings
   type: default
   contents: 
   #  - "2023-08-18-test/index.qmd"
   #  - "2023-9-18-direct-library-preparation/index.qmd"
     - "2023-09-29-hobrasio/index.qmd"
-  sort: 
-    - "date desc"
-    - "title desc"
+    - "2023-07-21-ckd-case-study/index.qmd"
+    - "2023-08-01-cbd-blog/index.qmd"
+    - "2023-09-07-technology-based-intervention/index.qmd"
+    - "2023-09-10-thoracic/index.qmd"
+    - "2023-09-11-sulbutiamine/index.qmd"
+    - "2023-09-29-tuberculosis/index.qmd"
+    - "2023-10-01-breathalyzers/index.qmd"
+  sort-ui: true
+    #- "date desc"
+    #- "title desc"
   filter-ui: [title, date]
-  page-size: 10
+  page-size: 6
   max-items: 10
   image-align: right
-  image-height: 75px
+  image-height: 120px
+  image-placeholder: "placeholder.jpg"
   #image-placeholder:
   date-format: medium
-  fields: [date, author, title, description, categories, image]
+  fields: [date, author, title, categories, image, reading-time]
+  max-description-length: 100
   categories: true
 comments: false
 format: 
   html: 
     footer: false
 ---
+:::{.callout-tip}
+## While Navigating.....
 
-----------------------------------------
+<p> All medical commentaries and correspondences are published in Rmarkdown/Quarto with version control on [Github](github.com/koladegray) </p>
+:::
 
-Documenting Blogs Bordering on Medical Writing et al
+
+:::{#blog-listings}
+:::

@@ -1,0 +1,105 @@
+```{=html}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+
+<style>
+  .btn-xs {
+    padding: 1px 5px;
+    font-size: 15px;
+  }
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+</style>
+
+<ul class="list">
+  <% for (const item of items) { %>
+    <li <%= metadataAttrs(item) %>>
+      <%= item.title %> 
+      <br/>
+      <p>
+      <!-- paper info for not-yet-published papers -->
+      <% if (item.type !== 'R') { %>
+        <small class="text-muted">
+          <%= item.date %>. <%= item.author %>.
+        </small>
+      <% } %>
+      
+      <!-- paper info for published papers -->
+      <% if (item.type === 'R') { %>
+        <small class="text-muted">
+          <%= item.date %>. <%= item.author %>.
+        </small>
+      <% } %>
+      
+      <br/>
+
+      <% if (item.errata) { %>
+        <a role="button" href="<%= item.errata %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-exclamation-diamond ai-lg"></i> Errata
+        </a> 
+      <% } %>
+      
+      <% if (item.quarto) { %>
+        <a role="button" href="<%= item.quarto %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-dataverse ai-lg"></i> Read on Quarto 
+        </a> 
+      <% } %>
+      
+      <% if (item.pubopen) { %>
+        <a role="button" href="<%= item.pubopen %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-open-access ai-lg"></i> Open Access
+        </a>
+      <% } %>
+     
+      
+      <% if (item.linkedIn) { %>
+        <a role="button" href="<%= item.linkedIn %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-linkedin ai-lg"></i> LinkedIn 
+        </a> 
+      <% } %>
+      
+      <% if (item.medium) { %>
+        <a role="button" href="<%= item.medium %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-medium ai-lg"></i> Medium 
+        </a>
+      <% } %>
+      
+      <% if (item.dataverse) { %>
+        <a role="button" href="<%= item.dataverse %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-dataverse ai-lg"></i> Quarto 
+        </a>
+      <% } %>
+      
+      <% if (item.kaggle) { %>
+        <a role="button" href="<%= item.kaggle %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-kaggle ai-lg"></i> Read on Kaggle 
+        </a>
+      <% } %>
+      
+      <% if (item.github) { %>
+        <a role="button" href="<%= item.github %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-github ai-lg"></i> GitHub Code 
+        </a>
+      <% } %>
+      
+      <% if (item.twitter) { %>
+        <a role="button" href="<%= item.twitter %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-twitter ai-lg"></i> Twitter Post 
+        </a> 
+      <% } %>
+      
+      <br/>
+      
+      <% if (item.note) { %>
+        <small class="text-secondary">
+          <span class="note"><%= item.note %></span>    
+        </small>
+      <% } %>
+      </p>
+      <hr>
+    </li>
+  <% } %>
+</ul>
+
+```

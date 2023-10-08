@@ -1,0 +1,235 @@
+---
+title: "Creating a Comprehensive Date Table for Time Intelligence Analysis in R"
+author: "'Kolade Gracious"
+date: "2023-09-29"
+categories: [lubridate, stringi, zoo, Time Intelligence]
+description: "Formuating comprehesive datetime feilds in R with the {stringi}, {zoo} and {lubridate} packages"
+toc: true
+#bibliography: references.bib
+bibliography: references.bib
+---
+
+------------------------------------------------------------------------
+
+<br> Creating a Comprehensive Date Table for Time Intelligence Analysis in R Formulating comprehensive datetime fields in R with the {stringi}, {zoo} and {lubridate} package
+
+I created this post as a direct response to Malcom Okonkwo's [twitter post](https://x.com/malcom_okonkwo/status/1706265412395041188?s=20) challenging r-lang users to create a comprehensive date table for the year 2023 in R. He solved the challenge in SQL and had quoted [another post](https://x.com/Olaoluwa__Mercy/status/1706206895508201668?s=20) completing the same challenge using Microsoft Excel. I decided to complete this task in R.
+
+I mean, why not? After all, R's flexibility with datetime manipulation is notoriously underrated.
+
+Here's a picture of the challenge prompt.
+
+![Date Table Challenge Prompt](datetimeprompt.jpg){fig-align="center"}
+
+## Getting Started with the Basics
+
+What are the task variables and problems?
+
+-   Comprehensive date table needed for the year 2023
+-   Fiscal year starts on July 1st
+-   Recognized holidays to be incorporated into the date table as listed in the prompt
+-   Weekends are defined as Sundays and Saturdays
+-   Variables and corresponding observations are to be generated automatically (of course!)
+
+## Unveiling the aRtistry to Solve this Challenge
+
+1.  Load the required R packages needed for Time Intelligence analysis
+
+-   zoo [@zoo-2]
+
+-   stringi \[[@stringi]\]
+
+-   lubridate \[[@lubridate]\]
+
+-   tidyverse \[[@tidyverse]\]
+
+```{r echo=TRUE, message=F, warning=F}
+library(tidyverse)
+library(dplyr)
+library(lubridate)
+library(stringi)
+library(zoo)
+```
+
+<br>
+
+2.  Declare fixed dependencies stored as objects first
+
+```{r Declaring fixed dependencies}
+start_date <- as.Date("2023/01/01")
+end_date <- as.Date("2023/12/31")
+#Fiscal year starts in July (month_number 7) every year
+fiscal_start_month = 7 
+
+##create a date matrix for recognized holidays
+holiday<- as.Date(
+  "2023/01/01", "2023/01/02", "2023/04/09", "2023/04/10", 
+  "2023/04/21", "2023/04/24", "2023/06/12", "2023/06/28", 
+  "2023/06/29", "2023/10/01", "2023/12/25", "2023/12/26"
+  )
+
+```
+
+<br>
+
+3.  Create Date sequence automatically and store as a tibble
+
+```{r generate date seq., echo=TRUE, warning=TRUE}
+date_sequence <- as_tibble(seq(start_date,end_date,by = "day"))
+```
+
+```{r view date seq., echo=TRUE, message=TRUE}
+head(date_sequence)
+```
+
+::: callout-note
+Generated date sequences are stored as 365 observations of the variable `value`. This variable name will remain unchanged throughout this post.
+:::
+
+<br>
+
+4.  Mutate date_sequence to create a full date table For the sake of simplicity the sections of this stage will be discussed in three parts; Year, Quarter/Week, Fiscal Year and Weekend/Holiday wrangling
+
+-   Year
+
+```{r echo=TRUE, message=TRUE}
+datetable_year <- date_sequence %>% 
+      mutate(
+    ##Year
+    year = year(value), #date_sequence is stored in [1] as "value"
+    day_of_month = day(value),
+    day_of_week = stri_datetime_fields(value)$DayOfWeek,
+    day_of_week_short = format(value,"%a"),
+    day_of_year = stri_datetime_fields(value)$DayOfYear,
+    weekday = weekdays.Date(value),
+    month = months(value),
+    month_number = stri_datetime_fields(value)$Month,
+    month_start_date = floor_date(as.Date(value, "%Y-%m-%d"), unit = "month"),
+    month_end_date = floor_date(as.Date(value, "%Y-%m-%d"), unit = "month") 
+                                                     + days_in_month(value)-1, 
+    ### "-1" to make sure the exact end on the month is returned
+    week_of_month = paste0("Week ", (stri_datetime_fields(value)$WeekOfMonth)),
+    week_of_year =  paste0("Week ", stri_datetime_fields(value)$WeekOfYear)
+      )
+```
+
+<br>
+
+Now, take a look at the first part of the datetable
+
+```{r}
+head(datetable_year)
+```
+
+<br>
+
+-   Quarter/Week
+
+```{r}
+
+datetable_qtr_wk <- date_sequence %>% 
+      mutate(
+##Quarter/Week
+        quarter = quarters.POSIXt(value),
+        qtr_start_date = format(as.Date(as.yearqtr(value, format = "%Y-%m-%d")),
+                                                                  "%d-%h-%Y"),
+        qtr_end_date = format(as.Date(as.yearqtr(value, format = "%Y-%m-%d"), 
+                                                     frac = 1), "%d-%h-%Y"),
+        week_start_date = format(floor_date(as.Date(value, "%Y-%m-%d"), 
+                         unit = "week", week_start = 1), "%a-%h-%y"),
+        #R starts weeks on Sunday, add "week_start=1 as an arg" to coarse to Monday
+        week_end_date = format(floor_date(as.Date(value, "%Y-%m-%d"), 
+                                   unit = "week") + 6, "%a-%h-%y"),
+        year_month = as.yearmon(value, "%m-%Y"),
+        year_qrt = as.yearqtr(value, format = "%Y-%m-%d")
+      )
+```
+
+The r chunk above create multiple qtr/wk fields using the 'value' variable and the functionality of the loaded R packages. A look at the second part of the date table.
+
+```{r}
+head(datetable_qtr_wk)
+```
+
+<br>
+
+-   Fiscal Year
+
+```{r}
+datetable_fiscal_yr <- date_sequence %>% 
+      mutate(
+##Fiscal Year
+    fiscal_year = paste0("FY-", ifelse(month(value) >= fiscal_start_month, 
+                                       year(value) + 1, year(value))),
+    fiscal_qrt = quarter(value, type= "year.quarter", fiscal_start = 10),
+    fiscal_quarter_start_date = format(quarter(value, type= "date_first", 
+                                      fiscal_start = 10), "%a-%h-%y"),
+    fiscal_quarter_end_date = format(quarter(value, type= "date_last", 
+                                    fiscal_start = 10), "%a-%h-%y")
+      )
+```
+
+Now, a look at the fiscal years variables
+
+```{r}
+head(datetable_fiscal_yr)
+```
+
+<br>
+
+-   Weekend and Holiday
+
+```{r}
+datetable_wknd_hol <- date_sequence %>% 
+      mutate(
+##Weekend and Holidays
+    is_weekend = format(value, "%u") %in% c(6,7), #Saturday(6) $ Sunday(7)
+    is_holiday = format(value, "%Y-%m-%d") %in% holiday
+      )
+
+head(datetable_wknd_hol)
+```
+
+<br>
+
+5.  Binding all sections together Now that all sections of the date table has been created, let's bind them all together. This automatically merges all the code chunks above and produce a complete output.
+
+```{r}
+datetable <- bind_cols(datetable_year, datetable_fiscal_yr, 
+                       datetable_qtr_wk, datetable_wknd_hol,
+                       .name_repair = "minimal"
+                       )
+
+```
+
+<br>
+
+6.  Examine the dimension, column, rows and data types for the date table.
+
+-   View date table
+
+```{r}
+view(datetable)
+```
+
+-   Examine date table dimension
+
+```{r}
+dim(datetable)
+```
+
+The code chunk above reveal \[datetable\] as a tibble with 365 rows (total days of the year) and 29 columns (feilds generated automatically).
+
+-   Examine data types in date table
+
+```{r}
+glimpse(datetable)
+```
+
+## Code Block
+
+A screen grab of all r-chunk as one? Why not?
+
+![](datetable_code.png){fig-align="center"}
+
+## Packages Used

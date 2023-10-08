@@ -25,7 +25,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -68,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../theme.scss">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -97,27 +116,15 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Data Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../papers/index.html" rel="" target="">
- <span class="menu-text">Papers</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../blogs/index.html" rel="" target="">
- <span class="menu-text">Blog Posts</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../journals/index.html" rel="" target="">
- <span class="menu-text">Journal Articles</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../copies/index.html" rel="" target="">
- <span class="menu-text">Copies</span></a>
+ <span class="menu-text">Medical Writing</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto tools-wide">
     <a href="https://twitter.com/DrealOtunba" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
     <a href="https://github.com/koladegray" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
     <a href="https://linkedin.com/gracious-ogunkolade" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-    <a href="https://medium.com/teteuf" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-medium"></i></a>
+    <a href="https://medium.com/gray-commits" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-medium"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
           </div> <!-- /navcollapse -->
@@ -154,6 +161,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#mechanical-micromanipulation" id="toc-mechanical-micromanipulation" class="nav-link" data-scroll-target="#mechanical-micromanipulation">3. Mechanical Micromanipulation</a></li>
   </ul></li>
   <li><a href="#direct-library-preparation-method-the-latest-innovation-in-cell-sequencing" id="toc-direct-library-preparation-method-the-latest-innovation-in-cell-sequencing" class="nav-link" data-scroll-target="#direct-library-preparation-method-the-latest-innovation-in-cell-sequencing">Direct <strong>Library Preparation Method: The Latest Innovation in Cell Sequencing</strong></a></li>
+  <li><a href="#cited-works" id="toc-cited-works" class="nav-link" data-scroll-target="#cited-works">Cited Works</a></li>
   </ul>
 </nav>
     </div>
@@ -201,23 +209,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <hr>
-<p><br> Cell culture and tissue studies are becoming important in genomics and human biology. Despite the wide innovations in the field of cell studies, clinical results and experimental reviews from cell-based examinations are still largely tilted towards the conventional assumption that all cells derived from cultures and tissues are completely homogeneous.</p>
-<p style="text-align: center;">
-</p><p>How then should scientists study biological heterogeneity? Most importantly, how should they study the inherent properties of a single cell as an offshoot of the genome?</p>
-<p></p>
+<p>Cell culture and tissue studies are becoming important in genomics and human biology. Despite the wide innovations in the field of cell studies, clinical results and experimental reviews from cell-based examinations are still largely tilted towards the conventional assumption that all cells derived from cultures and tissues are completely homogeneous.</p>
+<p>How then should scientists study biological heterogeneity? Most importantly, how should they study the inherent properties of a single cell as an offshoot of the genome?</p>
 <section id="cell-sequencing-processes-and-studies" class="level2">
 <h2 class="anchored" data-anchor-id="cell-sequencing-processes-and-studies"><strong>Cell Sequencing Processes and Studies</strong></h2>
-<p>For decades on end, cell biologists have devised multiple <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5318355/">cell sequencing methods</a> to navigate beyond the technical difficulties of cell examination. Scientific insight into cell cultures and tissues are basically important in cancer studies and cell other forms of cellular anomalies.</p>
-<p>Single cell sequencing (SCS) techniques have long been considered a standard procedure in inter-cellular probing.</p>
-<p>When coupled with technological advancements in genome amplification and single cell isolation, SCS produces a valuable set in cellular studies of inherent properties at high resolution. As a leading player in the global biotechnology market, <a href="https://www.cellink.com/global/product-overview-page/">CELLINK Life Sciences</a> offer the most accurate and effective methods employed in cell-based studies.</p>
+<p>For decades on end, cell biologists have devised multiple cell sequencing methods to navigate beyond the technical difficulties of cell examination. Scientific insight into cell cultures and tissues are basically important in cancer studies and cell other forms of cellular anomalies<span class="citation" data-cites="Wang2017"><sup><a href="#ref-Wang2017" role="doc-biblioref">5</a></sup></span>.</p>
+<p>Single cell sequencing (SCS) techniques have long been considered a standard procedure in inter-cellular probing. When coupled with technological advancements in genome amplification and single cell isolation, SCS produces a valuable set in cellular studies of inherent properties at high resolution.</p>
 <p>Currently, leading research centers worldwide employs Single-cell whole-genome sequencing as a routine procedure in probing intercellular genomic variations and studying single-nucleotide variations in single cells.</p>
 <p>Despite the innovative results produced by these methods, studying genomic variations in with precise accuracy was still a big challenge in human medicine and cell biology. Scientists are consistently burdened with many question. The chief of which is – how exactly should we qualitatively study genomic features and cell heterogeneity?</p>
 </section>
 <section id="popular-methods-of-isolating-single-cells" class="level2">
 <h2 class="anchored" data-anchor-id="popular-methods-of-isolating-single-cells"><strong>Popular Methods of Isolating Single Cells</strong></h2>
+<p>The scientific race to isolate single cell from a whole genome started properly in 2009<span class="citation" data-cites="Yilmaz2012"><sup><a href="#ref-Yilmaz2012" role="doc-biblioref">7</a></sup></span>. Based on available evidence and the increasing need for cell-based studies in microbiology, scientists were able to analyze transcriptome complexity in individual cells using the first cell whole transcriptome sequencing protocol.</p>
 <p>The scientific race to isolate single cell from a whole genome started properly in 2009. Based on available evidence and the increasing need for cell-based studies in microbiology, scientists were able to analyze transcriptome complexity in individual cells using the first cell whole transcriptome sequencing protocol.</p>
-<p>The scientific race to isolate single cell from a whole genome started properly in 2009. Based on available evidence and the increasing need for cell-based studies in microbiology, scientists were able to analyze transcriptome complexity in individual cells using the first cell whole transcriptome sequencing protocol.</p>
-<p>Two years later, the science evolved and <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318999/">single-cell whole-genome sequencing</a> was created. This breakthrough ushered in a new wave of scientific inquiries that led to the development of a single cell whole exome sequencing in 2012, and in 2013, a novel method of single cell epigenomic sequencing was developed.</p>
+<p>Two years later, the science evolved and single-cell whole-genome sequencing was created . This breakthrough ushered in a new wave of scientific inquiries that led to the development of a single cell whole exome sequencing in 2012, and in 2013, a novel method of single cell epigenomic sequencing was developed.</p>
 <p>As expected, the methods to isolating single cell from a whole genome were formed around these protocols. Currently, there are a few methods employed by different leading research institutions around the world in isolating single cells from cell culture or tissue mass. These methods, although effective to an extent, were with many shortcomings.</p>
 <p>To a large extent, the general challenge associated with these old methods is in adequately controlling the quality and quantity of cell isolates extracted from tissues or cell cultures. These old methods include: <br></p>
 <ol type="1">
@@ -246,7 +251,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>This method is generally considered efficient and fast as it creates a unique system of cell sorting. When in use, FACS can easily isolate designated cells from a tissue sample or genome by exploring the ability of these cells to fluorescence when pre-labeled.</p>
 <p>This unique property of the FACS cell-sorting protocol explains its popularity in the study f single viral particles in a poll or assemblage of mixed viral genome. When compared with recently developed protocols, such as the Direct Library Preparation Plus, the Fluorescence Activated Cell Sorting method is limited in application.</p>
-<p>In this method, it is compulsory that a bulk of the cell assemblage be prepared as sorting material and samples must be prepared in solution. Earlier observation reports also holds that the fluorescent dye used in cell labeling can damage the viability of cells or influence the inherent properties of the single cells.</p>
+<p>In this method, it is compulsory that a bulk of the cell assemblage be prepared as sorting material and samples must be prepared in solution. Earlier observation reports also holds that the fluorescent dye used in cell labeling can damage the viability of cells or influence the inherent properties of the single cells<span class="citation" data-cites="Hodne2015"><sup><a href="#ref-Hodne2015" role="doc-biblioref">1</a></sup></span>.</p>
 </section>
 <section id="microfluids" class="level3">
 <h3 class="anchored" data-anchor-id="microfluids">2. Microfluids</h3>
@@ -257,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Embryonic development studies</p></li>
 <li><p>Neurobiology</p></li>
 </ul>
-<p>Basically, the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3318999/figure/F2/">Microfluidics setup</a> uses a highly integrated system to achieve <a href="https://www.cell.com/trends/biotechnology/fulltext/S0167-7799%2820%2930115-3">single cell culture</a> and sequencing by manipulating small volumes of a few hundreds of micro-liters of fluids. As the nomenclature suggests, Microfluidics needs only a few volume of fluids in cell-based studies.</p>
+<p>Basically, the Microfluidics setup<span class="citation" data-cites="Yilmaz2012"><sup><a href="#ref-Yilmaz2012" role="doc-biblioref">7</a></sup></span> uses a highly integrated system to achieve single cell culture and sequencing by manipulating small volumes of a few hundreds of micro-liters of fluids. As the nomenclature suggests, Microfluidics needs only a few volume of fluids in cell-based studies<span class="citation" data-cites="liu2020"><sup><a href="#ref-liu2020" role="doc-biblioref">3</a></sup></span>.</p>
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -267,13 +272,13 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 <p>Research institutes from around the world are currently experimenting with the feasibility of employing Microfluidics in human medicine especially in the areas of epigenomics sequencing and single cell whole-genome studies.</p>
-<p>In the laboratories and microbiological studies, Microfluidics can effectively separate biological nanoparticles from tissues samples, cell cultures and cell assemblage. In a 2016 publication of <a href="https://pubmed.ncbi.nlm.nih.gov/16871203/"><em>Nature</em></a><em>,</em> the future of Microfluidics was examined based on coverage and advantage in cell sequencing.</p>
+<p>In the laboratories and microbiological studies, Microfluidics can effectively separate biological nanoparticles from tissues samples, cell cultures and cell assemblage. In a 2016 publication of <em>Nature,</em> the future of Microfluidics was examined based on coverage and advantage in cell sequencing<span class="citation" data-cites="whitesides2006"><sup><a href="#ref-whitesides2006" role="doc-biblioref">6</a></sup></span>.</p>
 <p>Reports from this review suggest that Microfluidics produces accurate results with a unique level of sensitivity in almost all research applications as reported. This method can also finely resolve nanoliter-to-picoliter volumes of samples in research studies that need timely analysis and effective outcomes in low volume fluids.</p>
 </section>
 <section id="mechanical-micromanipulation" class="level3">
 <h3 class="anchored" data-anchor-id="mechanical-micromanipulation">3. Mechanical Micromanipulation</h3>
 <p>As an old and classic method in cell isolation and single-cell based studies, Mechanical Micromanipulation surely deserves an honorable mention. This manual method is cost-efficient and can only need cheap instrumentation especially when results are not needed to be extremely accurate.</p>
-<p>This explains the continued use of Mechanical Micromanipulation in many Microbiology research laboratories around the world, despite the popularity of new methods. The <a href="https://www.researchgate.net/figure/Schematic-diagram-of-mechanical-micromanipulation-Samples-on-glass-slide-are-viewed_fig3_42390514">Mechanical Micromanipulation setup</a> only requires the mechanical suctioning of a single cell from a cell assemblage using a capillary pipette, microscope and other supporting instruments.</p>
+<p>This explains the continued use of Mechanical Micromanipulation in many Microbiology research laboratories around the world, despite the popularity of new methods. The Mechanical Micromanipulation setup only requires the mechanical suctioning of a single cell from a cell assemblage using a capillary pipette, microscope and other supporting instruments<span class="citation" data-cites="ishii2010"><sup><a href="#ref-ishii2010" role="doc-biblioref">2</a></sup></span>.</p>
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -289,7 +294,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="direct-library-preparation-method-the-latest-innovation-in-cell-sequencing" class="level2">
 <h2 class="anchored" data-anchor-id="direct-library-preparation-method-the-latest-innovation-in-cell-sequencing">Direct <strong>Library Preparation Method: The Latest Innovation in Cell Sequencing</strong></h2>
-<p>The Direct Library Preparation method of cell sequencing was developed as a scalable single-cell whole-genome sequencing platform. Compared to other methods before this innovation, the <a href="https://www.cellenion.com/applications/single-cell-omics/scwgs">Direct Library Preparation instrumentation</a> is perfectly designed for accuracy, high resolution and unparalleled efficiency in cell isolation experiments and research findings.</p>
+<p>The Direct Library Preparation method of cell sequencing was developed as a scalable single-cell whole-genome sequencing platform. Compared to other methods before this innovation, the Direct Library Preparation instrumentation is perfectly designed for accuracy, high resolution and unparalleled efficiency in cell isolation experiments and research findings.</p>
 <p>Recently published biotech reviews on this subject matter have positioned DLP as more than just an innovation in cell isolation studies. By large, it ushers in an era where microbiology and human medicine can optimally benefit from technology.</p>
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
@@ -311,7 +316,7 @@ ul.task-list li input[type="checkbox"] {
 <p>By extension, there are theoretical evidences supporting the use of this novel method in genome heterogeneity studies, mutational processes and findings on clonal evolution in healthy and cancer tissues. Early reviews and studies on the Direct Library Preparation platform showed that it can capture a high-resolution microscopy images of cells. These images are captured as the cells navigates a transparent nozzle as they settle in wells.</p>
 <p>Image output allows for exact cell identification and separation. All single cell captures are lysed processes to produce unique sequencing inserts. Standard illumina protocols and allows the researcher to pool and sequence indexed libraries at the desired coverage depth.</p>
 <p>The wide application of Direct Library Preparation in the research might also be linked with the innovative advantage of the development and inclusion of an open-source, cloud compatible software infrastructure. This inclusion allows the bulk storage of data and metadata produced in all sequencing and imaging processes. Based on a researcher’s preference, the result generated from this storage can be loaded into selected data visualization and assessment platform for further studies, data exploration and quality control.</p>
-<p>An early report on the application of Direct Library Preparation was published by a January 2020 issue of <a href="https://www.nature.com/articles/s41592-019-0722-2"><em>Nature Methods</em></a>. The authors in this study use Direct Library Preparation to generate a resource of 51,926 single-cell genomes and matched cell images from diverse cell types including cell lines, xenograft and diagnostic samples with limited material. The resource bulk generated allows the study of variations in mitotic mis-segregation rates across tissues types and genotypes. As expected, the analysis of genomic matches obtained and images captured aided in establishing a correlation between cellular morphology and genome ploidy states.</p>
+<p>An early report on the application of Direct Library Preparation was published by a January 2020 issue of <em>Nature Methods</em>. The authors in this study use Direct Library Preparation to generate a resource of 51,926 single-cell genomes and matched cell images from diverse cell types including cell lines, xenograft and diagnostic samples with limited material. The resource bulk generated allows the study of variations in mitotic mis-segregation rates across tissues types and genotypes. As expected, the analysis of genomic matches obtained and images captured aided in establishing a correlation between cellular morphology and genome ploidy states<span class="citation" data-cites="todorovic2020"><sup><a href="#ref-todorovic2020" role="doc-biblioref">4</a></sup></span>.</p>
 <p>This single review on DLP argued a case for its integration into medical sciences especially in tumor and embryonic development studies. This study, as reported, also documented the calculation of single-nucleotide resolution clonal genotypes and inferences of clonal phylogenies using aggregation of cells sharing copy number profiles. As a last result in this study, the authors also reported clone-specific chromosomal aneuploidy in polyclonal populations as defined by joint analysis of the listed features. Speculations on the readiness of DLP’s use in human medicine are currently on debate.</p>
 <p>However, there are enough evidence to argue for its usefulness in tumor studies. By allowing the measurement of clonal replication states and rare aneuploidy patterns of single cells, DLP is evidently suitable for embryonic development and tumor tracking studies.</p>
 <section id="comparison-benefits-and-features" class="level4">
@@ -331,14 +336,42 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Use in the analysis of any cell and nuclei from 5 to 80 micrometer.</p></li>
 </ul>
 <p>To a large extent, DLP solved the myriads of shortcomings associated with the early methods employed in cell sequencing researches. Using the Direct Library Preparation (DLP) method in single-cell whole-genome sequencing of clinical sample is currently considered one of the best approach for cell isolation in modern biotechnology.</p>
-<p>This is coming at a time when <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7418798/">Direct Library Preparation in human medicine</a> is increasingly becoming a topic of global scientific interest. With time, more adoption of Direct Library Preparation method is expected to be recorded in many research facilities around the world.</p>
-<p>Still Testing</p>
+<p>This is coming at a time when Direct Library Preparation in human medicine is increasingly becoming a topic of global scientific interest<span class="citation" data-cites="zhang2020a"><sup><a href="#ref-zhang2020a" role="doc-biblioref">8</a></sup></span>. With time, more adoption of Direct Library Preparation method is expected to be recorded in many research facilities around the world.</p>
+</section>
+</section>
+<section id="cited-works" class="level2">
+
+
 
 
 </section>
-</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Cited Works</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-Hodne2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Hodne K, Weltzien FA. Single-Cell Isolation and Gene Analysis: Pitfalls and Possibilities. <em>International Journal of Molecular Sciences</em>. 2015;16(11):26832-26849. doi:<a href="https://doi.org/10.3390/ijms161125996">10.3390/ijms161125996</a></div>
+</div>
+<div id="ref-ishii2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Ishii S, Tago K, Senoo K. Single-cell analysis and isolation for microbiology and biotechnology: methods and applications. <em>Applied Microbiology and Biotechnology</em>. 2010;86(5):1281-1292. doi:<a href="https://doi.org/10.1007/s00253-010-2524-4">10.1007/s00253-010-2524-4</a></div>
+</div>
+<div id="ref-liu2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Liu W, He H, Zheng SY. Microfluidics in Single-Cell Virology: Technologies and Applications. <em>Trends in Biotechnology</em>. 2020;38(12):1360-1372. doi:<a href="https://doi.org/10.1016/j.tibtech.2020.04.010">10.1016/j.tibtech.2020.04.010</a></div>
+</div>
+<div id="ref-todorovic2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Todorovic V. Amplification-free single-cell whole-genome sequencing gets a makeover. <em>Nature Methods</em>. 2020;17(1):27-27. doi:<a href="https://doi.org/10.1038/s41592-019-0722-2">10.1038/s41592-019-0722-2</a></div>
+</div>
+<div id="ref-Wang2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Wang J, Song Y. Single cell sequencing: a distinct new field. <em>Clinical and Translational Medicine</em>. 2017;6(1). doi:<a href="https://doi.org/10.1186/s40169-017-0139-4">10.1186/s40169-017-0139-4</a></div>
+</div>
+<div id="ref-whitesides2006" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Whitesides GM. The origins and the future of microfluidics. <em>Nature</em>. 2006;442(7101):368-373. doi:<a href="https://doi.org/10.1038/nature05058">10.1038/nature05058</a></div>
+</div>
+<div id="ref-Yilmaz2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Yilmaz S, Singh AK. Single cell genome sequencing. <em>Current Opinion in Biotechnology</em>. 2012;23(3):437-443. doi:<a href="https://doi.org/10.1016/j.copbio.2011.11.018">10.1016/j.copbio.2011.11.018</a></div>
+</div>
+<div id="ref-zhang2020a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Zhang J, Wang W, Huang J, Wang X, Zeng Y. How far is single<span>-</span>cell sequencing from clinical application? <em>Clinical and Translational Medicine</em>. 2020;10(3). doi:<a href="https://doi.org/10.1002/ctm2.117">10.1002/ctm2.117</a></div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -693,7 +726,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Copyright 2023, ’Kolade Gracious</div>
+    <div class="nav-footer-center">Copyright 2023. ’Kolade Gracious</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
