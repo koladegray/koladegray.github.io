@@ -5,6 +5,7 @@ website:
   title: "'Kolade Gracious"
   favicon: favicon.ico
   back-to-top-navigation: true
+  google-analytics: "G-VMYDMXZZFN"
   #reader-mode: true
   sidebar: 
     style: "docked"
@@ -50,4 +51,5 @@ format:
     #theme: flatly Darkly
 #Superhero United Sandstone Journal
 editor: source
+
 

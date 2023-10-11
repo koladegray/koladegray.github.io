@@ -3,7 +3,7 @@ title: "HOBRASIO: A Novel Therapy Regimen for Early Stage Androgenic Hair Loss"
 subtitle: "Evaluating a multi-component integrative therapy for Alopecia forms"
 #format: html
 author: "'Kolade Gracious"
-date: "2023-09-29"
+date: "2023-10-01"
 categories: [Therapy, Alopecia]
 #description: "Evaluating a multi-component integrative therapy for Androgenic Alopecia"
 toc: true

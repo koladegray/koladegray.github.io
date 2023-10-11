@@ -2,6 +2,9 @@
 title: "'Kolade Gracious"
 subtitle: "(*Medical Writer **|** Data Analyst*)"
 image: p2.jpg
+resources: 
+ - gradata.pdf
+ - graymed.pdf
 page-layout: full
 about:
   id: hero-heading
@@ -14,10 +17,10 @@ about:
       href: mailto:mcgraccy01@gmail.com
     - icon: filetype-pdf
       text: Resume [Med.Writer]
-      href: https://www.koladegray.github.io/graymed.pdf
+      href: graymed.pdf
     - icon: filetype-pdf
       text: Resume [Data Analyst]
-      href: https://www.koladegray.github.io/graydata.pdf
+      href: graydata.pdf
     - icon: linkedin
       text: Linkedin
       href: https://www.linkedin.com/in/gracious-ogunkolade
