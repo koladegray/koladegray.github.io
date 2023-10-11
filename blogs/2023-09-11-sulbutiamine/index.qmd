@@ -8,7 +8,7 @@ categories: [Drug Review, Pharma, Sulbutiamine]
 toc: true
 bibliography: references.bib
 csl: american-medical-association-alphabetical.csl
-image: "sul_vector.jpg"
+image: "sulb.jpg"
 ---
 
 ------------------------------------------------------------------------
