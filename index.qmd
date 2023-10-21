@@ -2,6 +2,10 @@
 title: "'Kolade Gracious"
 subtitle: "(*Medical Writer **|** Data Analyst*)"
 image: p2.jpg
+twitter-card:
+  card-style: summary_large_image
+  image: "p2.jpg"
+  title: "Portfolio Archive - 'Kolade Gracious"  # less than 55 chars
 resources: 
  - gradata.pdf
  - graymed.pdf
