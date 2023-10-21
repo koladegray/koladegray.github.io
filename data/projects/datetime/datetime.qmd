@@ -7,6 +7,12 @@ description: "Formuating comprehesive datetime feilds in R with the {stringi}, {
 toc: true
 #bibliography: references.bib
 bibliography: references.bib
+#image: "datatable-1.jpg"
+twitter-card:
+  card-style: summary_large_image
+  image: "datatable_code.png"
+  title: "Create Date Table in {R}"  # less than 55 chars
+  description: "Reproducing the Clark and Golder (2006) example from Rainey (2014)"  # less than 125 chars
 ---
 
 ------------------------------------------------------------------------

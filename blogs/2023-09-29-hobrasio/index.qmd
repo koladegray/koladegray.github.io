@@ -4,7 +4,7 @@ subtitle: "Evaluating a multi-component integrative therapy for Alopecia forms"
 #format: html
 author: "'Kolade Gracious"
 date: "2023-10-01"
-categories: [Therapy, Alopecia]
+categories: [Therapy, Alopecia, Hair, Dermatology]
 #description: "Evaluating a multi-component integrative therapy for Androgenic Alopecia"
 toc: true
 bibliography: references.bib

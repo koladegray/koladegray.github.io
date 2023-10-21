@@ -33,6 +33,7 @@
   categories:
     - R
     - Time Intelligence
+    - Date Table
   
 - title: Returning Multi-Level Aggregates in PostgreSQL Using ROLLUP Function
   author: "'Kolade Gracious"
