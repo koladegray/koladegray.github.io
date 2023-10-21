@@ -14,32 +14,32 @@ about:
   links: 
     - icon: envelope
       text: email
-      href: mailto:mcgraccy01@gmail.com
+      href: mailto:gracious.kolade@gmail.com
+    - icon: linkedin
+      text: Linkedin
+      href: https://www.linkedin.com/in/gracious-ogunkolade
     - icon: filetype-pdf
       text: Resume [Med.Writer]
       href: graymed.pdf
     - icon: filetype-pdf
       text: Resume [Data Analyst]
       href: graydata.pdf
-    - icon: linkedin
-      text: Linkedin
-      href: https://www.linkedin.com/in/gracious-ogunkolade
 ---
 
 ::: {#hero-heading}
 Since completing my first degree in the Pharmaceutical Sciences, I have expanded my reach beyond primary healthcare by learning technical skills exploring the intersection of finance, healthcare and data science.
 
-Currently, I develop **medical communication solutions** in pharma, medicine and professional learning with deliverables designed as continuing education courses, website copies and patients education pamphlets.
+Currently, I develop **medical communication solutions** in pharma, medicine and professional learning with deliverables designed as continuing education courses, clinical trial reports, publications and medical briefs.
 
-When I am not writing healthcare contents, you'd find me on **RStudio,** **Microsoft Excel** or **pgAdmin** writing code required for exploratory data analysis, inferential statistics, and data modelling in **R**, **SQL** and **DAX**.
+When I am not actively writing healthcare contents, you'd find me on **RStudio,** **Microsoft Excel** or **pgAdmin** writing code for exploratory data analysis, inferential statistics, and data modelling in **R**, **SQL** and **DAX**.
 
-Other times, you will probably find me somewhere in Lagos, Nigeria, discussing politics or listening to a weird mashed-up playlist of Billie Eilish, Jacob Banks, Lana Del Rey, Burna Boy, and the Nigerian sonic-artistry maestro, Brymo Olooforo.
+Other times, you'd probably find me somewhere in Lagos, Nigeria, discussing politics or listening to a weird mashed-up playlist of my music faves: Billie Eilish, Jacob Banks, Lana Del Rey, Burna Boy, and the Nigerian sonic-artistry maestro, Brymo Olooforo. You know what? Add Sia somewhere in there. 
 
-Oh, I almost forgot! I am a big fan of film scores composed by Hans Zimmer and Ramin Djawadi.
+I am also a big fan of film scores composed by Hans Zimmer and Ramin Djawadi.
 
 ### Connect
 
-Got writing gigs or project collaborations for me? Sounds right! [Send me a brief](mcgraccy01@gmail.com) and let's create magic.
+Got writing gigs or data analytics collaborations for me? Sounds right! [Send me a brief](mailto:gracious.kolade@gmail.com) and let's create magic.
 
 ```{=html}
 <div style="display: flex; justify-content: center;">
@@ -49,5 +49,5 @@ Got writing gigs or project collaborations for me? Sounds right! [Send me a brie
 </div>
 <br>
 ```
-You can find me on [Twitter](https://twitter.com/DrealOtunba), [Linkedin](https://linkedin.com/gracious) and [Coursera](https://coure.com). I publicly version-control many of my data analysis and medical writing projects on [GitHub](https://github.com/koladegray). The code for this Quarto Website is Open Source can be found in a [Github repo.](https://github.com/koladegray/koladegray.github.io)
+You can find me on [Twitter](https://twitter.com/DrealOtunba), [Linkedin](https://ng.linkedin.com/in/gracious-ogunkolade) and [Coursera](https://www.coursera.org/user/271acb62ee53a26a8d9f04eddf592a48). I publicly version-control many of my data analysis and medical writing projects on [GitHub](https://github.com/koladegray). The code for this Quarto Website is open source and can be found in a [Github repo.](https://github.com/koladegray/koladegray.github.io)
 :::
