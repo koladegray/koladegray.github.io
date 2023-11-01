@@ -1,19 +1,24 @@
 ---
 title: "Home-based Radiofrequency Energy Devices: Innovative Ideas in Hybrid Skin Rejuvenation Therapy"
-subtitle: "Demand for invasive, flexible and home-based cosmetic repair option is on the rise. How about a focus on RF pulsed energy devices?"
+subtitle: "Demand for non-invasive, flexible and home-based cosmetic repair option is on the rise. How about a focus on RF pulsed energy devices?"
 author: "'Kolade Gracious"
-date: "2023-10-21"
+date: "2023-11-01"
 categories: [Therapy, Alopecia, Skin, Dermatology]
 #description: ""
 toc: true
 #csl: american-medical-association-alphabetical.csl
 image: "rejuv.jpg"
 bibliography: references.bib
+twitter-card:
+  card-style: summary_large_image
+  image: "rejuv.jpg"
+  title: "Innovative Ideas in Hybrid Skin Rejuvenation"  # less than 55 chars
+  description: "A Review Focus on RF Pulsed Energy Devices in Dermatology"  # less than 125 chars
 ---
 
 ------------------------------------------------------------------------
 
-Just as with other branches of medicine, the procedures and conventional therapy methods in dermatology keep improving. In many parts, the recent innovations in Dermatology are birth from advancements in Cell Therapy Studies, Skin Matrix Studies, and multiple clinical trials exploring the beneficial effects of Biotechnology in the reversal of physiological aging. These studies further expanded the current knowledge trends in genetics, photo-aging, and invasive cosmetic therapy. Skin health is considered an observable parameter for cellular aging as it provides a vivid picture of how living tissues develop through a life cycle.
+Just as in other branches of medicine, the procedures and conventional therapy methods in dermatology keep improving. In many parts, the recent innovations in Dermatology are birth from advancements in Cell Therapy Studies, Skin Matrix Studies, and multiple clinical trials exploring the beneficial effects of Biotechnology in the reversal of physiological aging. These studies further expanded the current knowledge trends in genetics, photo-aging, and invasive cosmetic therapy. Skin health is considered an observable parameter for cellular aging as it provides a vivid picture of how living tissues develop through a life cycle.
 
 The complex cycle of skin aging is characterized by both tissue-level changes to the cellular matrix and physical manifestations. This double-pronged process occurs simultaneously, with observable features including paper-like wrinkles, a thicker epidermis, disorganized collagen fibers, loss of skin tone and elasticity, and abnormal pigmentation [@zhang2018]. In pathologic conditions, extra-skin tissues might also develop as a non-cancerous outgrowth or blemishes resistant to conventional therapy.
 
