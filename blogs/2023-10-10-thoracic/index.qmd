@@ -93,7 +93,7 @@ When compared with our pre-COVID data for the same time period in 2019, these re
 
 <br>
 
-We used Pando (mobile app) and Microsoft teams to ensure closer communication between members of the multidisciplinary team. During this time, our junior staff was co-opted to work on intensive care, while we were also providing thoracic support to the ECMO and ITU teams, and we were also sharing theatre lists with other units from across London.
+Pando (mobile app) and Microsoft Teams were deployed to ensure closer communication between members of the multidisciplinary team. During this time, volunteers were co-opted to work on intensive care, while researchers providing thoracic support to the ECMO and ITU teams, and also shared theater lists with other units from across London.
 
 <br>
 

@@ -33,7 +33,9 @@ Sulbutiamine is known to give an extra kick when needed. This is the primary rea
 
 ##### 2. Long-term Memory Formation
 
-Many clinical evidence and research results are currently supporting the use of Sulbutiamine in the stimulation of long-term memory formation. Sulbutiamine interacts significantly with neurotransmitters directly involved in memory formation --choline, dopamine and glutamate responds readily to the modulatory effects of Sulbutiamine in humans. Investigating the role of Sulbutiamine in long-term memory formation, a research study published by the Journal of Pharmacology Biochemistry and Behavior submitted that this compound mediates an increase in hippocampal cholinergic activity by inducing an uptick in sodium dependent high affinity choline uptake [@Micheau1985]. The steps involved are beyond the scope of this review.
+Many clinical evidence and research results are currently supporting the use of Sulbutiamine in the stimulation of long-term memory formation. Sulbutiamine interacts significantly with neurotransmitters directly involved in memory formation --choline, dopamine and glutamate responds readily to the modulatory effects of Sulbutiamine in humans. 
+
+Investigating the role of Sulbutiamine in long-term memory formation, a research study published by the Journal of Pharmacology Biochemistry and Behavior submitted that this compound mediates an increase in hippocampal cholinergic activity by inducing an uptick in sodium dependent high affinity choline uptake [@Micheau1985]. The steps involved are beyond the scope of this review.
 
 Summarily, Sulbutiamine increases the rate impulse transmission in the brain receptor and improves glutamate flow in a bid to enhancing memory formation. There are also studies explaining the effectiveness of Sulbutiamine in reversing the adverse effects of amnesia-inducing drugs on memory formation.
 
