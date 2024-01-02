@@ -33,7 +33,9 @@ Sulbutiamine is known to give an extra kick when needed. This is the primary rea
 
 ##### 2. Long-term Memory Formation
 
-Many clinical evidence and research results are currently supporting the use of Sulbutiamine in the stimulation of long-term memory formation. Sulbutiamine interacts significantly with neurotransmitters directly involved in memory formation --choline, dopamine and glutamate responds readily to the modulatory effects of Sulbutiamine in humans. Investigating the role of Sulbutiamine in long-term memory formation, a research study published by the Journal of Pharmacology Biochemistry and Behavior submitted that this compound mediates an increase in hippocampal cholinergic activity by inducing an uptick in sodium dependent high affinity choline uptake [@Micheau1985]. The steps involved are beyond the scope of this review.
+Many clinical evidence and research results are currently supporting the use of Sulbutiamine in the stimulation of long-term memory formation. Sulbutiamine interacts significantly with neurotransmitters directly involved in memory formation --choline, dopamine and glutamate responds readily to the modulatory effects of Sulbutiamine in humans. 
+
+Investigating the role of Sulbutiamine in long-term memory formation, a research study published by the Journal of Pharmacology Biochemistry and Behavior submitted that this compound mediates an increase in hippocampal cholinergic activity by inducing an uptick in sodium dependent high affinity choline uptake [@Micheau1985]. The steps involved are beyond the scope of this review.
 
 Summarily, Sulbutiamine increases the rate impulse transmission in the brain receptor and improves glutamate flow in a bid to enhancing memory formation. There are also studies explaining the effectiveness of Sulbutiamine in reversing the adverse effects of amnesia-inducing drugs on memory formation.
 
@@ -84,5 +86,6 @@ Sulbutiamine is rapidly absorbed and distributed into the body tissues after ora
 ## Sulbutiamine Stacking
 
 Sulbutiamine stacking can also be done to maximize therapeutic response in humans. This emerging practice involves the combination of Sulbutiamine with drugs and drug products that can enhance its biochemical effects. The combination of Sulbutiamine with optimal doses of Cholinergics increases the central effect of Sulbutiamine on the cholinergic system. The adverse effects of some drugs are more pronounced when used for long periods in high doses. Sulbutiamine may be co-administered with suboptimal doses of these drugs to effects the needed clinical response with any significant adverse effect.
+
 
 ## Cited Works
