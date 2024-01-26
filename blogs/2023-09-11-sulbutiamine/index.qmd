@@ -2,7 +2,7 @@
 title: "Sulbutiamine - A Drug Review"
 subtitle: "Developed as a compound that can easily increase and sustain the level of brain thiamine levels, Sulbutiamine was once a wonder drug."
 author: "'Kolade Gracious"
-date: "2023-09-11"
+date: "2024-02-12"
 categories: [Drug Review, Pharma, Sulbutiamine]
 #description: ""
 toc: true

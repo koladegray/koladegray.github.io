@@ -15,8 +15,10 @@ listing:
     - "2023-09-11-sulbutiamine/index.qmd"
     - "2023-10-25-tuberculosis/index.qmd"
     - "2023-10-01-breathalyzers/index.qmd"
-  sort-ui: 
+  sort:
     - "date desc"
+  #sort-ui: 
+    #- "date desc"
     #- "title desc"
   filter-ui: [title, date]
   page-size: 6

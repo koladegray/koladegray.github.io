@@ -3,7 +3,7 @@ title: "Technology-based Intervention in Clinical Alcohol and Drug Addiction Car
 subtitle: "Management options leveraging psychosocial theories and behavioral observations developed and used as proposed models and different randomized trials for addiction care"
 #format: html
 author: "'Kolade Gracious"
-date: "2023-09-07"
+date: "2023-12-20"
 categories: [Pharma, Addiction, Alcohol]
 #description: ""
 toc: true

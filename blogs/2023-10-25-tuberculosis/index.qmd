@@ -1,8 +1,8 @@
 ---
-title: "Epidemiology of Tuberculosis: A Case Study (2000 - 2016)"
+title: "Epidemiology of Tuberculosis: A Review (2000 - 2016)"
 subtitle: "Exploring the epidemiology trend of tuberculosis over a 16-year period from the Year 2000 to the initiation of the End TB Strategy in 2016."
 author: "'Kolade Gracious"
-date: "2023-10-25"
+date: "2024-01-25"
 categories: [Epidemiology, Tuberculosis, Trends]
 #description: ""
 toc: true
