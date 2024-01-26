@@ -39,7 +39,7 @@ format:
 :::{.callout-tip}
 ## While Navigating.....
 
-<p> All medical commentaries and correspondences are published in Rmarkdown/Quarto with version control on [Github](github.com/koladegray) </p>
+<p> All medical commentaries and correspondences are published in Rmarkdown/Quarto with version control on [Github](github.com/koladegray). </p>
 :::
 
 
