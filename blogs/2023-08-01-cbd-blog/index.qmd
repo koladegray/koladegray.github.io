@@ -2,7 +2,7 @@
 title: "The Ultimate Comprehensive Guide for CBD Hemp Flower"
 subtitle: "Hemp - an industrial variation of cannabis sativa containing less than .3% THC, is the only legal source of cannabidiol. Understanding the plant atributes is considered important in the global cannabis market today"
 author: "'Kolade Gracious"
-date: "2023-08-01"
+date: "2023-08-15"
 categories: [CBD, Hemp, Cannabidiol]
 #description: ""
 toc: true

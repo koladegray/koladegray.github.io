@@ -2,7 +2,7 @@
 title: "Plant-Based Dietary Approach in the Management of Third Stage Chronic Kidney Diseases"
 subtitle: "This clinical case study outlines the plant-based therapy plan for a 55-year-old man with a clinical diagnosis of Chronic Kidney Disease"
 author: "'Kolade Gracious"
-date: 2023-07-21
+date: 2023-10-21
 categories: [Case Study, Chronic Kidney Disease, Therapy]
 #description: "Evauating care outcomes following thoracic surgery practice during the COVID-19 pandemic using data generated from multiple sites, including a COVID Centre"
 toc: true

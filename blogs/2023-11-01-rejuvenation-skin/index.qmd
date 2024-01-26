@@ -2,7 +2,7 @@
 title: "Home-based Radiofrequency Energy Devices: Innovative Ideas in Hybrid Skin Rejuvenation Therapy"
 subtitle: "Demand for non-invasive, flexible and home-based cosmetic repair option is on the rise. How about a focus on RF pulsed energy devices?"
 author: "'Kolade Gracious"
-date: "2023-11-01"
+date: "2024-01-05"
 categories: [Therapy, Alopecia, Skin, Dermatology]
 #description: ""
 toc: true
