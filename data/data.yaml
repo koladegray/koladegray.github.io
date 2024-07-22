@@ -44,4 +44,14 @@
   categories:
     - SQL
     
-    
+- title: "Comparative Analysis of Healthcare Funding Modes in West Africa"
+  author: "'Kolade Gracious"
+  type: "R"
+  date: 2024-07-23
+  #twitter: "https://x.com/DrealOtunba/status/1706806878456418665?s=20"
+  github: "https://github.com/koladegray/koladegray.github.io/blob/main/data/projects/Healthcare%20funding/WorkingScript.qmd"
+  quarto: "projects/Healthcare funding/WorkingScript.qmd"
+  #linkedIn: "https://www.linkedin.com/posts/gracious-ogunkolade_date-tables-are-essential-for-almost-every-activity-7113208391149232128-Fr9o?utm_source=share&utm_medium=member_desktop"
+  categories:
+    - R
+    - Tidyverse
