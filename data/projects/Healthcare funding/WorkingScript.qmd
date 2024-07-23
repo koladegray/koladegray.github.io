@@ -35,11 +35,11 @@ library(tidyverse) #.........data wrangling
 library(janitor)  #..........data wrangling
 library(ggforce)  #..........viz faceting
 library(patchwork)  #.......combine plots
-library(ggthemes)  #.........text csztomizations
-library(ggtext)  #.........text csztomizations
+library(ggthemes)  #.........text cztomizations
+library(ggtext)  #.........text cztomizations
 library(sysfonts)  #.........generate viz fonts
 library(showtext)  #.........generate viz fonts
-library(monochromeR)  #.........viz colour selection
+library(monochromeR)  #.........viz color selection
 library(fontawesome)
 ```
 
@@ -120,7 +120,7 @@ head(wrangled_table)
 
 
 
-## C. Prepare for Data Vizualization
+## C. Prepare for Data Viz.
 
 ### i. Compute Midpoints
 
@@ -164,10 +164,6 @@ font_add_google("Fira Sans Condensed", "fira")
 font_add('fa-brands', 'fonts/font_inner/otfs/Font Awesome 6 Brands-Regular-400.otf')
 showtext_auto()
 
-github_icon <- "&#xf09b"
-github_username <- "Gracious 'Kolade"
-
-
 # Set Viz Colours
 component_colours1 <- c(
   "Government schemes and compulsory contributory health care financing schemes"= "#244855",
@@ -185,7 +181,7 @@ viz_colours <- tibble(txt_col = "#141414",
 #Declare plot titles
 
 plot_titles <- tibble(
-maintitle = "Comparative Analysis of Healthcare Spending Modes in West Africa [2011 - 2021]",
+maintitle = "Comparing Healthcare Funding Modes in West African Countries [2011 - 2021]",
 subtitle = "Despite billions of dollars in healthcare expenditure, the personal financial burden of medical care (out-of-pocket spending) is highest in Nigeria at over 73% of total cost;\nCape Verdeans only shoulder about 25% of total care cost.",
 caption = "Data Source: Global Health Expenditure Database, WHO <br><span style='font-family:fa-brands'>&#xf08c;</span> Gracious 'Kolade"
 )
@@ -228,7 +224,7 @@ baseplot <- midpoint_data %>%
   scale_x_continuous(
     breaks = seq(-100, 100, by = 20), limits = c(-100, 100)) +
   
-   theme_minimal(base_family = "fira", base_size = 15) +
+   theme_minimal(base_family = "fira", base_size = 20) +
   
 # set theme
   theme(
@@ -263,7 +259,7 @@ baseplot_with_labels <- baseplot +
       y = Countries,
       label = round(percent, 1)
     ),
-    size = 3.5,
+    size = 4.5,
     color = viz_colours$numcol,
     family = "fira",
     fontface = "bold",
@@ -279,7 +275,7 @@ baseplot_with_labels <- baseplot +
       y = Countries,
       label = round(percent, 1),
     ),
-    size = 3.5,
+    size = 4.5,
     color = viz_colours$numcol,
     family = "fira",
     fontface = "bold",
@@ -313,18 +309,18 @@ firstbaseplot_category_labels <- baseplot_with_labels +
     data = midpoint_data %>%
       filter(Countries == "Cabo Verde"),
     aes(
-      x = middle_point + c(-15, 25),
+      x = middle_point + c(-10, 20),
       y = Countries,
       label = label_guide
     ),
  # Adjust label appearance
-    nudge_y = 3,
+    nudge_y = 3.5,
     colour = component_colours1,
-    size = 3.5,
+    size = 5.5,
     family = "fira",
     fontface = "plain",
     vjust = 1.5,
-    lineheight = .9,
+    lineheight = .7,
   )
 
 
@@ -403,7 +399,7 @@ second_baseplot <- total_spend_table %>%
     space = "free",
   ) +
 
-  theme_minimal(base_size = 15) +
+  theme_minimal(base_size = 20) +
   
  geom_text(
     aes(
@@ -411,7 +407,7 @@ second_baseplot <- total_spend_table %>%
       x = total_healthcare_spending,
       label = paste0("$", (round(total_healthcare_spending / 1000, 2)), "B")
     ),
-    size = 3.5,
+    size = 4.5,
     hjust = -0.1,
     color = viz_colours$numcol,
     fontface = "bold",
@@ -456,13 +452,13 @@ second_baseplot
       y = Countries,
       label = "c. Total Cost\n[a + b + Voluntary Contributions]"
     ),
-    nudge_y = 3,
-    size = 3.5,
+    nudge_y = 3.5,
+    size = 5.5,
     family = "fira",
     fontface = "plain",
     vjust = 1.5,
     hjust = .05,
-    lineheight = .9,
+    lineheight = .7,
     color = viz_colours$txt_col
   ) 
 
@@ -491,17 +487,18 @@ finalplot <- firstbaseplot_category_labels +  secondbaseplot_category_labels +
                         family = "fira"),
         
     plot.title = element_text(colour = viz_colours$title_col,
-                              size = 17,
+                              size = 25,
                               hjust = 0.5,
                               margin = margin(10,0,6,0),
                               #TRouBLe (Top, Right, Bottom, Left)
                               face = "bold"),
-    plot.caption = element_markdown(),                          
-    plot.subtitle = element_text(size = 12,
+    plot.caption = element_markdown(size = 12,
+                                    colour = viz_colours$subtitle_col),                          
+    plot.subtitle = element_text(size = 17,
                                            vjust = 3,
                                            hjust = 0.5,
-                                           lineheight = 1,
-                                           margin = margin(5,0,10,0),
+                                           lineheight = .9,
+                                           margin = margin(10,0,7,0),
                                            colour = viz_colours$subtitle_col
                                            ),
     plot.margin = margin(rep(18,4)),
@@ -522,8 +519,8 @@ finalplot
 
 ggsave(
   filename = "finalplot.png",
-  width = 12,
-  height = 7.5,
+  width = 17,
+  height = 10,
   dpi = 100,
   bg = "#FFFFFF"
 )
