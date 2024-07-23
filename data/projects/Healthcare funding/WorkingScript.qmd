@@ -64,7 +64,7 @@ initial_table <- datatable %>%
   select(-...3)
 
 head(initial_table)
-
+view(initial_table)
 ```
 
 
@@ -115,7 +115,7 @@ wrangled_table <- initial_table %>%
   # drop spending class variable
   select(-spend_class)
 
-head(wrangled_table)
+view(wrangled_table)
 ```
 
 
@@ -132,6 +132,7 @@ This workflow is important for the selected viz option: a divergent bar chart.
 viz_table <- wrangled_table %>%
   # filter out the voluntary contribution rows
   filter(!str_detect(Indicators, "Voluntary"))
+
 ```
 
 
@@ -187,7 +188,7 @@ caption = "Data Source: Global Health Expenditure Database, WHO <br><span style=
 )
   
 # Set other dependencies
-barwidth <- 0.75
+barwidth <- 0.9
 ```
 
 
@@ -333,17 +334,19 @@ firstbaseplot_category_labels
 
 ### i. Prepare data
 
+
+
+
 ```{r}
 
 # Data Preparation for a 'Total Spend' Plot
 
-total_spending <- midpoint_data %>%
+total_spending <- wrangled_table %>%
   ungroup() %>%
   group_by(Countries) %>%
   summarise(total_healthcare_spending = sum(total))
 
 total_spend_table <- total_spending %>%
-  
 # Not the best of method 
   mutate(
     oops_class = c(
@@ -391,7 +394,8 @@ second_baseplot <- total_spend_table %>%
       y = fct_rev(as_factor(Countries)),
       x = total_healthcare_spending,
     ),
-    fill = viz_colours$bar_col
+    fill = viz_colours$bar_col,
+    width = barwidth
   ) +
   ggforce::facet_col(
     facets = vars(oops_class),
@@ -474,7 +478,7 @@ finalplot <- firstbaseplot_category_labels +  secondbaseplot_category_labels +
   
   plot_layout(
     ncol = 2,
-    width = c(2, 1.5)
+    width = c(2, 1.7)
   ) +
   
   plot_annotation(
