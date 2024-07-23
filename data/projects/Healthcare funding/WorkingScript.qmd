@@ -471,7 +471,7 @@ secondbaseplot_category_labels
 
 
 
-## F. Combine Both Plots
+## F. Now, Combine Both Plots
 
 ```{r}
 finalplot <- firstbaseplot_category_labels +  secondbaseplot_category_labels +
