@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -69,7 +69,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -78,8 +84,10 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VMYDMXZZFN"></script>
@@ -100,11 +108,11 @@ gtag('config', 'G-VMYDMXZZFN', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">’Kolade Gracious</span>
+    <span class="navbar-title"><strong>’Kolade Gracious</strong></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -114,45 +122,38 @@ gtag('config', 'G-VMYDMXZZFN', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="../../blogs/index.html"> 
+<span class="menu-text">Med.Comms</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../data/index.html" rel="" target="">
- <span class="menu-text">Data Projects</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../blogs/index.html" rel="" target="">
- <span class="menu-text">Medical Writing</span></a>
+    <a class="nav-link" href="../../data/index.html"> 
+<span class="menu-text">Strategy &amp; Analytics</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto tools-wide">
-    <a href="https://twitter.com/DrealOtunba" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
     <a href="https://github.com/koladegray" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://linkedin.com/gracious-ogunkolade" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-    <a href="https://medium.com/gray-commits" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-medium"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Sulbutiamine - A Drug Review</li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Sulbutiamine - A Drug Review</li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
     </div>
   </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -179,7 +180,8 @@ gtag('config', 'G-VMYDMXZZFN', { 'anonymize_ip': true});
   <div class="quarto-categories">
     <div class="quarto-category">Drug Review</div>
     <div class="quarto-category">Pharma</div>
-    <div class="quarto-category">Sulbutiamine</div>
+    <div class="quarto-category">Report</div>
+    <div class="quarto-category">Therapy</div>
   </div>
   </div>
 
@@ -205,7 +207,9 @@ gtag('config', 'G-VMYDMXZZFN', { 'anonymize_ip': true});
   </div>
   
 
+
 </header>
+
 
 <hr>
 <p><br></p>
@@ -223,11 +227,13 @@ Basic Synthesis
 <p>As an entity of biomedical importance, Sulbutiamine is synthesized by binding two molecules of thiamine (Vitamin B1) with a sulfur group forming a dimer chemically nomenclated as ‘2 - Isobutyryl thiamine disulfide’.</p>
 </div>
 </div>
-<p>The rationale behind the development of Sulbutiamine is simple –a compound that can easily increase and sustain the level of brain thiamine levels was needed to reverse the symptoms of thiamine deficiency. Thiamine is polar, making it soluble in water and decreasing its rate of penetration of the blood-brain barrier. As an oxidized derivative of thiamine, Sulbutiamine is a non-polar dimer of thiamine that crosses the blood-brain barrier and metabolized to release more thiamine molecules in the brain. This profile increases the bioavailability of thiamine in the brain, decreases thiamine metabolism and combats thiamine deficiency. This is the sole basis for the cognitive-enhancing properties of Sulbutiamine.</p>
+<p>The rationale behind the development of Sulbutiamine is simple –a compound that can easily increase and sustain the level of brain thiamine levels was needed to reverse the symptoms of thiamine deficiency. Thiamine is polar, making it soluble in water and decreasing its rate of penetration of the blood-brain barrier. As an oxidized derivative of thiamine, Sulbutiamine is a non-polar dimer of thiamine that crosses the blood-brain barrier and metabolized to release more thiamine molecules in the brain.</p>
+<p>This profile increases the bioavailability of thiamine in the brain, decreases thiamine metabolism and combats thiamine deficiency. This is the sole basis for the cognitive-enhancing properties of Sulbutiamine.</p>
+<p><br></p>
 <section id="sulbutiamine-in-clinical-care" class="level2">
 <h2 class="anchored" data-anchor-id="sulbutiamine-in-clinical-care">Sulbutiamine in Clinical Care</h2>
 <section id="cognitive-enhancement" class="level5">
-<h5 class="anchored" data-anchor-id="cognitive-enhancement">1. Cognitive Enhancement</h5>
+<h5 class="anchored" data-anchor-id="cognitive-enhancement">1<strong>. Cognitive Enhancement</strong></h5>
 <p>Sulbutiamine is known to give an extra kick when needed. This is the primary reason for its use among millions of people. As a synthetic derivative of thiamine, it induces a mild stimulatory effect by enhancing the actions of dopamine at the expense of other catecholamine. Sulbutiamine is preferred to amphetamines and other cognitive-enhancing therapies as it presents no significant adverse effects on the users. As a non-prescription drug, it is considered a supplement therapy in Alzheimer’s patients as it increases attention span and improves treatment indices.</p>
 </section>
 <section id="long-term-memory-formation" class="level5">
@@ -249,6 +255,7 @@ Basic Synthesis
 <h5 class="anchored" data-anchor-id="energy-boost-in-chronic-fatigue">5. Energy Boost in Chronic Fatigue</h5>
 <p>Judging from a few clinical studies, Sulbutiamine has proven to be useful in the treatment of posttraumatic fatigue characterized by low energy levels. Since its use with anti-infective medications is not contraindicated, many physicians now explore this combination posttraumatic patients to boost mood and increase energy levels. A non-randomized observational study investigating the effect of Sulbutiamine in patients with infection associated asthenia was by published by The Journal of the Association of Physicians of India in 2003.</p>
 <p>An inspection of the primary outcome data revealed that the number of patients with complete resolution of all asthenic symptoms was over 50%. In some patients, severe asthenia was significantly reduced, however, response was greater in patients with acute infection and symptom presentation<span class="citation" data-cites="Trovero2000"><sup><a href="#ref-Trovero2000" role="doc-biblioref">4</a></sup></span>. Sulbutiamine is also effective in the management of fatigue associated with multiple sclerosis and in persistent bouts of unexplained fatigue.</p>
+<p><br></p>
 </section>
 </section>
 <section id="sulbutiamines-pharmacology" class="level2">
@@ -260,24 +267,31 @@ Basic Synthesis
 <li><p>In experimental models, Sulbutiamine has been shown to increase hippocampal cholinergic activity by a direct effect on central cholinergic pathway. This mechanism is however complex and still under further scrutiny by different research groups. However, different publications have confirmed that chromic administration of Sulbutiamine directly improves the ability of experimental rats to form long term memory.</p></li>
 </ul>
 <p>Sulbutiamine has also been proven to increase energy use in the brain by directly stimulating the levels of thiamine triphosphate<span class="citation" data-cites="Sevim2017"><sup><a href="#ref-Sevim2017" role="doc-biblioref">2</a></sup></span>.</p>
+<p><br></p>
 </section>
 <section id="dosage-and-safety-studies-on-sulbutiamine" class="level2">
 <h2 class="anchored" data-anchor-id="dosage-and-safety-studies-on-sulbutiamine">Dosage and Safety Studies on Sulbutiamine</h2>
-<p>In different regions of the World, Sulbutiamine is readily available as an over-the-counter drug supplement. It is presented for sale predominantly in two forms –bulk powder packs and capsules. Currently, there exists no definitive publication or official directive about the safety profile of Sulbutiamine in humans. However, long-term usage data has suggested that Sulbutiamine is generally tolerated in humans at doses up to 600mg/day. There are no reported cases of toxicity in humans. For safety concerns, it is advisable that this drug product be taken with food.</p>
+<p>In different regions of the World, Sulbutiamine is readily available as an over-the-counter drug supplement. It is presented for sale predominantly in two forms –bulk powder packs and capsules. Currently, there exists no definitive publication or official directive about the safety profile of Sulbutiamine in humans.</p>
+<p>However, long-term usage data has suggested that Sulbutiamine is generally tolerated in humans at doses up to 600mg/day. There are no reported cases of toxicity in humans. For safety concerns, it is advisable that this drug product be taken with food.</p>
 <p>Continuous use of Sulbutiamine for a period of time exceeding 4 weeks is unadvisable as the safety of its long-term use is unknown. Anecdotal reports of tolerance in humans has also been documented. Optimal dose for use is pegged at 200-600 mg taken twice or three times daily depending on indication for use and expert recommendation.</p>
+<p><br></p>
 </section>
 <section id="adverse-effects-and-drug-interaction" class="level2">
 <h2 class="anchored" data-anchor-id="adverse-effects-and-drug-interaction">Adverse Effects and Drug Interaction</h2>
 <p>As with other popular supplements, Sulbutiamine is considered safe when used at the standard dose regimen under expert supervision. It is generally advisable that users of this product adopt a cyclic method of dosing. This involves intermittent breaks or drug-free days in between usage periods. In this usage plan, Sulbutiamine is administered consistently for 3 days before a day off. It has been found to moderately interact with antibiotics.</p>
-<p>A study published by the Journal of Association of Physicians of India reported drug interaction adverse effects in about 0.6% of patients treated with a combination of Sulbutiamine and specific anti-infective drugs. There is little documentation about the side effects of Sulbutiamine in humans. These side effects are infrequent and can include euphoria, headaches, mild agitation, nausea, insomnia, tremor drowsiness and skin allergies. Unless otherwise recommended by a physician, Sulbutiamine is contraindicated for use in pregnancy.</p>
+<p>A study published by the Journal of Association of Physicians of India reported drug interaction adverse effects in about 0.6% of patients treated with a combination of Sulbutiamine and specific anti-infective drugs. There is little documentation about the side effects of Sulbutiamine in humans.</p>
+<p>These side effects are infrequent and can include euphoria, headaches, mild agitation, nausea, insomnia, tremor drowsiness and skin allergies. Unless otherwise recommended by a physician, Sulbutiamine is contraindicated for use in pregnancy.</p>
+<p><br></p>
 </section>
 <section id="metabolism-and-excretion-of-sulbutiamine-in-humans" class="level2">
 <h2 class="anchored" data-anchor-id="metabolism-and-excretion-of-sulbutiamine-in-humans">Metabolism and Excretion of Sulbutiamine in Humans</h2>
 <p>Sulbutiamine is rapidly absorbed and distributed into the body tissues after oral administration. The lipophilic nature of the molecule ensures that it is accumulated in the tissues and also crosses the blood-brain barrier to effect neurotropic actions. Biochemical effects are noticed within 30 minutes of administration and peak effect is experienced after 3 hours. Sulbutiamine has a half-life of 5 hours and it is excreted mainly in the urine.</p>
+<p><br></p>
 </section>
 <section id="sulbutiamine-stacking" class="level2">
 <h2 class="anchored" data-anchor-id="sulbutiamine-stacking">Sulbutiamine Stacking</h2>
-<p>Sulbutiamine stacking can also be done to maximize therapeutic response in humans. This emerging practice involves the combination of Sulbutiamine with drugs and drug products that can enhance its biochemical effects. The combination of Sulbutiamine with optimal doses of Cholinergics increases the central effect of Sulbutiamine on the cholinergic system. The adverse effects of some drugs are more pronounced when used for long periods in high doses. Sulbutiamine may be co-administered with suboptimal doses of these drugs to effects the needed clinical response with any significant adverse effect.</p>
+<p>Sulbutiamine stacking can also be done to maximize therapeutic response in humans. This emerging practice involves the combination of Sulbutiamine with drugs and drug products that can enhance its biochemical effects. The combination of Sulbutiamine with optimal doses of Cholinergics increases the central effect of Sulbutiamine on the cholinergic system.</p>
+<p>The adverse effects of some drugs are more pronounced when used for long periods in high doses. Sulbutiamine may be co-administered with suboptimal doses of these drugs to effects the needed clinical response with any significant adverse effect.</p>
 </section>
 <section id="cited-works" class="level2">
 
@@ -286,7 +300,7 @@ Basic Synthesis
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Cited Works</h2><div id="refs" class="references csl-bib-body" role="list">
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Cited Works</h2><div id="refs" class="references csl-bib-body" role="list">
 <div id="ref-Micheau1985" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Micheau J, Durkin TP, Destrade C, Rolland Y, Jaffard R. Chronic administration of sulbutiamine improves long term memory formation in mice: Possible cholinergic mediation. <em>Pharmacology Biochemistry and Behavior</em>. 1985;23(2):195-198. doi:<a href="https://doi.org/10.1016/0091-3057(85)90555-6">10.1016/0091-3057(85)90555-6</a></div>
 </div>
@@ -341,6 +355,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -409,13 +450,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'alternate';
+  const darkModeDefault = true;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -494,10 +537,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -507,8 +567,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -520,7 +589,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -564,6 +756,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -589,6 +782,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -654,12 +873,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Copyright 2023. ’Kolade Gracious</div>
+    <div class="nav-footer-center">
+<p>Copyright 2025. Gracious OGUNKOLADE</p>
+</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 

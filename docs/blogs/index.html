@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>'Kolade Gracious – index</title>
+<title>’Kolade Gracious</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,7 +50,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -59,8 +65,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -106,6 +114,33 @@ gtag('config', 'G-VMYDMXZZFN', { 'anonymize_ip': true});
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="../theme.scss">
 </head>
 
@@ -113,11 +148,11 @@ gtag('config', 'G-VMYDMXZZFN', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">’Kolade Gracious</span>
+    <span class="navbar-title"><strong>’Kolade Gracious</strong></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -127,51 +162,45 @@ gtag('config', 'G-VMYDMXZZFN', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link active" href="../blogs/index.html" aria-current="page"> 
+<span class="menu-text">Med.Comms</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../data/index.html" rel="" target="">
- <span class="menu-text">Data Projects</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../blogs/index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Medical Writing</span></a>
+    <a class="nav-link" href="../data/index.html"> 
+<span class="menu-text">Strategy &amp; Analytics</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto tools-wide">
-    <a href="https://twitter.com/DrealOtunba" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
     <a href="https://github.com/koladegray" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://linkedin.com/gracious-ogunkolade" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-    <a href="https://medium.com/gray-commits" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-medium"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
     </div>
   </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="Addiction">Addiction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Addiction Care">Addiction Care <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Alcohol">Alcohol <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Alopecia">Alopecia <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Biotechnology">Biotechnology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Breathalyzers">Breathalyzers <span class="quarto-category-count">(1)</span></div><div class="category" data-category="CBD">CBD <span class="quarto-category-count">(1)</span></div><div class="category" data-category="COVID-19">COVID-19 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cannabidiol">Cannabidiol <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Case Study">Case Study <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Cell">Cell <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Chronic Kidney Disease">Chronic Kidney Disease <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Dermatology">Dermatology <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Drug Review">Drug Review <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Epidemiology">Epidemiology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Hair">Hair <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Hemp">Hemp <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pharma">Pharma <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Report">Report <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Sequencing">Sequencing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Skin">Skin <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Sulbutiamine">Sulbutiamine <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Therapy">Therapy <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Trends">Trends <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Tuberculosis">Tuberculosis <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(14)</span></div><div class="category" data-category="Addiction Care">Addiction Care <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Alcohol">Alcohol <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Biotechnology">Biotechnology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cannabidiol">Cannabidiol <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Case Study">Case Study <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Case study">Case study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Dermatology">Dermatology <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Drug Review">Drug Review <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Pharma">Pharma <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Report">Report <span class="quarto-category-count">(11)</span></div><div class="category" data-category="Therapy">Therapy <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Trends">Trends <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 
 
@@ -186,7 +215,7 @@ While Navigating…..
 </div>
 <div class="callout-body-container callout-body">
 <p>
-All medical commentaries and correspondences are published in Rmarkdown/Quarto with version control on <a href="github.com/koladegray">Github</a>
+All medical commentaries and correspondences are published in Rmarkdown/Quarto with version control on <a href="github.com/koladegray">Github</a>.
 </p>
 </div>
 </div>
@@ -198,42 +227,41 @@ All medical commentaries and correspondences are published in Rmarkdown/Quarto w
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Therapy,Alopecia,Hair,Dermatology" data-listing-date-sort="1708902000000" data-listing-file-modified-sort="1706277971395" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11">
+<div class="quarto-post image-right" data-index="0" data-categories="Alcohol,Addiction Care,Report,Therapy" data-listing-date-sort="1739487600000" data-listing-file-modified-sort="1741358135158" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2124">
 <div class="thumbnail">
-<p><a href="../blogs/2023-09-29-hobrasio/index.html"> <img src="../blogs/2023-09-29-hobrasio/hob2_vector.jpg" class="thumbnail-image" style="height: 120px;"> </a></p>
+<p><a href="../blogs/2025-02-14-Futuristic-Alcohol-Monitoring/index.html" class="no-external"></a></p><a href="../blogs/2025-02-14-Futuristic-Alcohol-Monitoring/index.html" class="no-external">
+<p><img src="../blogs/2025-02-14-Futuristic-Alcohol-Monitoring/alcohol-monitoring.png" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2025-02-14-Futuristic-Alcohol-Monitoring/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../blogs/2023-09-29-hobrasio/index.html">
 <h3 class="no-anchor listing-title">
-HOBRASIO: A Novel Therapy Regimen for Early Stage Androgenic Hair Loss
+<a href="../blogs/2025-02-14-Futuristic-Alcohol-Monitoring/index.html" class="no-external">Futuristic Technology in Alcohol Monitoring Systems</a>
 </h3>
 <div class="listing-subtitle">
-Evaluating a multi-component integrative therapy for Alopecia forms
+<a href="../blogs/2025-02-14-Futuristic-Alcohol-Monitoring/index.html" class="no-external">Potential solutions for combating global alcohol addiction crisis</a>
 </div>
-</a>
 <div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Alcohol'); return false;">
+Alcohol
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Addiction Care'); return false;">
+Addiction Care
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Report'); return false;">
+Report
+</div>
 <div class="listing-category" onclick="window.quartoListingCategory('Therapy'); return false;">
 Therapy
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Alopecia'); return false;">
-Alopecia
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Hair'); return false;">
-Hair
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Dermatology'); return false;">
-Dermatology
-</div>
-</div>
-<a href="../blogs/2023-09-29-hobrasio/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="../blogs/2023-09-29-hobrasio/index.html">
+<a href="../blogs/2025-02-14-Futuristic-Alcohol-Monitoring/index.html" class="no-external">
 <div class="listing-date">
-Feb 26, 2024
+Feb 14, 2025
 </div>
 <div class="listing-author">
-’Kolade Gracious
+Gracious Ogunkolade
 </div>
 <div class="listing-reading-time">
 11 min
@@ -241,19 +269,181 @@ Feb 26, 2024
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Drug Review,Pharma,Sulbutiamine" data-listing-date-sort="1707692400000" data-listing-file-modified-sort="1706278260985" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="quarto-post image-right" data-index="1" data-categories="Cannabidiol,Drug Review,Pharma,Report,Trends" data-listing-date-sort="1734044400000" data-listing-file-modified-sort="1741358211920" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="1000">
 <div class="thumbnail">
-<p><a href="../blogs/2023-09-11-sulbutiamine/index.html"> <img src="../blogs/2023-09-11-sulbutiamine/sulb.jpg" class="thumbnail-image" style="height: 120px;"> </a></p>
+<p><a href="../blogs/2024-12-13-Epidolex/index.html" class="no-external"></a></p><a href="../blogs/2024-12-13-Epidolex/index.html" class="no-external">
+<p><img src="../blogs/2024-12-13-Epidolex/epidolex-front.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2024-12-13-Epidolex/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../blogs/2023-09-11-sulbutiamine/index.html">
 <h3 class="no-anchor listing-title">
-Sulbutiamine - A Drug Review
+<a href="../blogs/2024-12-13-Epidolex/index.html" class="no-external">Epidolex: How The Cannabis Industry Changed Forever</a>
 </h3>
 <div class="listing-subtitle">
-Developed as a compound that can easily increase and sustain the level of brain thiamine levels, Sulbutiamine was once a wonder drug.
+<a href="../blogs/2024-12-13-Epidolex/index.html" class="no-external"> </a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Cannabidiol'); return false;">
+Cannabidiol
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Drug Review'); return false;">
+Drug Review
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pharma'); return false;">
+Pharma
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Report'); return false;">
+Report
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Trends'); return false;">
+Trends
+</div>
+</div>
+</div>
+<div class="metadata">
+<a href="../blogs/2024-12-13-Epidolex/index.html" class="no-external">
+<div class="listing-date">
+Dec 13, 2024
+</div>
+<div class="listing-author">
+Gracious Ogunkolade
+</div>
+<div class="listing-reading-time">
+5 min
 </div>
 </a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Report,Case study" data-listing-date-sort="1732316400000" data-listing-file-modified-sort="1741358183317" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1518">
+<div class="thumbnail">
+<p><a href="../blogs/2024-11-23-Child-Abuse/index.html" class="no-external"></a></p><a href="../blogs/2024-11-23-Child-Abuse/index.html" class="no-external">
+<p><img src="../blogs/2024-11-23-Child-Abuse/childVic.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2024-11-23-Child-Abuse/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blogs/2024-11-23-Child-Abuse/index.html" class="no-external">Exploring the Correlation Between Child Abuse and Substance Use Disorders in Adulthood</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../blogs/2024-11-23-Child-Abuse/index.html" class="no-external">…a social commentary drawing evidence from survey and inferentials</a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Report'); return false;">
+Report
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Case study'); return false;">
+Case study
+</div>
+</div>
+</div>
+<div class="metadata">
+<a href="../blogs/2024-11-23-Child-Abuse/index.html" class="no-external">
+<div class="listing-date">
+Nov 23, 2024
+</div>
+<div class="listing-author">
+Gracious Ogunkolade
+</div>
+<div class="listing-reading-time">
+8 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Case Study,Report,Therapy" data-listing-date-sort="1728687600000" data-listing-file-modified-sort="1741358156321" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2212">
+<div class="thumbnail">
+<p><a href="../blogs/2024-10-12-Menopause-Thyroid/index.html" class="no-external"></a></p><a href="../blogs/2024-10-12-Menopause-Thyroid/index.html" class="no-external">
+<p><img src="../blogs/2024-10-12-Menopause-Thyroid/meno.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2024-10-12-Menopause-Thyroid/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blogs/2024-10-12-Menopause-Thyroid/index.html" class="no-external">Exploring the Menopause-Thyroid Connection</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../blogs/2024-10-12-Menopause-Thyroid/index.html" class="no-external">Evaluating a possible therapy pipeline for menopuasal disorders</a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Case Study'); return false;">
+Case Study
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Report'); return false;">
+Report
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Therapy'); return false;">
+Therapy
+</div>
+</div>
+</div>
+<div class="metadata">
+<a href="../blogs/2024-10-12-Menopause-Thyroid/index.html" class="no-external">
+<div class="listing-date">
+Oct 12, 2024
+</div>
+<div class="listing-author">
+Gracious Ogunkolade
+</div>
+<div class="listing-reading-time">
+12 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="Therapy,Dermatology,Report,Case Study" data-listing-date-sort="1708902000000" data-listing-file-modified-sort="1741357768590" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2100">
+<div class="thumbnail">
+<p><a href="../blogs/2023-09-29-hobrasio/index.html" class="no-external"></a></p><a href="../blogs/2023-09-29-hobrasio/index.html" class="no-external">
+<p><img src="../blogs/2023-09-29-hobrasio/hob2_vector.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2023-09-29-hobrasio/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blogs/2023-09-29-hobrasio/index.html" class="no-external">HOBRASIO: A Novel Therapy Regimen for Early Stage Androgenic Hair Loss</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../blogs/2023-09-29-hobrasio/index.html" class="no-external">Evaluating a multi-component integrative therapy for Alopecia forms</a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Therapy'); return false;">
+Therapy
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Dermatology'); return false;">
+Dermatology
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Report'); return false;">
+Report
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Case Study'); return false;">
+Case Study
+</div>
+</div>
+</div>
+<div class="metadata">
+<a href="../blogs/2023-09-29-hobrasio/index.html" class="no-external">
+<div class="listing-date">
+Feb 26, 2024
+</div>
+<div class="listing-author">
+Gracious Ogunkolade
+</div>
+<div class="listing-reading-time">
+11 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="Drug Review,Pharma,Report,Therapy" data-listing-date-sort="1707692400000" data-listing-file-modified-sort="1741357660606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1499">
+<div class="thumbnail">
+<p><a href="../blogs/2023-09-11-sulbutiamine/index.html" class="no-external"></a></p><a href="../blogs/2023-09-11-sulbutiamine/index.html" class="no-external">
+<p><img src="../blogs/2023-09-11-sulbutiamine/sulb.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2023-09-11-sulbutiamine/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blogs/2023-09-11-sulbutiamine/index.html" class="no-external">Sulbutiamine - A Drug Review</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../blogs/2023-09-11-sulbutiamine/index.html" class="no-external">Developed as a compound that can easily increase and sustain the level of brain thiamine levels, Sulbutiamine was once a wonder drug.</a>
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Drug Review'); return false;">
 Drug Review
@@ -261,14 +451,16 @@ Drug Review
 <div class="listing-category" onclick="window.quartoListingCategory('Pharma'); return false;">
 Pharma
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Sulbutiamine'); return false;">
-Sulbutiamine
+<div class="listing-category" onclick="window.quartoListingCategory('Report'); return false;">
+Report
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Therapy'); return false;">
+Therapy
 </div>
 </div>
-<a href="../blogs/2023-09-11-sulbutiamine/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="../blogs/2023-09-11-sulbutiamine/index.html">
+<a href="../blogs/2023-09-11-sulbutiamine/index.html" class="no-external">
 <div class="listing-date">
 Feb 12, 2024
 </div>
@@ -281,34 +473,30 @@ Feb 12, 2024
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Epidemiology,Tuberculosis,Trends" data-listing-date-sort="1706137200000" data-listing-file-modified-sort="1706278240399" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="quarto-post image-right" data-index="6" data-categories="Report,Case Study" data-listing-date-sort="1706137200000" data-listing-file-modified-sort="1741357887014" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1451">
 <div class="thumbnail">
-<p><a href="../blogs/2023-10-25-tuberculosis/index.html"> <img src="../blogs/2023-10-25-tuberculosis/tuberc_vector.jpg" class="thumbnail-image" style="height: 120px;"> </a></p>
+<p><a href="../blogs/2023-10-25-tuberculosis/index.html" class="no-external"></a></p><a href="../blogs/2023-10-25-tuberculosis/index.html" class="no-external">
+<p><img data-src="../blogs/2023-10-25-tuberculosis/tuberc_vector.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2023-10-25-tuberculosis/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../blogs/2023-10-25-tuberculosis/index.html">
 <h3 class="no-anchor listing-title">
-Epidemiology of Tuberculosis: A Review (2000 - 2016)
+<a href="../blogs/2023-10-25-tuberculosis/index.html" class="no-external">Epidemiology of Tuberculosis: A Review (2000 - 2016)</a>
 </h3>
 <div class="listing-subtitle">
-Exploring the epidemiology trend of tuberculosis over a 16-year period from the Year 2000 to the initiation of the End TB Strategy in 2016.
+<a href="../blogs/2023-10-25-tuberculosis/index.html" class="no-external">Exploring the epidemiology trend of tuberculosis over a 16-year period from the Year 2000 to the initiation of the End TB Strategy in 2016.</a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Epidemiology'); return false;">
-Epidemiology
+<div class="listing-category" onclick="window.quartoListingCategory('Report'); return false;">
+Report
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Tuberculosis'); return false;">
-Tuberculosis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Trends'); return false;">
-Trends
+<div class="listing-category" onclick="window.quartoListingCategory('Case Study'); return false;">
+Case Study
 </div>
 </div>
-<a href="../blogs/2023-10-25-tuberculosis/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="../blogs/2023-10-25-tuberculosis/index.html">
+<a href="../blogs/2023-10-25-tuberculosis/index.html" class="no-external">
 <div class="listing-date">
 Jan 25, 2024
 </div>
@@ -321,37 +509,33 @@ Jan 25, 2024
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Therapy,Alopecia,Skin,Dermatology" data-listing-date-sort="1704409200000" data-listing-file-modified-sort="1706278216030" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="quarto-post image-right" data-index="7" data-categories="Therapy,Report,Dermatology" data-listing-date-sort="1704409200000" data-listing-file-modified-sort="1741357919094" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1811">
 <div class="thumbnail">
-<p><a href="../blogs/2023-11-01-rejuvenation-skin/index.html"> <img src="../blogs/2023-11-01-rejuvenation-skin/rejuv.jpg" class="thumbnail-image" style="height: 120px;"> </a></p>
+<p><a href="../blogs/2023-11-01-rejuvenation-skin/index.html" class="no-external"></a></p><a href="../blogs/2023-11-01-rejuvenation-skin/index.html" class="no-external">
+<p><img data-src="../blogs/2023-11-01-rejuvenation-skin/rejuv.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2023-11-01-rejuvenation-skin/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../blogs/2023-11-01-rejuvenation-skin/index.html">
 <h3 class="no-anchor listing-title">
-Home-based Radiofrequency Energy Devices: Innovative Ideas in Hybrid Skin Rejuvenation Therapy
+<a href="../blogs/2023-11-01-rejuvenation-skin/index.html" class="no-external">Home-based Radiofrequency Energy Devices: Innovative Ideas in Hybrid Skin Rejuvenation Therapy</a>
 </h3>
 <div class="listing-subtitle">
-Demand for non-invasive, flexible and home-based cosmetic repair option is on the rise. How about a focus on RF pulsed energy devices?
+<a href="../blogs/2023-11-01-rejuvenation-skin/index.html" class="no-external">Demand for non-invasive, flexible and home-based cosmetic repair option is on the rise. How about a focus on RF pulsed energy devices?</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Therapy'); return false;">
 Therapy
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Alopecia'); return false;">
-Alopecia
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Skin'); return false;">
-Skin
+<div class="listing-category" onclick="window.quartoListingCategory('Report'); return false;">
+Report
 </div>
 <div class="listing-category" onclick="window.quartoListingCategory('Dermatology'); return false;">
 Dermatology
 </div>
 </div>
-<a href="../blogs/2023-11-01-rejuvenation-skin/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="../blogs/2023-11-01-rejuvenation-skin/index.html">
+<a href="../blogs/2023-11-01-rejuvenation-skin/index.html" class="no-external">
 <div class="listing-date">
 Jan 5, 2024
 </div>
@@ -364,39 +548,41 @@ Jan 5, 2024
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Pharma,Addiction,Alcohol" data-listing-date-sort="1703026800000" data-listing-file-modified-sort="1706278412866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="quarto-post image-right" data-index="8" data-categories="Pharma,Report,Alcohol,Addiction Care" data-listing-date-sort="1703026800000" data-listing-file-modified-sort="1741357623921" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1490">
 <div class="thumbnail">
-<p><a href="../blogs/2023-09-07-technology-based-intervention/index.html"> <img src="../blogs/2023-09-07-technology-based-intervention/alcohol_vector.jpg" class="thumbnail-image" style="height: 120px;"> </a></p>
+<p><a href="../blogs/2023-09-07-technology-based-intervention/index.html" class="no-external"></a></p><a href="../blogs/2023-09-07-technology-based-intervention/index.html" class="no-external">
+<p><img data-src="../blogs/2023-09-07-technology-based-intervention/alcohol_vector.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2023-09-07-technology-based-intervention/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../blogs/2023-09-07-technology-based-intervention/index.html">
 <h3 class="no-anchor listing-title">
-Technology-based Intervention in Clinical Alcohol and Drug Addiction Care Programs
+<a href="../blogs/2023-09-07-technology-based-intervention/index.html" class="no-external">Technology-based Intervention in Clinical Alcohol and Drug Addiction Care Programs</a>
 </h3>
 <div class="listing-subtitle">
-Management options leveraging psychosocial theories and behavioral observations developed and used as proposed models and different randomized trials for addiction care
+<a href="../blogs/2023-09-07-technology-based-intervention/index.html" class="no-external">Management options leveraging psychosocial theories and behavioral observations developed and used as proposed models and different randomized trials for addiction care</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Pharma'); return false;">
 Pharma
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Addiction'); return false;">
-Addiction
+<div class="listing-category" onclick="window.quartoListingCategory('Report'); return false;">
+Report
 </div>
 <div class="listing-category" onclick="window.quartoListingCategory('Alcohol'); return false;">
 Alcohol
 </div>
+<div class="listing-category" onclick="window.quartoListingCategory('Addiction Care'); return false;">
+Addiction Care
 </div>
-<a href="../blogs/2023-09-07-technology-based-intervention/index.html"> </a>
+</div>
 </div>
 <div class="metadata">
-<a href="../blogs/2023-09-07-technology-based-intervention/index.html">
+<a href="../blogs/2023-09-07-technology-based-intervention/index.html" class="no-external">
 <div class="listing-date">
 Dec 20, 2023
 </div>
 <div class="listing-author">
-’Kolade Gracious
+Gracious Ogunkolade
 </div>
 <div class="listing-reading-time">
 8 min
@@ -404,39 +590,35 @@ Dec 20, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Cell,Sequencing,Biotechnology" data-listing-date-sort="1701730800000" data-listing-file-modified-sort="1706278443282" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="quarto-post image-right" data-index="9" data-categories="Case Study,Biotechnology" data-listing-date-sort="1701730800000" data-listing-file-modified-sort="1741357710320" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1959">
 <div class="thumbnail">
-<p><a href="../blogs/2023-9-18-direct-library-preparation/index.html"> <img src="../blogs/2023-9-18-direct-library-preparation/dlp_vector.jpg" class="thumbnail-image" style="height: 120px;"> </a></p>
+<p><a href="../blogs/2023-9-18-direct-library-preparation/index.html" class="no-external"></a></p><a href="../blogs/2023-9-18-direct-library-preparation/index.html" class="no-external">
+<p><img data-src="../blogs/2023-9-18-direct-library-preparation/dlp_vector.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2023-9-18-direct-library-preparation/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../blogs/2023-9-18-direct-library-preparation/index.html">
 <h3 class="no-anchor listing-title">
-Direct Library Preparation: The Latest Innovation in Single-Cell Whole Genome Sequencing
+<a href="../blogs/2023-9-18-direct-library-preparation/index.html" class="no-external">Direct Library Preparation: The Latest Innovation in Single-Cell Whole Genome Sequencing</a>
 </h3>
 <div class="listing-subtitle">
-Exploring a novel innovation in genome sequencing
+<a href="../blogs/2023-9-18-direct-library-preparation/index.html" class="no-external">Exploring a novel innovation in genome sequencing</a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Cell'); return false;">
-Cell
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Sequencing'); return false;">
-Sequencing
+<div class="listing-category" onclick="window.quartoListingCategory('Case Study'); return false;">
+Case Study
 </div>
 <div class="listing-category" onclick="window.quartoListingCategory('Biotechnology'); return false;">
 Biotechnology
 </div>
 </div>
-<a href="../blogs/2023-9-18-direct-library-preparation/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="../blogs/2023-9-18-direct-library-preparation/index.html">
+<a href="../blogs/2023-9-18-direct-library-preparation/index.html" class="no-external">
 <div class="listing-date">
 Dec 5, 2023
 </div>
 <div class="listing-author">
-’Kolade Gracious
+Gracious Ogunkolade
 </div>
 <div class="listing-reading-time">
 10 min
@@ -444,34 +626,36 @@ Dec 5, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Case Study,COVID-19,Report" data-listing-date-sort="1699570800000" data-listing-file-modified-sort="1706278635024" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="quarto-post image-right" data-index="10" data-categories="Case Study,Therapy,Pharma,Report" data-listing-date-sort="1699570800000" data-listing-file-modified-sort="1741357815739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1979">
 <div class="thumbnail">
-<p><a href="../blogs/2023-10-10-thoracic/index.html"> <img data-src="../blogs/2023-10-10-thoracic/thoracic_vector.jpg" class="thumbnail-image" style="height: 120px;"> </a></p>
+<p><a href="../blogs/2023-10-10-thoracic/index.html" class="no-external"></a></p><a href="../blogs/2023-10-10-thoracic/index.html" class="no-external">
+<p><img data-src="../blogs/2023-10-10-thoracic/thoracic_vector.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2023-10-10-thoracic/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../blogs/2023-10-10-thoracic/index.html">
 <h3 class="no-anchor listing-title">
-Maintaining Standards of Care in Thoracic Surgery During the Covid-19 Pandemic in London: A Multi-site Report
+<a href="../blogs/2023-10-10-thoracic/index.html" class="no-external">Maintaining Standards of Care in Thoracic Surgery During the Covid-19 Pandemic in London: A Multi-site Report</a>
 </h3>
 <div class="listing-subtitle">
-Evauating care outcomes following thoracic surgery practice during the COVID-19 pandemic
+<a href="../blogs/2023-10-10-thoracic/index.html" class="no-external">Evauating care outcomes following thoracic surgery practice during the COVID-19 pandemic</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Case Study'); return false;">
 Case Study
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('COVID-19'); return false;">
-COVID-19
+<div class="listing-category" onclick="window.quartoListingCategory('Therapy'); return false;">
+Therapy
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pharma'); return false;">
+Pharma
 </div>
 <div class="listing-category" onclick="window.quartoListingCategory('Report'); return false;">
 Report
 </div>
 </div>
-<a href="../blogs/2023-10-10-thoracic/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="../blogs/2023-10-10-thoracic/index.html">
+<a href="../blogs/2023-10-10-thoracic/index.html" class="no-external">
 <div class="listing-date">
 Nov 10, 2023
 </div>
@@ -484,39 +668,38 @@ Nov 10, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="Case Study,Chronic Kidney Disease,Therapy" data-listing-date-sort="1697842800000" data-listing-file-modified-sort="1706278741935" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="11" data-categories="Case Study,Pharma,Therapy" data-listing-date-sort="1697842800000" data-listing-file-modified-sort="1741357567606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1366">
 <div class="thumbnail">
-<p><a href="../blogs/2023-07-21-ckd-case-study/index.html"> <img data-src="../blogs/2023-07-21-ckd-case-study/ckd_vector.jpg" class="thumbnail-image" style="height: 120px;"> </a></p>
+<p><a href="../blogs/2023-07-21-ckd-case-study/index.html" class="no-external"></a></p><a href="../blogs/2023-07-21-ckd-case-study/index.html" class="no-external">
+<p><img data-src="../blogs/2023-07-21-ckd-case-study/ckd_vector.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2023-07-21-ckd-case-study/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../blogs/2023-07-21-ckd-case-study/index.html">
 <h3 class="no-anchor listing-title">
-Plant-Based Dietary Approach in the Management of Third Stage Chronic Kidney Diseases
+<a href="../blogs/2023-07-21-ckd-case-study/index.html" class="no-external">Plant-Based Dietary Approach in the Management of Third Stage Chronic Kidney Diseases</a>
 </h3>
 <div class="listing-subtitle">
-This clinical case study outlines the plant-based therapy plan for a 55-year-old man with a clinical diagnosis of Chronic Kidney Disease
+<a href="../blogs/2023-07-21-ckd-case-study/index.html" class="no-external">This clinical case study outlines the plant-based therapy plan for a 55-year-old man with a clinical diagnosis of Chronic Kidney Disease</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Case Study'); return false;">
 Case Study
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Chronic Kidney Disease'); return false;">
-Chronic Kidney Disease
+<div class="listing-category" onclick="window.quartoListingCategory('Pharma'); return false;">
+Pharma
 </div>
 <div class="listing-category" onclick="window.quartoListingCategory('Therapy'); return false;">
 Therapy
 </div>
 </div>
-<a href="../blogs/2023-07-21-ckd-case-study/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="../blogs/2023-07-21-ckd-case-study/index.html">
+<a href="../blogs/2023-07-21-ckd-case-study/index.html" class="no-external">
 <div class="listing-date">
 Oct 21, 2023
 </div>
 <div class="listing-author">
-’Kolade Gracious
+Gracious Ogunkolade
 </div>
 <div class="listing-reading-time">
 7 min
@@ -524,19 +707,19 @@ Oct 21, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="Therapy,Alcohol,Addiction Care,Breathalyzers" data-listing-date-sort="1694041200000" data-listing-file-modified-sort="1706278791013" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="quarto-post image-right" data-index="12" data-categories="Therapy,Alcohol,Addiction Care" data-listing-date-sort="1694041200000" data-listing-file-modified-sort="1741357782259" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1474">
 <div class="thumbnail">
-<p><a href="../blogs/2023-10-01-breathalyzers/index.html"> <img data-src="../blogs/2023-10-01-breathalyzers/bret_vector.jpg" class="thumbnail-image" style="height: 120px;"> </a></p>
+<p><a href="../blogs/2023-10-01-breathalyzers/index.html" class="no-external"></a></p><a href="../blogs/2023-10-01-breathalyzers/index.html" class="no-external">
+<p><img data-src="../blogs/2023-10-01-breathalyzers/bret_vector.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2023-10-01-breathalyzers/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../blogs/2023-10-01-breathalyzers/index.html">
 <h3 class="no-anchor listing-title">
-Breathalyzers in Clinical Alcohol and Drug Care Programs
+<a href="../blogs/2023-10-01-breathalyzers/index.html" class="no-external">Breathalyzers in Clinical Alcohol and Drug Care Programs</a>
 </h3>
 <div class="listing-subtitle">
-Leveraging advancements in digital technology to drive the campaign against alcohol abuse.
+<a href="../blogs/2023-10-01-breathalyzers/index.html" class="no-external">Leveraging advancements in digital technology to drive the campaign against alcohol abuse.</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Therapy'); return false;">
 Therapy
@@ -547,14 +730,10 @@ Alcohol
 <div class="listing-category" onclick="window.quartoListingCategory('Addiction Care'); return false;">
 Addiction Care
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Breathalyzers'); return false;">
-Breathalyzers
 </div>
-</div>
-<a href="../blogs/2023-10-01-breathalyzers/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="../blogs/2023-10-01-breathalyzers/index.html">
+<a href="../blogs/2023-10-01-breathalyzers/index.html" class="no-external">
 <div class="listing-date">
 Sep 7, 2023
 </div>
@@ -567,39 +746,35 @@ Sep 7, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="CBD,Hemp,Cannabidiol" data-listing-date-sort="1692054000000" data-listing-file-modified-sort="1706278822224" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11">
+<div class="quarto-post image-right" data-index="13" data-categories="Report,Cannabidiol" data-listing-date-sort="1692054000000" data-listing-file-modified-sort="1741357548467" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2122">
 <div class="thumbnail">
-<p><a href="../blogs/2023-08-01-cbd-blog/index.html"> <img data-src="../blogs/2023-08-01-cbd-blog/cbd_vector.jpg" class="thumbnail-image" style="height: 120px;"> </a></p>
+<p><a href="../blogs/2023-08-01-cbd-blog/index.html" class="no-external"></a></p><a href="../blogs/2023-08-01-cbd-blog/index.html" class="no-external">
+<p><img data-src="../blogs/2023-08-01-cbd-blog/cbd_vector.jpg" class="thumbnail-image" style="height: 120px;"></p>
+</a><p><a href="../blogs/2023-08-01-cbd-blog/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../blogs/2023-08-01-cbd-blog/index.html">
 <h3 class="no-anchor listing-title">
-The Ultimate Comprehensive Guide for CBD Hemp Flower
+<a href="../blogs/2023-08-01-cbd-blog/index.html" class="no-external">The Ultimate Comprehensive Guide for CBD Hemp Flower</a>
 </h3>
 <div class="listing-subtitle">
-Hemp - an industrial variation of cannabis sativa containing less than .3% THC, is the only legal source of cannabidiol. Understanding the plant atributes is considered important in the global cannabis market today
+<a href="../blogs/2023-08-01-cbd-blog/index.html" class="no-external">Hemp - an industrial variation of cannabis sativa containing less than .3% THC, is the only legal source of cannabidiol. Understanding the plant atributes is considered important in the global cannabis market today</a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('CBD'); return false;">
-CBD
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Hemp'); return false;">
-Hemp
+<div class="listing-category" onclick="window.quartoListingCategory('Report'); return false;">
+Report
 </div>
 <div class="listing-category" onclick="window.quartoListingCategory('Cannabidiol'); return false;">
 Cannabidiol
 </div>
 </div>
-<a href="../blogs/2023-08-01-cbd-blog/index.html"> </a>
 </div>
 <div class="metadata">
-<a href="../blogs/2023-08-01-cbd-blog/index.html">
+<a href="../blogs/2023-08-01-cbd-blog/index.html" class="no-external">
 <div class="listing-date">
 Aug 15, 2023
 </div>
 <div class="listing-author">
-’Kolade Gracious
+Gracious Ogunkolade
 </div>
 <div class="listing-reading-time">
 11 min
@@ -661,6 +836,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -729,13 +931,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'alternate';
+  const darkModeDefault = true;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -814,10 +1018,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -827,8 +1048,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -840,7 +1070,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -884,6 +1237,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -909,6 +1263,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -974,12 +1354,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Copyright 2023. ’Kolade Gracious</div>
+    <div class="nav-footer-center">
+<p>Copyright 2025. Gracious OGUNKOLADE</p>
+</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 

@@ -2,14 +2,16 @@
 title: "HOBRASIO: A Novel Therapy Regimen for Early Stage Androgenic Hair Loss"
 subtitle: "Evaluating a multi-component integrative therapy for Alopecia forms"
 #format: html
-author: "'Kolade Gracious"
+author: "Gracious Ogunkolade"
 date: "2024-02-26"
-categories: [Therapy, Alopecia, Hair, Dermatology]
+categories: [Therapy, Dermatology, Report, Case Study]
 #description: "Evaluating a multi-component integrative therapy for Androgenic Alopecia"
 toc: true
 bibliography: references.bib
 image: "hob2_vector.jpg"
 ---
+
+<br>
 
 ## Hair Loss in a Lifecycle
 
@@ -69,7 +71,9 @@ Other drugs used in the off-label management of alopecia forms include Dutasteri
 
 ## Considering HOBRASIO as a Novel Integrative Therapy Option
 
-Currently, the therapy options available for the management of alopecia forms produce inconsistent results. To a large part, the long-course drug therapies do not guarantee recovery, as their results cannot be easily reproductive in a patient population. Novel management methods using combination therapy options are quickly gaining traction in the medical community. These methods involve the combination of proven conventional and new therapies to rapidly improve hair growth or slow down hair loss. In addition to their effectiveness, these methods have shown considerable advantages in safety, skin compatibility, and result consistency.
+Currently, the therapy options available for the management of alopecia forms produce inconsistent results. To a large part, the long-course drug therapies do not guarantee recovery, as their results cannot be easily reproductive in a patient population. Novel management methods using combination therapy options are quickly gaining traction in the medical community.
+
+These methods involve the combination of proven conventional and new therapies to rapidly improve hair growth or slow down hair loss. In addition to their effectiveness, these methods have shown considerable advantages in safety, skin compatibility, and result consistency.
 
 The Hybrid Object Rejuvenation (HOBRASIO) option provides an evidence-based therapy for alopecia forms by combining different rejuvenation methods. This innovation improves hair growth in both gender and poses no medical threat to the patients. Although this method is new, there exists much research backing its usefulness in modern cosmetology.
 
@@ -77,15 +81,21 @@ The Hybrid Object Rejuvenation (HOBRASIO) option provides an evidence-based ther
 In a 2016 review published by the *Journal of Cosmetic and Laser Therapy,* researchers recommended the use of combined therapy options in a same-day management model. Studies like this explore the possibilities and provide scientific backing for novel dermatology treatments like HOBRASIO
 :::
 
-In the management of alopecia forms, HOBRASIO combines several proven strategies in a single therapy regimen. This innovation secures optimal therapy effects for epidermal rejuvenation. In addition to its regenerative effect on follicles, this novel therapy option also provides soft tissue augmentation and skin rejuvenation effects. Unlike in conventional management with fixed therapy modalities for alopecia, HOBRASIO combines different options within the limits of safety, for different skin types. This single approach makes it effective in promoting hair replacement at the vertex or the scalp. Patients are guaranteed a consistent result with a short-course therapy and no adherence problems.
+In the management of alopecia forms, HOBRASIO combines several proven strategies in a single therapy regimen. This innovation secures optimal therapy effects for epidermal rejuvenation. In addition to its regenerative effect on follicles, this novel therapy option also provides soft tissue augmentation and skin rejuvenation effects.
+
+Unlike in conventional management with fixed therapy modalities for alopecia, HOBRASIO combines different options within the limits of safety, for different skin types. This single approach makes it effective in promoting hair replacement at the vertex or the scalp. Patients are guaranteed a consistent result with a short-course therapy and no adherence problems.
 
 ## Hobrasio Regimen For Alopecia Forms
 
-As a hybrid cosmetic therapy approach, HOBRASIO explores the combination of Minoxidil, low laser therapy, and Micro-needling for epidermal and superficial dermal problems. Alopecia falls right into this category. A combination of these three therapies into a single regimen triggers physiological modifications that solve alopecia. Combining these invasive procedures produces a desired clinical outcome that is considered cosmetically satisfactory. Early initiation of treatment can also effectively stop the transition to 'alopecia universalis' or 'alopecia totalis.'
+As a hybrid cosmetic therapy approach, HOBRASIO explores the combination of Minoxidil, low laser therapy, and Micro-needling for epidermal and superficial dermal problems. Alopecia falls right into this category. A combination of these three therapies into a single regimen triggers physiological modifications that solve alopecia.
+
+Combining these invasive procedures produces a desired clinical outcome that is considered cosmetically satisfactory. Early initiation of treatment can also effectively stop the transition to 'alopecia universalis' or 'alopecia totalis.'
 
 -   **Micro-needling**
 
-Micro-needling is a relatively new therapy option in modern cosmetology. However, since its introduction in the early 90s, micro-needling has been used for different dermatological problems including skin rejuvenation, acne scarring, melisma, and surgical scar repair [@Fertig2018]. This minimally invasive procedure involves the use of multiple fine needles to create micro-punctures in the skin. This action triggers a physiologic cascade that triggers vascularization and the release of growth factors.
+Micro-needling is a relatively new therapy option in modern cosmetology. However, since its introduction in the early 90s, micro-needling has been used for different dermatological problems including skin rejuvenation, acne scarring, melisma, and surgical scar repair [@Fertig2018].
+
+This minimally invasive procedure involves the use of multiple fine needles to create micro-punctures in the skin. This action triggers a physiologic cascade that triggers vascularization and the release of growth factors.
 
 These growth factors initiate the rapid formation of collagen and elastin. In its use for alopecia, micro-needling triggers the release of platelet-derived growth factors and epidermal factors that activate the hair bulge. Proteins releases in this cascade also stimulate dermal stems cells and subsequent hair formation.
 
@@ -95,7 +105,9 @@ In a 2014 case study published by the *Journal of Cutaneous and Anesthetic Surge
 
 -   **Low Laser Therapy**
 
-Low laser therapy is an innovative approach in modern dermatology that explores the physics of photons (particles of Light) for epidermal rejuvenation. Generally, this option utilizes low-intensity light at the red or near-infrared wavelength to alter the physiology of the epidermal cells [@Yoon2021]. In a large part, the precise mechanism of action of low laser therapy in hair replacement has not yet been established. However, multiple research studies suggest that low laser stimulates the anagen re-entry of telogen hair follicles.
+Low laser therapy is an innovative approach in modern dermatology that explores the physics of photons (particles of Light) for epidermal rejuvenation. Generally, this option utilizes low-intensity light at the red or near-infrared wavelength to alter the physiology of the epidermal cells [@Yoon2021].
+
+In a large part, the precise mechanism of action of low laser therapy in hair replacement has not yet been established. However, multiple research studies suggest that low laser stimulates the anagen re-entry of telogen hair follicles.
 
 By modifying the normal cycle of hair growth, the low laser stimulates the increase in hair growth rate, hair density, and diameter. Hair shedding decreases and the primary symptoms of alopecia clinically resolve.
 
@@ -113,10 +125,14 @@ Despite its wide application today, the exact mechanism of action of minoxidil f
 
 Research studies have however postulated different hypotheses for this action. Minoxidil plays a key role in cell proliferation at the early stages.
 
-Minoxidil sulfate, a metabolite of minoxidil has also been proposed to be involved in the hair rejuvenation effects of minoxidil \[[@Suchonwanit2019; @Randolph2021; @Villani2021]\]. Minoxidil also stimulates prostaglandin E production in a cascade of reactions that ends with the stimulation of the hair follicles. This triggers the continuous growth of hair as the growth stage becomes elongated. Numerous clinical trials have been conducted to prove the efficacy of minoxidil at different concentrations for the treatment of androgenic alopecia.
+Minoxidil sulfate, a metabolite of minoxidil has also been proposed to be involved in the hair rejuvenation effects of minoxidil \[[@Suchonwanit2019; @Randolph2021; @Villani2021]\]. Minoxidil also stimulates prostaglandin E production in a cascade of reactions that ends with the stimulation of the hair follicles.
+
+This triggers the continuous growth of hair as the growth stage becomes elongated. Numerous clinical trials have been conducted to prove the efficacy of minoxidil at different concentrations for the treatment of androgenic alopecia.
 
 ## Final Thoughts
 
-Alopecia forms have been consistently linked with increased risk of psychosocial complications in many patients. Uncontrolled air loss can trigger mild episodes of anxiety and depression as the patient desperately searches for effective therapy. HOBRASIO provides a comprehensive therapy approach for alopecia. The combined treatment options stimulate hair growth and also significantly reduces shedding. Compared with other treatments available today, HOBRASIO produces the desired clinical outcome within the limit of biological safety.
+Alopecia forms have been consistently linked with increased risk of psychosocial complications in many patients. Uncontrolled air loss can trigger mild episodes of anxiety and depression as the patient desperately searches for effective therapy. HOBRASIO provides a comprehensive therapy approach for alopecia.
+
+The combined treatment options stimulate hair growth and also significantly reduces shedding. Compared with other treatments available today, HOBRASIO produces the desired clinical outcome within the limit of biological safety.
 
 ## Cited Works

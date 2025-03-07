@@ -1,9 +1,9 @@
 ---
 title: "Direct Library Preparation: The Latest Innovation in Single-Cell Whole Genome Sequencing"
 subtitle: "Exploring a novel innovation in genome sequencing"
-author: "'Kolade Gracious"
+author: "Gracious Ogunkolade"
 date: "2023-12-05"
-categories: [Cell, Sequencing, Biotechnology]
+categories: [Case Study, Biotechnology]
 description: "Cell-based studies are important in biotechnology. But, how can a scientist avoid the usual errors and get the best result?"
 toc: true
 bibliography: references.bib

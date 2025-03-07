@@ -1,6 +1,6 @@
 ---
-title: "'Kolade Gracious"
-subtitle: "(*Medical Writer **|** Data Analyst*)"
+title: "Gracious OGUNKOLADE"
+subtitle: "(*Medical Writer **|** Strategy and Analytics*)"
 image: p2.jpg
 twitter-card:
   card-style: summary_large_image
@@ -16,34 +16,37 @@ about:
   image-shape: rectangle
   image-width: 250px
   links: 
-    - icon: envelope
-      text: email
-      href: mailto:gracious.kolade@gmail.com
-    - icon: linkedin
-      text: Linkedin
-      href: https://www.linkedin.com/in/gracious-ogunkolade
+ #   - icon: envelope
+ #    text: email
+ #    href: mailto:gracious.kolade@gmail.com
+  #  - icon: linkedin
+  #    text: Linkedin
+  #    href: https://www.linkedin.com/in/graciousogunkolade
     - icon: filetype-pdf
-      text: Resume [Med.Writer]
+      text: Resume [Medical Writer]
       href: graymed.pdf
     - icon: filetype-pdf
-      text: Resume [Data Analyst]
+      text: Resume [Strategy & Insight Analyst]
       href: graydata.pdf
 ---
 
 ::: {#hero-heading}
-Since completing my first degree in the Pharmaceutical Sciences, I have expanded my reach beyond primary healthcare by learning technical skills exploring the intersection of finance, healthcare and data science.
+Since completing my first degree in the Pharmaceutical Sciences, I have expanded my reach beyond primary healthcare, learning technical skills directly exploring the intersection of Commercial Strategy, Analytics and Healthcare.
 
-Currently, I develop **medical communication solutions** in pharma, medicine and professional learning with deliverables designed as continuing education courses, clinical trial reports, publications and medical briefs.
 
-When I am not actively writing healthcare contents, you'd find me on **RStudio,** **Microsoft Excel** or **pgAdmin** writing code for exploratory data analysis, inferential statistics, and data modelling in **R**, **SQL** and **DAX**.
+As a side quest, I develop **medical communications** in the Human Sciences with deliverables designed as Science Blogs, White Papers, CMEs, Publications and Medical Briefs.
 
-Other times, you'd probably find me somewhere in Lagos, Nigeria, discussing politics or listening to a weird mashed-up playlist of my music faves: Billie Eilish, Jacob Banks, Lana Del Rey, Burna Boy, and the Nigerian sonic-artistry maestro, Brymo Olooforo. You know what? Add Sia somewhere in there. 
+Over the past five years, I have provided freelance and ghostwriting services for Fortune 500s in Diagnostics, Nutrition, Oncology, Sports Medicine and Cannabis Marketing —save to say I have worked for the big guns and the small revolvers 😉
+
+When I am not actively writing science, you'd find me on **RStudio,** **Microsoft Excel** or **pgAdmin** developing code workflows for Market research, Data Analysis, Inferential Statistics and Insight Reporting with **R Programming**, **SQL** and **DAX**.
+
+Other times, you might find me somewhere in Lagos, Nigeria, discussing politics, bing-watching **The Voice**, or listening to a mixed playlist of my music faves: Akon, Billie Eilish, Jacob Banks, Lana Del Rey, Burna Boy, and the Nigerian sonic-artistry maestro, Brymo Olooforo. You know what? Add Sia somewhere in that list.
 
 I am also a big fan of film scores composed by Hans Zimmer and Ramin Djawadi.
 
 ### Connect
 
-Got writing gigs or data analytics collaborations for me? Sounds right! [Send me a brief](mailto:gracious.kolade@gmail.com) and let's create magic.
+Got Writing gigs or Analytics collaborations for me? Sounds right! [Send me a brief](mailto:gracious.kolade@gmail.com) and let's create magic.
 
 ```{=html}
 <div style="display: flex; justify-content: center;">
@@ -53,5 +56,5 @@ Got writing gigs or data analytics collaborations for me? Sounds right! [Send me
 </div>
 <br>
 ```
-You can find me on [Twitter](https://twitter.com/DrealOtunba), [Linkedin](https://ng.linkedin.com/in/gracious-ogunkolade) and [Coursera](https://www.coursera.org/user/271acb62ee53a26a8d9f04eddf592a48). I publicly version-control many of my data analysis and medical writing projects on [GitHub](https://github.com/koladegray). The code for this Quarto Website is open source and can be found in a [Github repo.](https://github.com/koladegray/koladegray.github.io)
+You can find me on [Twitter](https://twitter.com/DrealOtunba), [Linkedin](https://ng.linkedin.com/in/graciousogunkolade) and [Coursera](https://www.coursera.org/user/271acb62ee53a26a8d9f04eddf592a48). I publicly version-control many of my data analysis and medical writing projects on [GitHub](https://github.com/koladegray). The code for this Quarto Website is open-source and can be found in a [Github repo.](https://github.com/koladegray/koladegray.github.io)
 :::

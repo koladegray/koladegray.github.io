@@ -3,7 +3,7 @@ title: "Home-based Radiofrequency Energy Devices: Innovative Ideas in Hybrid Ski
 subtitle: "Demand for non-invasive, flexible and home-based cosmetic repair option is on the rise. How about a focus on RF pulsed energy devices?"
 author: "'Kolade Gracious"
 date: "2024-01-05"
-categories: [Therapy, Alopecia, Skin, Dermatology]
+categories: [Therapy, Report, Dermatology]
 #description: ""
 toc: true
 #csl: american-medical-association-alphabetical.csl

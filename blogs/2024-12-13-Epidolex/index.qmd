@@ -1,0 +1,109 @@
+---
+title: "Epidolex: How The Cannabis Industry Changed Forever"
+subtitle: "  "
+#format: html
+author: "Gracious Ogunkolade"
+date: "2024-12-13"
+categories: [Cannabidiol, Drug Review, Pharma, Report, Trends]
+#description: "Evaluating a multi-component integrative therapy for Androgenic Alopecia"
+toc: true
+reference-location: margin
+bibliography: references.bib
+image: "epidolex-front.jpg"
+---
+
+------------------------------------------------------------------------
+
+<br>
+
+The medicinal benefits of cannabis and cannabis-derived products have been known for years. At a time when no sufficient scientific evidence exists for its use, cannabis was used as self-prescribed natural products for the treatment of pain, dementia, depression, anxiety and sleep disorders[@Wang2023].
+
+With time, reports of debilitating adverse effects including addiction, psychosis and cognitive impairment in known long-term users emerged. As natural product science evolved, researchers extracted and studied the component compounds of the cannabis plant.
+
+::: callout-important
+## Bias?
+
+Independent researches focused on characterizing the components of the cannabis plant unanimously concluded that delta-9-tetrahydrocannabinol is responsible for the mind-altering effects and other adverse effects observed in long-term cannabis users.
+:::
+
+These researches concluded that cannabidiol (CBD) is a non-psychoactive cannabinoid showing potential therapeutic benefits in animal models and human test subjects. As expected, the focus of enquiry on the *Cannabis sativa* plant shifted towards cannabidiol [@Sholler2020].
+
+Integrated healthcare providers reported some impressive reports on the pharmacological benefits of CBD and advised that this compound be integrated into modern medicine. Today, the term ‘Medical cannabis’ in a large part refers to cannabidiol.
+
+At first, CBD was only allowed for use as an adjunctive treatment in the management of rare and chronic conditions with no standard therapy plan exists. Clinical trials were also conducted to further understand the pharmacology of this compound.
+
+On June 25, 2018, the U.S Food and Drug Administration (FDA) considered the available clinical trial results available for Epidiolex and subsequently approved an oral solution of the drug. Epidiolex was approved for the treatment of seizures associated Lennox-Gastaut syndrome and Dravet Syndrome [@Corroon2018].
+
+<br>
+
+![Epidolex: A Breakthrough in Cannabis-based Therapy](epidolex.jpg){fig-alt="Epidolex Product Image" fig-align="center" width="484"}
+
+<br>
+
+Epidiolex became the first FDA-approved cannabidiol-based drug for use in adults and children older than 2 years. As expected, many independent research enquiries were conducted to ascertain the efficacy and safety of the new drug in the target population. Since its approval, Epidolex has shown impressive results in the treatment of the two rare forms of epilepsy for which it was indicated [@Abu-Sawwa2020].
+
+To a large extent, the approval of Epidiolex started the much publicized green rush and also created positive promotional headlines for cannabis and cannabis-derived products. For the first time, modern medicine turned to a cannabis-derived product for succor and considered other cannabis-derived products as a potential game changer in human medicine.
+
+<br>
+
+## **Impacts of Epidiolex on the Cannabidiol Industry**
+
+The approval of Epidiolex serve an additional catalyst to a rapidly expanding cannabinol industry. One of the first noticeable impact is the sudden increases in the total market share of the CBD industry.
+
+Before 2017, only a few market research reports on the valuation of the global cannabidiol market existed. However, by 2018, Epidiolex's approval prompted different market analysts to monitor the market of this new drug.
+
+According to a report by *Grand View Research,* the global cannabidiol market was valued at \$4.6 billion in 2018 and is expected to grow at a compound annual growth rate of 22.2% from 2019 to 2025.
+
+<br>
+
+## **Impressive Cannabis Stock Valuations**
+
+Before the approval of Epidiolex, cannabis companies listed on the stock market in different countries only deal in hemp and cannabis-derived products such as extracts, gummies, oil, and CBD-infused cosmetics.
+
+Epidiolex has positively impacted the stock valuation of GW Pharmaceuticals (NASDAQ: GWPH) — the company responsible for its development and sale.
+
+<br>
+
+> As an immediate effect, GW Pharmaceuticals' share rose in after-hour trading to \$150 –a staggering uptick of 3.62%. In the first quarter of 2020, Epidiolex sales in the United States alone was valued at \$106.1 million. During this period, Epidiolex sales in Germany and U.K totaled \$10 million.
+
+<br>
+
+GW Pharmaceuticals has also completed plans to introduce the CBD-based drug to Sweden and Italy after a successful entry into France. Despite the Coronavirus pandemic, the global sale of Epidiolex kept increasing.
+
+GW Pharmaceuticals has also filed a supplemental New Drug Application with the FDA in a bid to secure approval for Epidiolex in the treatment of seizures with tuberous sclerosis complex. As an expected ripple effect, Epidiolex has spiked investment interests in other cannabis stocks globally [@Thiele2021]. 
+
+<br>
+
+## **Increased Cannabinoid Research and New Drug Development Attempts**
+
+Following the approval of Epidiolex, many researchers have turned to cannabidiol and different CBD/THC combination in medical research. Different surveys and drug candidate screenings have also commenced.
+
+These researches and clinical trials, if successful, are expected to increase the number of CBD-based drug candidates available for review and approval.
+
+In a bid to expand the market valuation of Epidolex, GW Pharmaceuticals has begun a clinical trial, currently in Phase 2, in the hope of securing approval for Epidiolex in the treatment of spinal cord injury spasticity and posttraumatic stress disorders.
+
+There are also other Epidiolex-based clinical trials investigating the potential benefit of the new drug in the treatment of Sturge-Weber Syndrome, cognitive impairment in Bipolar Disorder and symptomatic management of Covid-19 patients [@Smegal2023].
+
+New CBD-based drug approval and successful clinical researches are expected to positively impact the global cannabidiol market in the nearest future.
+
+<br>
+
+## **Increased Product Revenue for the Global Cannabidiol Industry**
+
+The global cannabidiol market is divided into different sections depending on product interest. There separate valuations for the CBD beverage market, CBD nutrition market, CBD oil market, CBD-infused personal care and cosmetics market and the CBD pharmaceuticals market.
+
+Since its approval in 2018, Epidolex has positively improved the valuation of these market. In the launch year, Epidiolex added a whopping \$269 million as added revenue to global sale of CBD-based pharmaceuticals and supplement products.
+
+With a planned launch in countries outside the United States, the value is expected to increases steadily over the years. This new drug has also created a global awareness for cannabis and especially, CBD-based products.
+
+The CBD-oil market which was rarely studies before 2017 is now projected to grow at a CAGR of 31.90% for the forecast period of 2020 to 2027. Other sections of the cannabidiol market have also been projected to expand rapid in the next few years.
+
+<br>
+
+## What Next?
+
+Judging from all market analysis report available, the global cannabidiol market has experienced an impressive boom since the approval of Epidiolex. Luckily, the peak of these impacts are not yet reached.
+
+<br>
+
+## [**Cited Works**]{.underline}
