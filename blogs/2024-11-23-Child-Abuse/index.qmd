@@ -1,0 +1,119 @@
+---
+title: "Exploring the Correlation Between Child Abuse and Substance Use Disorders in Adulthood"
+subtitle: "...a social commentary drawing evidence from survey and inferentials"
+#format: html
+author: "Gracious Ogunkolade"
+date: "2024-11-23"
+categories: [Report, Case study]
+#description: "Evaluating a multi-component integrative therapy for Androgenic Alopecia"
+toc: true
+reference-location: margin
+bibliography: references.bib
+image: "childVic.jpg"
+---
+
+------------------------------------------------------------------------
+
+<br>
+
+# Child Abuse, Victimization, Maltreatment and Neglect 
+
+In December, 2020, *Statista Research* published a report on world population by age and region. According to this research, about 26 percent of the world’s population is under 15 years old. In Europe alone, the population of individuals in this age group accounts for 16 percent of the total population. In other parts of the world, this percentage varies —Africa (41%), Asia (2%), Oceania (23%), and North America (18%).
+
+With the youth currently making a significant percentage of the global population, many behavioral and psychosocial studies have been conducted to understand how society interactions affects this age group. Many of these researches directly measure the impact of parental influence, peer interactions and social pressure on the behavioral pattern of adults in later life stages[@Tomé2012];[@Delgado2022].
+
+Child abuse and neglect, or child violence and maltreatment, have been hotly considered and debated in many climes of the world. The World Health Organization described violence against children as:
+
+> *‘any form of violence against people under 18 years old, whether perpetrated by parents or other caregivers, peers, romantic partners or strangers.’*
+
+The scope of this definition widened to capture different types of interpersonal violence that occur at different stages of child development. Maltreatment is described to include violent punishment, physical, sexual and psychological violence and neglects of infants and children by parents and caregivers.
+
+Bullying captures aggressive behaviors by parents, caregivers or another group of children, perpetrated as repeated physical, social or psychological harm. Youth Violence occur among young adults aged 10-29 and involves physical assault with or without weapons and may involve gang violence.
+
+Emotional of psychological violence captured all forms of movement restrictions, intimidation, ridicule, rejection, discrimination, threats, and non-physical forms of hostile treatment [@Ratto2023].
+
+<br>
+
+## **Global Stats on Child Abuse and Neglect**
+
+These forms of child abuse and neglect are recorded in almost every social setting around the globe. In 2014, a global estimate of 1 billion children between the ages of 2-17 reportedly experienced forms of physical, sexual and emotional abuse. In the United States alone, an estimated 1 million children experience forms of non-physical hostile treatment, abuse and neglect [@Hillis2016].
+
+Research estimates submits that nearly 5 million children across the globe are have been forcibly displaced and compelled to migrate across state or international boundaries, by war, torture or abuse [@martin2017].
+
+A large percentage of these children contribute to the refugee crisis in many developed countries. Children and young adults also make up more than 2% of all detected trafficking victims globally. In regions where the stats describing child abuse and neglect are high, there is an accompanying breakdown in the societal construct, law and order.
+
+This has inspired many behavioral researchers to investigate how youthful/childhood experiences of abuse and neglect affect lifestyle at later stages of life. These forms of abuse and maltreatment have been implicated in the anti-social behaviors noticed in many individuals at a later stage of life [@Herrenkohl2013].
+
+<br>
+
+## **Consequence of Abuse and Social Neglect in Children and Young Adults**
+
+1.  **Behavioral Consequences**
+
+The behavioral consequences of child abuse and neglect are mostly observed as physical aggression and antisocial behavioral pattern. Children who were abuse at a tender age or subjected to different forms of torture and neglect are most likely to show higher forms of aggression in the society.
+
+Researchers have explained that this consequence of an initial abuse –experienced at younger age –is a manifestation of a learned response in the affected individuals. Adults who experienced neglect and abuse at a younger age are also most likely to exhibit fear, anger, withdrawal and avoidance [@lippard2020].
+
+They also display unruly behavior and have high rates of conduct problems, interaction problems and substance use problems.
+
+<br>
+
+2.  **Psychosocial Consequences**
+
+Severe neglect at childhood have been shown to adversely affect psychosocial wellbeing at later stages of life. These psychosocial consequences have been observed to manifest as attention deficits, poor social skills, developmental delays, emotional delays and indulgence in illicit drug use.
+
+Young adults experiencing psychosocial consequences earlier also shows indications of diminished self-esteem, deteriorating social functioning and a heightened level of depression [@masselink2017]. This explains why psychiatric diagnosis and affective disorders are common among young adults who fall in this category.
+
+Significant emotional difficulties, inappropriate sexual behaviors, an affiliation to antisocial gangs are also widely documented among this population. There are also many forms of medical, physiological and cognitive consequences experienced at adulthood and linked with child abuse and neglect.
+
+<br>
+
+## **Research Evidences Linking Child Abuse and Neglect with Substance Use Disorders at Adulthood**
+
+Young adults who experienced moderate and severe forms of abuse and neglect during childhood have long been considered a vulnerable population to alcohol problems and illicit drug use. However, until recently, these considerations were largely unproven. Currently, there are numerous scientific enquiries establishing a link between abuse and neglect at childhood and substance use disorders at late stages of adulthood.
+
+One of the earliest studies on this relationship was published by Wilsnack and colleagues in 1997. The researchers assessed the relationship between child abuse and adult drinking behavior in 1,099 women participating in a 190-year national survey on women’s drinking.
+
+Cases of abuse were reported retrospectively by the participants. The research results suggest that women who had experience forms if abuse and neglect during childhood were significantly likely to have alcohol-related behaviors and problems.
+
+In 2013, the *Journal of Studies on Alcohol and Drugs* published a research conducted to examine possible links childhood maltreatment and alcohol use disorders. The participant poll was made of 4,468 people within the age range of 18-25, participating in the National Epidemiology Survey on Alcohol and Related Conditions.
+
+After adjusting sociodemographic characteristics, the authors concluded that childhood maltreatment was associated with greater likelihood of an alcohol use disorder. Most importantly, difference in age prevalence of alcohol use disorders among the participants who reported multiple types of maltreatment and physical abuse was significant in the older age groups.
+
+Many research studies have covered more than alcohol-related risky behaviors on this subject. A research report published by the Journal of Drug and Alcohol Dependence examined how Substance misuse problems are exhibited as coping motive for childhood abuse in South African adolescents attending school.
+
+This research was designed as a secondary analysis of 1,149 adolescents attending schools in Cape Town, South Africa. Childhood trauma, alcohol and drug problems and coping orientation were measured with Questionnaires.
+
+Research results suggested that drug use –as a coping mechanism –mediates the relationship between three forms of child abuse (emotional, physical and sexual) and substance use problems in adolescents [@hogarth2019].
+
+Many other researches have documented and established a link between reported cases of childhood abuse and substance use problems in later stages of life. The common theme in these researches indicates that childhood problems of abuse and neglect significantly predispose adults to substance use disorders.
+
+By extension, it is safe to conclude that adults currently suffering from alcohol use disorders and illicit drug addiction might have a positive history of abuse and neglect.
+
+<br>
+
+## **Risk Factors Influencing the Link Between Childhood Abuse and Substance Use Problems in Adulthood** 
+
+Why exactly are substance use problems in adulthood the predominant social observation related to child abuse and neglect? This question has prompted various researchers to examine why these adults choose this response over others. The arguments explaining this observation so far are numerous.
+
+Many researchers agree that people who experienced neglect and forms of abuse as teenagers use alcohol and illicit drugs as a coping mechanism [@min2007]. Repeated cases of childhood abuse and neglect leads to social withdrawal and depression. People who lack a proper coping mechanism engage in alcohol and drug abuse as a means to seek consolation.
+
+Alcohol and illicit drugs are not indicated for these social problems and as such, cannot solve them. These individuals simply engage in repeated use of these products, leading to dependence.
+
+Antisocial behaviors have long been linked with childhood cases of abuse and neglect. These behaviors, captured many times as aggression, violence, delinquency and hyperactivity, are widely considered as consequences of childhood victimization, abuse and neglect.
+
+On reaching a stage of external socialization, people exhibiting these behaviors fits perfectly in a deviant group of others exhibiting same. These peer groups of delinquents hold oppositional and antisocial views that promotes alcohol and illicit drug use. The repeated circle of group influence leads to alcohol and illicit drug use and dependence among the individuals of these groups.
+
+Post-traumatic stress disorders (PTSD) in in victims of childhood abuse and neglect have also been described as an influencing factor for alcohol and drug dependence. There are many research reports suggesting that the prevalence of alcohol problems is likely higher in adults with a positive history of abuse and neglect and has experienced PTSD [@cross2015].
+
+These researches implicates PTSD as factor that increases the incidence of substance misuse as coping mechanism for childhood experiences of abuse.
+
+<br>
+
+## **Future Probes**
+
+Although, there are many researches establishing a link between childhood cases of abuse and substance use problems, the conclusions depend on many variables. These variables make it hard to establish a conclusive evidence on the subject matter. In a bid to reduce the global burden of substance use problems, many public health agencies and international bodies have launched many awareness programs on substance misuse problems. Many of these campaigns are designed to also discourage child abuse, victimization, neglect, and maltreatment.
+
+<br>
+
+## Cited Works

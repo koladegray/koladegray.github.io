@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
 website:
-  title: "'Kolade Gracious"
+  title: "**'Kolade Gracious**"
   favicon: favicon.ico
   back-to-top-navigation: true
   google-analytics: "G-VMYDMXZZFN"
@@ -10,32 +10,32 @@ website:
   sidebar: 
     style: "docked"
   page-footer: 
-    center: "Copyright 2023. 'Kolade Gracious"
-    background: light  
+    center: "Copyright 2025. Gracious OGUNKOLADE"
+    background: light
   navbar:
     #right:
     tools:    
       #- icon: rss
       #  href: blog/index.xml
         #text: Blog RSS
-      - icon: twitter
-        href: https://twitter.com/DrealOtunba
+    #  - icon: twitter
+     #   href: https://twitter.com/DrealOtunba
       - icon: github
         href: https://github.com/koladegray
-      - icon: linkedin
-        href: https://linkedin.com/gracious-ogunkolade
-      - icon: medium
-        href: https://medium.com/gray-commits
+    #  - icon: linkedin
+   #     href: https://linkedin.com/gracious-ogunkolade
+     # - icon: medium
+     #   href: https://medium.com/gray-commits
         
     left:
-      - href: index.qmd
-        text: About
+     #- href: index.qmd
+     #   text: About
+      - href: blogs/index.qmd
+        text: Med.Comms
       - href: data/index.qmd
-        text: Data Projects
+        text: Strategy & Analytics
       #- href: papers/index.qmd
       #  text: Papers
-      - href: blogs/index.qmd
-        text: Medical Writing
       #- href: journals/index.qmd
       #  text: Journal Articles
       #- href: copies/index.qmd

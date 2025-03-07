@@ -2,9 +2,9 @@
 title: "Technology-based Intervention in Clinical Alcohol and Drug Addiction Care Programs"
 subtitle: "Management options leveraging psychosocial theories and behavioral observations developed and used as proposed models and different randomized trials for addiction care"
 #format: html
-author: "'Kolade Gracious"
+author: "Gracious Ogunkolade"
 date: "2023-12-20"
-categories: [Pharma, Addiction, Alcohol]
+categories: [Pharma, Report, Alcohol, Addiction Care]
 #description: ""
 toc: true
 image: "alcohol_vector.jpg"
@@ -15,7 +15,7 @@ bibliography: references.bib
 
 <br>
 
-Substance abuse and drug addiction constitute a major public health problem in different regions of the world. Interestingly, these problems are as old as the history of drug use and recently, different literature studies have made impressive attempts to study and specifically categorize drug use problems. 
+Substance abuse and drug addiction constitute a major public health problem in different regions of the world. Interestingly, these problems are as old as the history of drug use and recently, different literature studies have made impressive attempts to study and specifically categorize drug use problems.
 
 In 2017, the National Survey on Drug Use and Health (NSDUH) reported an estimated value of 20 million people with an alcohol or drug use disorder. On a broad scope, dug use disorders are categorized as Opioid use disorder (OUD), Substance use disorders (SUD) and alcohol use disorders [@chaptera].
 
@@ -25,12 +25,11 @@ Treatment options for substance abuse patients were developed and made prominent
 
 > In 2004, the Journal of Drug and Alcohol Dependence published a research article detailing the systematic review of these conventional methods in the management of alcohol, cocaine and opioid addiction [@Roozen2004].
 
-As published, conclusions from this study suggests that these methods are effective in drug addiction care programs especially when paired with abstinence-contingent incentives. In 2009, the report of a meta-analysis randomized control trial studying the potency of cognitive-behavioral treatment on drug addiction patients was published by the Journal of Studies on Alcohol and Drugs [@Paliwal2008]. 
+As published, conclusions from this study suggests that these methods are effective in drug addiction care programs especially when paired with abstinence-contingent incentives. In 2009, the report of a meta-analysis randomized control trial studying the potency of cognitive-behavioral treatment on drug addiction patients was published by the Journal of Studies on Alcohol and Drugs [@Paliwal2008].
 
-The conclusion of this report also supported early submissions and fueled the drive for novel treatment methods with more conclusive treatment outcomes.The search for a novel treatment approach for use in drug addiction programs was intensified when reports of relapse and recurrent substance use increased. In 2008, the Journal of Drug and Alcohol Dependence published a report suggesting that the conventional approach to addiction therapy are susceptible to relapse and a high incidence of substance use recurrence. 
+The conclusion of this report also supported early submissions and fueled the drive for novel treatment methods with more conclusive treatment outcomes.The search for a novel treatment approach for use in drug addiction programs was intensified when reports of relapse and recurrent substance use increased. In 2008, the Journal of Drug and Alcohol Dependence published a report suggesting that the conventional approach to addiction therapy are susceptible to relapse and a high incidence of substance use recurrence.
 
 Technology-based therapy methods for drug addiction programs were developed and delivered through technological platforms including social network sites, smartphone applications websites and digital forums.
-
 
 ## Digital Tools for Therapists in Addiction Care Programs
 
@@ -40,23 +39,23 @@ Compared with the conventional methods, digital recovery services are readily av
 
 Digital tools delivered on mobile phones are readily available, convenient for use, and can easily replace the face-to-face interviews and personal assignments of the conventional methods. Digital tools on smartphones are designed as advanced software platforms with varied functions and capabilities that supports a personalized addiction care plan. Modules on these applications increases patients' awareness of their addiction problem, help patients assess daily alcohol use, document weekly recovery plans and provide a health publications detailing verified information about craving triggers and dangers of substance abuse [@Dulin2013]. Primarily, this digital intervention method offers users a coping strategy to reduce rate of hazardous drinking and also combat psychological distress that can cause relapse.
 
-The Alcohol Comprehensive Health Enhancement Support System (A-CHESS) is a popular digital tool based on cognitive-relapse prevention technique, Marlette relapse-prevention system and a self-determination theory. Modules available for users include health information sources on addiction management, counselor support, self-assessment of recovery, and discussion groups. The cognitive-relapse prevention approach uses a GPS tracking prompts that remind users of their recovery goals on approaching a high-risk location. 
+The Alcohol Comprehensive Health Enhancement Support System (A-CHESS) is a popular digital tool based on cognitive-relapse prevention technique, Marlette relapse-prevention system and a self-determination theory. Modules available for users include health information sources on addiction management, counselor support, self-assessment of recovery, and discussion groups. The cognitive-relapse prevention approach uses a GPS tracking prompts that remind users of their recovery goals on approaching a high-risk location.
 
 In 2013, Alcoholism Treatment Quarterly published a report examining theory and empirical evidence basis on smartphone-based, self-administered intervention system for alcohol use disorders. Results of the pilot randomized trial provided evidence of smartphone-based tools' effectiveness in managing alcohol use disorders.
 
 -   **Interactive Voice Recognition**
 
-The interactive voice recognition (IVR) digital technology is a modern adaptation of motivational interviewing. It involves a telephone-based delivery of recorded scripts guiding users on the methods of abstinence and recovery assessment. Scheduled phone calls are made by the therapist to addiction patients discussing techniques of medication adherence, craving management, adverse effect observations and monitoring of daily substance use. 
+The interactive voice recognition (IVR) digital technology is a modern adaptation of motivational interviewing. It involves a telephone-based delivery of recorded scripts guiding users on the methods of abstinence and recovery assessment. Scheduled phone calls are made by the therapist to addiction patients discussing techniques of medication adherence, craving management, adverse effect observations and monitoring of daily substance use.
 
-Voice prompts from the therapists elicit a participant's real time response using voice feedbacks or keypad responses. A series of correctly answered responses helps the therapist with vital data recording for recovery evaluation.In 2017, the International Journal of Behavioral Medicine published the report of a randomized controlled trial studying the effectiveness of interactive voice response with feedback intervention in outpatient treatment of substance use disorders. 
+Voice prompts from the therapists elicit a participant's real time response using voice feedbacks or keypad responses. A series of correctly answered responses helps the therapist with vital data recording for recovery evaluation.In 2017, the International Journal of Behavioral Medicine published the report of a randomized controlled trial studying the effectiveness of interactive voice response with feedback intervention in outpatient treatment of substance use disorders.
 
 Study results suggests that personalized feedback potentially improves recovery from addiction problems and that IVR is useful for repeated intervention as an adjunct to regular treatment [@Andersson2017]. The therapist simply evaluates a stream of user-centered feedback to grade recovery and effectiveness of care plan.
 
 -   **Social Media and Online Forums**
 
-Online forums offer reinforced social support for patients enrolled in an addiction care program. The therapist creates a virtual community of online users interacting with a team of expert professionals in addiction therapy. Clinicians have taken a step further by forming social media chat rooms and discussion threads that offer virtual support on self-administered therapy plan, recovery tracking and other expert-delivered interventions for addiction management. 
+Online forums offer reinforced social support for patients enrolled in an addiction care program. The therapist creates a virtual community of online users interacting with a team of expert professionals in addiction therapy. Clinicians have taken a step further by forming social media chat rooms and discussion threads that offer virtual support on self-administered therapy plan, recovery tracking and other expert-delivered interventions for addiction management.
 
-Over the years, there is an increasing emergence of sites offering support networks, free customized abstinence plans and validated information on substance use problems. This sites include Women for Sobriety, SMART (Self-management and Recovery Training) and Sober Recovery. The therapy idea for this tool is quite simple. These forums create a virtual interactive interface for the therapist and addicts. Therapists deliver a recovery goals and abstinence plans that suits a subgroup of enrolled participants. Participants reports addiction care data on daily substance use and substance craving frequency which helps the therapist track recovery and provide modifications of plans when necessary. 
+Over the years, there is an increasing emergence of sites offering support networks, free customized abstinence plans and validated information on substance use problems. This sites include Women for Sobriety, SMART (Self-management and Recovery Training) and Sober Recovery. The therapy idea for this tool is quite simple. These forums create a virtual interactive interface for the therapist and addicts. Therapists deliver a recovery goals and abstinence plans that suits a subgroup of enrolled participants. Participants reports addiction care data on daily substance use and substance craving frequency which helps the therapist track recovery and provide modifications of plans when necessary.
 
 Recently, different research reports supporting online forums as a viable digital tool for addiction programs has emerged. In 2014, National Institute on Drug Abuse has published an announcement detailing plans to fund different institutes exploring the use of social media and online forums to advance the scientific understanding of the management of substance use disorders and addiction problems.
 
@@ -70,9 +69,9 @@ Following voice prompt feedback, keypad responses or real-time mood reports, the
 
 In 2006, Addiction published a report article on the rate and predictors of alcohol relapse after treatment. Study results suggests that about 80% of treated participants in a drug addiction program who experience short-term remission are likely to relapse fully [@Moos2006]. This study has fueled many scientific interests in the study of alcohol relapse rates and the use of digital tools as a mainstream therapy plan.
 
-Therapists have proposed a remote alcohol monitoring therapy that involves the combination of a suitable addiction digital tool with a breathalyzer. This provides a patient-focused plan that responsibly task participants with the provision of documented proof of sobriety and accountability for substance use. This plan simply increases the participants' awareness of their substance use problem and puts them in charge of their recovery plan as the therapist provides periodic evaluation of monitoring plan. 
+Therapists have proposed a remote alcohol monitoring therapy that involves the combination of a suitable addiction digital tool with a breathalyzer. This provides a patient-focused plan that responsibly task participants with the provision of documented proof of sobriety and accountability for substance use. This plan simply increases the participants' awareness of their substance use problem and puts them in charge of their recovery plan as the therapist provides periodic evaluation of monitoring plan.
 
-In updated assessment plans, digital tools can also present a relapse prevention model that completely replaces regular blood tests and evaluate immediate determinants and covert antecedents to substance use relapse [@Marsch2012]. Incorporating digital tool into a monitoring plan as a treatment option reduces program entry barriers, eliminates geographic restrictions effects a lasting long-term personalized approach to addiction recovery. By extension, these tools have also been found to be effective in the management of depression and anxiety bouts secondary to substance use disorders. 
+In updated assessment plans, digital tools can also present a relapse prevention model that completely replaces regular blood tests and evaluate immediate determinants and covert antecedents to substance use relapse [@Marsch2012]. Incorporating digital tool into a monitoring plan as a treatment option reduces program entry barriers, eliminates geographic restrictions effects a lasting long-term personalized approach to addiction recovery. By extension, these tools have also been found to be effective in the management of depression and anxiety bouts secondary to substance use disorders.
 
 The drive for the inclusion of technology-based tools into primary healthcare has received wide commendation around the world. This plan offers a new interesting role to addiction therapists and widen the range of available tools for recovery plans. With continuous research and development of digital addiction tools, the benefits of technology-based interventions in addiction care programs are no doubt, far reaching.
 

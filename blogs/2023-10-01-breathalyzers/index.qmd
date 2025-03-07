@@ -3,7 +3,7 @@ title: "Breathalyzers in Clinical Alcohol and Drug Care Programs"
 subtitle: "Leveraging advancements in digital technology to drive the campaign against alcohol abuse."
 author: "'Kolade Gracious"
 date: "2023-09-07"
-categories: [Therapy, Alcohol, Addiction Care, Breathalyzers]
+categories: [Therapy, Alcohol, Addiction Care]
 #description: ""
 toc: true
 image: "bret_vector.jpg"

@@ -15,6 +15,10 @@ listing:
     - "2023-09-11-sulbutiamine/index.qmd"
     - "2023-10-25-tuberculosis/index.qmd"
     - "2023-10-01-breathalyzers/index.qmd"
+    - "2024-10-12-Menopause-Thyroid/index.qmd"
+    - "2024-11-23-Child-Abuse/index.qmd"
+    - "2024-12-13-Epidolex/index.qmd"
+    - "2025-02-14-Futuristic-Alcohol-Monitoring/index.qmd"
   sort:
     - "date desc"
   #sort-ui: 
@@ -22,7 +26,7 @@ listing:
     #- "title desc"
   filter-ui: [title, date]
   page-size: 6
-  max-items: 10
+  max-items: 50
   image-align: right
   image-height: 120px
   image-placeholder: "placeholder.jpg"

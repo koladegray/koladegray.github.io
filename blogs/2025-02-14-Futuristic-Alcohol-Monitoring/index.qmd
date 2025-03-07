@@ -1,0 +1,183 @@
+---
+title: "Futuristic Technology in Alcohol Monitoring Systems"
+subtitle: "Potential solutions for combating global alcohol addiction crisis"
+#format: html
+author: "Gracious Ogunkolade"
+date: "2025-02-14"
+categories: [Alcohol, Addiction Care, Report, Therapy]
+#description: "Evaluating a multi-component integrative therapy for Androgenic Alopecia"
+toc: true
+reference-location: margin
+bibliography: references.bib
+image: "alcohol-monitoring.png"
+---
+
+------------------------------------------------------------------------
+
+<br>
+
+In 2018, *The Lancet* published a scientific report examining the validity of different claims on the health-related benefits of alcohol in humans.
+
+Designed to implement a novel method measuring the level of exposure across varied relative risk, this study perfectly solved the inaccuracies of previously published studies on alcohol in biological systems. Summarily the researchers concluded that;
+
+::: {.callout-note appearance="simple"}
+*‘alcohol (use) is a colossal global health issue and small reductions in health-related harms at low levels of alcohol intake are outweighed by the increased risk of other health-related harms, including cancer.’* [@burton2018]
+:::
+
+Although, many other studies have stressed the validity of this conclusion, however, the rate of alcohol use globally has significantly increased in recent years.
+
+A 2019 report of the National Survey on Drug Use and Health (NSDUH) published the stats on the prevalence of drinking, binge drinking and heavy alcohol use in the United States. The stats report that about 86 percent of people ages 18 and above have a positive history of alcohol use.
+
+Of these population, about 26 percent have been engaged in binge drinking within the past month. About 7 percent of this population have also been engaged in risky heavy alcohol use in the past month.
+
+In Africa and Third world countries, the regulations limiting alcohol use are weak and the volume of consumption reported for these regions is significantly higher.
+
+<br>
+
+## **How Big is the Problem of Alcohol-related Vices?**
+
+Alcohol consumption is risk factor in many disease conditions including mental behavioral disorders, cancers, non-communicable diseases such as cirrhosis, and unintentional accidents causing injuries and death.
+
+Logically, the health and social burden of alcohol use is directly linked to the level of alcohol consumption. The problem of alcohol-related vices is a real puzzle in many parts of the world. The numbers are scary and the socioeconomic effects are, to a large extent, damaging.
+
+The United States Department of Transportation, National Highway Traffic Safety Administration (NHTSA) reports that almost 30 people die daily in drunk-driving crashes – one person every 50 minutes.
+
+As a result, the annual cost of alcohol-related crashes has been estimated to be more than \$44 billion. In 2018, an estimated 1 million drivers were arrested for alcohol-related driving offences [@Barry2022].
+
+An earlier report published in 2016 indicated that alcohol-related risky behavior is directly responsible for about 28 percent of the total traffic-related deaths in the United States. Also, about 17 percent of all traffic-related child deaths involved an alcohol-impaired driver [@National2018].
+
+These numbers lend credence to many reports projecting alcohol-related causes as the third leading cause of death in the United States.
+
+<br>
+
+## **Stats on Alcohol-related Risky Behaviors Globally**
+
+Globally, the war against alcohol-related vices and risky behaviors has been a **consistent program** to many governments.
+
+> In 2018, the World Health Organization reported that 5.3 percent (3 million) of all deaths reported annually are linked to harmful use of alcohol.
+
+The stats on alcohol-related vices and deaths in other parts of the world are equally worrisome. In Asia, where the rate of alcohol consumption is considered the highest in the world.
+
+A referenced publication of the *Allianz Center for Technology* submitted that regional fatality rates of alcohol-related road traffic accidents are highest in Central Asia (18.2%), followed closely by Europe (16.7%) and the Americas (12.9%). The rates are lowest in Africa (8%), Asia Pacific (7.3%) and the Middle East (2.4%).
+
+In Vietnam –a country of over 90 million people, an annual estimation of over 4,000 road traffic deaths have been linked with alcohol-related road offences. In 2018, China reportedly recorded over 700,000 alcohol-related deaths. In 2019, the rate of alcohol-related mortalities was significantly high in Malaysia and Thailand.
+
+In Africa, Namibia and Nigeria reportedly holds the record for the highest annual rates of alcohol-related deaths.
+
+<br>
+
+## **Blood Alcohol Level Biomarkers**
+
+In forensic investigations and proceedings bordering on alcohol abstinence claims, direct measurement of blood ethanol level can be difficult. Biomarkers of alcohol consumption are especially important in these cases.
+
+These chemical entities are either produced as direct products of ethanol consumption or as enzymes or cells changed due to chronic alcohol consumption. Once produced, these biomarkers are retained in the human system and provide a biological means of determining the rate of minimum alcohol consumption over a period under investigation.
+
+The levels of these biomarkers as determined in confirmatory lab analysis and varies in sensitivity.Many new technological innovations in alcohol level measurements are designed to directly assess these biomarkers.
+
+In a 2018 publication of the *Dtsch Arzteblatt International,* researchers studied the sensitivity, specificity and analysis methods of different alcohol biomarkers in clinical and forensic contexts [@Andresen-Streichert2018].
+
+The alcohol biomarkers referenced in this study include carbohydrate-deficient transferring (CDT), gamma-glutamyltransferase (GGT), ethyl glucuronide (EtG), fatty acid ethyl esters (FAEE) and Phosphatidylethanol (PEth).
+
+Futuristic devices and analysis methods designed to measure blood alcohol levels are expected to leverage these biomarkers.  
+
+<br>
+
+## Legislation on Legal Limits of Blood Alcohol Levels
+
+There are many legislations enacted in different regions of the world to control alcohol consumption rates. These legislations prescribe a legal volume of alcohol in the blood, and above this limit, violators may be charged at different instances for driving under the influence.
+
+In part, these legislations also prescribe recommended tests for determining the concentration of alcohol in the blood. The Blood Alcohol Concentration (BAC) indices measures the actual grams of alcohol per 100ml of a body fluid, usually the blood.
+
+On consumption, ethanol is absorbed in the gastrointestinal tracts. Depending of biological factors including gastric emptying rate and changes in gastric motility, approximately 20 percent of the total volume consumed is absorbed by passive diffusion into the bloodstream. 
+
+Subsequently, a large chunk of the alcohol consumed is absorbed in the proximal portion of the small intestine. Ethanol is optimally soluble in water and has a low molecular weight. As a result, the alcohol concentration in the blood can noticeably changes after a few minutes of consuming a few units of alcohol.
+
+In standard measurement, about 12 ounces of an alcoholic beer (approximately 5% alcohol) or 1.5 ounces of distilled spirits (approximately 12% alcohol) can contain as much as 14 grams of pure alcohol.
+
+In the United States, it is illegal to drive with a BAC of 0.08 grams of alcohol per deciliter (g/dL) of blood –or greater. At this concentration, drivers and operators of heavy machinery are considered legally intoxicated and the risk of alcohol-induced accidents significantly increases [@Fell2019].
+
+<br>
+
+## **Advanced Technological Innovations in Alcohol Monitoring Systems**
+
+Forensic investigation after a crash requires a report on the blood concentration of the driver, if a DUI is suspected. In a bid to measure the exact BAC indices, many scientific studies have proposed futuristic innovations in alcohol monitoring systems.
+
+The new methods proposed –although some are theoretical –are considered more effective in measuring the exact blood level of alcohol in split intervals since consumption.
+
+Beyond simply curbing theviolation of alcohol rules, Alcohol Monitoring Technologies are becoming increasingly important in clinical studies and self-monitoring of blood alcohol content.
+
+The futuristic technologies in Blood Alcohol Monitoring Systems include:\
+
+<br>
+
+1.  **Near Field Communication (NFC)-enabled Implantable Glucose Monitoring Systems**
+
+On-the-spot monitoring systems are increasingly becoming important in not only the clinical management of alcohol-related substance disorders, but also in monitoring alcohol levels for forensic and legal purposes. Near Field Communication tags are advanced monitoring systems enabling electronic devices to execute non-contact data transmissions over a short distance.
+
+The application of this short-range high frequency technology is novel in human medicine. Until now, only a few research reviews have documented the use of NFC tags in Alcohol Monitoring Systems. The reference paper on a NFC-enabled implantable glucose monitoring system was presented in 2016 at the *International Conference of Biomedical Health Information* [@Anabtawi2016].
+
+The futuristic glucose level monitoring system is designed as a fully implantable, battery-assisted passive continuous glucose monitoring system. With a framework integrating an amperometric glucose sensor, a NFC tag wireless front-end and digital power management unit, devices built on this system are expected to sense the level of glucose in biological system and generate an on-the-spot reproducible data.
+
+The glucose sensors unit are designed with a working reference, mini electrodes and counter electrodes. Futuristic modifications of this system in alcohol monitoring have been proposed.
+
+Alcohol monitoring devices designed with this technology can effectively measure alcohol levels in body fluids as an implantable device. A study published by the *Alcohol, Clinical and Experimental Research* earlier demonstrated the utility of Alcohol Monitoring Systems to measure transdermal alcohol concentration (TAC) as a means to objectively quantify drinking [@Roache2015].
+
+Research data concluded that positive Transdermal Alcohol Concentration readings can detect low-level drinking in all participants who had earlier consumed at least 2 standard alcohol servings. Transdermal Alcohol Monitoring using an implantable NFC-enabled alcohol sensor has proven beyond theoretical doubts to be sensitive, specific, accurate and effective.\
+
+<br>
+
+2.  **FreeStyle Libre Glucose Monitoring System**
+
+This Continuous Glucose Monitoring System was officially approved in September 2016 by the U.S. Food and Drug Administration (FDA). Designed for use in the professional monitoring of glucose level in interstitial fluid, this system is based on a subcutaneous, wired enzyme glucose sensing technology.
+
+Modifications to this system have been proposed in the long-term tracking of alcohol levels in people convicted or DUI offences or under investigation for an alcohol-related risky behavior.
+
+In a standard pack, the FreeStyle Libre Glucose Monitoring System comes with a disposable sensor, a reader and a power adapter. The sensor is worn on the back of the subject’s arm and can last for 10 days [@Nguyen2022].
+
+This device automatically measures glucose level every minute, generating a set of reading batches stored in a 15-minute interval. The reader is held close to the sensor once a glucose reading is required.
+
+The data set generated displays the glucose level record for the past 8 hours. Data generated are detailed in measurement, revealing values for the direction and velocity of a subject’s glucose levels. Compared to a handheld Breathalizer, a modification of this system for alcohol level readings can provide data readings for a subject’s blood alcohol concentration over a long period of time.
+
+<br>
+
+3.  **EtG Ethyl Glucuronide (ETG) Test**
+
+Futuristic plans in the Alcohol Monitoring System have been expanded to capture the assay of alcohol biomarkers in the body fluid. Ethyl glucuronide is a direct, minor metabolite of ethanol. Primarily, ETG levels is explored in human physiology as a complementary parameter in immunochemical screenings the urine drug tests.
+
+Although ETG levels are detected using samples of urine, this alcohol biochemical can also be found in serum, hair and oral fluids. Once alcohol is consumed, the level of ETG detectable in urine noticeably changes.
+
+ETG levels are normally lower in the blood, prompting researchers to prefer detection in urine. Currently, the application of ETG tests in Alcohol Monitoring Systems are mainly for confirmatory purposes.
+
+In addition, the set up for ETG detection is done on a large scale using *LC-MS* bioassay techniques. Futuristic adaptations of alcohol monitoring devices exploring ETG levels in urine are expected to be designed as portable, wearable technologies.
+
+Since alcohol metabolism occurs until the last drop is excreted, these devices can provide a digital record of the levels of alcohol I the body fluids over a specific time interval. An early review, the *Journal of Drug and Alcohol Dependence published a study* confirming the sensitivity of ETG tests in detecting light and heavy drinking in alcohol dependent outpatients [@McDonell2015].
+
+<br>
+
+4.  **BACtrack Skyn**
+
+Alcohol Monitoring Systems featuring a compact design and a smartphone integration interface is definitely an advanced technological improvement on the currently available systems. The BACtract Skyn is a new generation, wrist-worn, compact transdermal alcohol biosensor.
+
+As a wearable biosensor, BACtract Skyn can directly measure blood alcohol levels via the skin. BACtract Skyn and future adaptations of tis devices are expected to run on electrochemical detection strategies in the detection of alcohol in body fluids [@Gunn2023].
+
+The design leverages the direct oxidation of ethanol at non-enzymatic catalytic electrodes. Electrochemical reactions at the electrodes recognizes and measures alcohol metabolites excreted through the dermal pores, quantify alcohol levels in reference to a pre-calibrated standard, produce a detectable signal and a reproducible digital value of alcohol concentration.  
+
+<br>
+
+5.  **Wearable Enzymatic Alcohol Biosensor**
+
+This new class of alcohol level monitoring devices are designed to improve on the technical challenges of the wearable and implantable alcohol monitoring devices. Currently, the designs for this new class of devices are theoretical, still requiring many years of research for actual hardware productions.
+
+The wearable enzymatic alcohol biosensors will feature an alcohol metabolizing enzyme –preferably Alcohol Oxidase, an electrochemical sensor, a power pack and a digital meter. Alcohol metabolites in the body fluids are oxidized by the enzyme [@Lansdorp2019].
+
+The resulting products of oxidation are sensed by the sensor. The readings provided by the digital meter directly revels the concentration of alcohol present in the body fluid. The fusion of enzymatic reaction pathways with an electrochemical detection method is a futuristic input in alcohol monitoring programs.
+
+<br>
+
+## Conclusion
+
+Technological advancements in alcohol monitoring systems are not only expected to improve the clinical outcome of alcohol management therapy. By extension, these advancements are designed also to effectively tackle the global menace of alcohol-related risky behaviors.
+
+<br>
+
+## [Cited Works]{.underline}

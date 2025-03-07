@@ -1,0 +1,152 @@
+---
+title: "Exploring the Menopause-Thyroid Connection"
+subtitle: "Evaluating a possible therapy pipeline for menopuasal disorders"
+#format: html
+author: "Gracious Ogunkolade"
+date: "2024-10-12"
+categories: [Case Study, Report, Therapy]
+#description: "Evaluating a multi-component integrative therapy for Androgenic Alopecia"
+toc: true
+bibliography: references.bib
+image: "meno.jpg"
+---
+
+<br>
+
+------------------------------------------------------------------------
+
+One of the most important life stages for the female gender is menopause. Attaining menopause means a lot of things for a woman –changes in the body physiology, battling the different symptoms of menopause, and coping with the hormonal changes as menopause progresses. For many women, these changes mean a lot and influence the quality of life as menopause starts.
+
+Menopausal age vary significantly across a population. Many times, it depends on genetics, race, socioeconomic status, number of ovulations, age at menarche, environmental factors, exposure to chemicals and toxins, and the presence of any medical conditions affecting the reproductive system. These factors constitute huge differences and unpredictability in the menopausal experiences across populations [@Ceylan2015].
+
+<br>
+
+## **The Physiology of Menopause**
+
+Primarily, menopause results from a complete loss of ovarian sensitivity to gonadotropin stimulations. These decreased sensitivities are directly involved in follicular attrition. The oocytes (the female gamete cells called ‘the egg’) in the ovaries undergo raid degeneration and eventual loss of reproductive ability [@Butler2011].
+
+As expected, the rapid degeneration of these oocytes results in a decline in the quantity and quality of ovarian follicles. So, when menopause happens, the reproductive system is healthy, but the follicles are shrinking and the reproductive ability is eventually lost. 
+
+As follicles age and shrink in size, resistance to gonadotropin reduces consistently, and the circulating levels of Follicle-stimulating hormone (FSH) and Luteinizing hormone (LH) increase. The increased circulating levels prompt the stromal stimulation of the ovary, causing a decrease in estradiol levels, inhibin levels, and an increase in estrone levels [@Santoro2011].
+
+The estradiol decrease is more dramatic as the decline rate climbs significantly within 4 years. As ovulation stops, the production from the conversion of androgens in the ovarian stroma and the production of estrogen in extra-gonadal sites remain unaffected. The adipose tissues, muscles, liver, bone, bone marrow, and hair roots represent a huge source of estrogen during this phase of a woman’s life.
+
+Exposure to estrogen from non-ovarian sites also comes with its effects –it increases the risk of endometrial hyperplasia and endometrial cancer in menopausal women. The complete hormonal interplay during this stage of life is numerous and very complex to cover within the scope of this review.
+
+<br>
+
+## **Thyroid Functions At Menopause**
+
+No doubt, menopause is a process of complex hormonal regulations. With every volume of gonadal hormones and other markers of reproductive function, a complex system of hormonal regulation explains the physiology of menopause.
+
+Women spend one-third of their lifetime in menopause, combating the symptoms associated with this stage and its occasional fluctuations in hormonal levels. Therapy methods that explore balancing these hormones have long been proposed, modified, and practiced in human medicine. Hormone replacement therapy is commonly recommended in postmenopausal women.
+
+The function of the thyroid hormone in menopause is an interesting topic in women’s health. Dysfunctions of the thyroid predominantly affect women with an incidence of 20 times greater than men. The incidence of these thyroid dysfunctions also increases with increasing age [@Frank-Raue2023].
+
+Since the average age of menopause is pegged at 50, regular thyroid screenings are recommended for menopausal women. Clinical survey results showed that nodular goiter, hypothyroidism, and thyroid gland autoimmunity are well reported in menopausal women.
+
+It is sometimes difficult to correctly diagnose thyroid disease in menopausal women as the symptoms for both cessation of ovulation (menopause) and thyroid dysfunctions in these women are common. Understanding how the thyroid affects hormonal regulation at menopause can help with therapy options for managing the symptoms a woman experiences at menopause.
+
+<br>
+
+## **Researches Linking Thyroid Hormone Function and Menopause**
+
+Many studies suggest that estrogen has a direct effect on the human thyroid cells. These interactions are studied extensively during menopause as the thyroid also ages. Earlier reports on this interaction have shown how estrogen increases the thyroxine-binding globulin and how thyroid hormone is needed in hypothyroid women undergoing estrogen therapy [@Arafah2001].
+
+The molecular interaction between estrogen and thyroid hormones is mediated by the estrogen receptors. In the body, the cellular action of estrogen –a lipophilic molecule, is medicated by its binding with two nuclear receptors –estrogen receptor (ER) alpha, and ER-beta. In any cells where these receptors are found, estrogen can affect a cellular change with receptor to receptor binding. This is how the estrogen-thyroid hormone relationship works during menopause [@Fuentes2019].
+
+Estrogen receptors (ERs) have been described in both neoplastic and non-neoplastic human thyroid tissues. However, these studies are relatively new, and their evidence is still under investigation. Some chemical assay studies have discovered ER-positivity in both normal and abnormal thyroid tissues.
+
+Today, both estrogen receptor variants have been reportedly discovered in thyroid tissues with many researchers currently examining how these receptors mediate thyroid functions during menopause. For now, the working assumption is that estrogen binding to ER-alpha promotes cell proliferation and growth while estrogen binding to ER-beta promotes apoptotic actions.
+
+Thyroid hormone dysfunctions are especially frequent in postmenopausal women. With these dysfunctions come different signs and symptoms that make menopause a terrible experience for some women. These undesired symptoms have been linked to an aging thyroid function [@Yadav2023].
+
+As women age, thyroid functioning declines Morphological studies have revealed that the thyroid epithelium degenerates, leading to its flattening and a resultant reduction in the size of the thyroid follicles. In many women, fibrous connective tissues and lymphoid tissues may replace a part of the previously healthy thyroid gland.
+
+The ability of the thyroid gland to uptake dietary iodine and produce its hormones during this period diminishes. The statistics are worrying. The iodine-uptake ability of the thyroid in people over 80 years old becomes 40 percent lower than in people over 30 years. The daily production of T4 –the main thyroid gland also decreases per microgram with biological metabolism slowing down significantly [@Gietka-Czernel2017].   
+
+As menopause progresses, the risk of developing thyroid dysfunction increases in women. An early study –the Whickham Survey, provided statistical justification for this. This study discovered that the incidence of elevated Thyroid-stimulating hormone is about 7.6% in the general female population and 17% in women over 70 years of age.
+
+The risk for developing hypothyroidism in women 75 -80 years of age is pegged at 14/1000/year. In another study –the Colorado Survey, the incidence of subclinical hypothyroidism was found to be about 4 percent in women aged 25 years. This value rises to about 14 and 20 percent for women aged 55 and 75 respectively [@Wouters2020].
+
+This study further establishes the point that thyroid hormone functioning is very important in menopause. If the thyroid dysfunctional during this period, the signs and symptoms that follow can make menopause a terrible experience for any woman out there.
+
+<br>
+
+## Navigating Menopause
+
+Globally, about 1.5 million women experience the transition to menopause every year. Many of these women often report cases of undesired symptoms including vasomotor symptoms, vaginal dryness, decreased libido, insomnia, and joint pain. If not properly managed, these symptoms can make menopause a very terrible experience. The most commonly reported symptoms of menopause include:
+
+<br>
+
+1.  **Vasomotor Symptoms**
+
+Vasomotor symptoms during menopause are often reported as hot flashes. About 85% of menopausal women report hot flashes of variable severity, frequency, and duration. Hot flashes can also be present in about 55% of women at the perimenopause stage [@Avis2018].
+
+There are some racial and ethnic variations to this experience as Caucasian women reported the highest prevalence and Japanese and Chinese women reports the lowest. It is a feeling of intense warmth presenting with sweating, flushing, and chills. The physiological events that occur during hot flashes have been linked with different biological responses to hormonal fluctuations at menopause.
+
+These includes elevated skin blood flow –suggesting peripheral vasodilation with temperature spikes occurring in the digits, face, arm, back, legs, chest, and abdomen. Measures of sweating and skin conductance also increase during these episodes.
+
+Most importantly, core body temperature increases before hot flashes. The increase in core body temperature is caused by increased metabolic rate and the peripheral vasodilation that follows. Many studies have also related the cause of hot flashes to variabilities in the levels of estradiol, follicle-stimulating hormone, and thyroid hormones in menopausal women.
+
+Regardless of the contributing mechanisms, it is evident that both hormone therapy and non-hormonal therapy can help relieve hot flashes in these women.
+
+<br>
+
+2.  **Vulvovaginal Atrophy**
+
+Vulvovaginal atrophy presents as vaginal dryness, dysuria, urinary urgency, and dyspareunia. The physiology of urogenital atrophy in menopausal women has long been described. The fluctuations in estrogen levels during perimenopause and the sustained low levels of this hormone during menopause render the reproductive tissues fragile [@Angelou2020].
+
+he fragile tissues are distressed, leading to the multiple vulvovaginal symptoms experienced at menopause. In addition to tissue distress, there can be vaginal atrophy, narrowing, and shortening of the vagina, and uterine prolapse. The urinary tracts have estrogen receptors, and as the fluctuations in estrogen levels continue the risk of urinary tract infections increases.
+
+Unlike hot flashes, the symptoms of vulvovaginal atrophy do not improve over time without treatment.
+
+<br>
+
+3.  **Sleep Disorders**
+
+As aging progresses, sleep quality generally deteriorates. With menopause, the decrease in sleep quality becomes more noticeable. A 2015 study published by *Menopause* evaluated the patterns in actigraphy-defined sleep measures of sleep and movements across the menstrual cycle in midlife menstruating women. Results from this study suggest that women report trouble sleeping during peri-menopause and sleep quality worsens at menopause [@Zheng2015].
+
+Studies have also suggested that as much as 25 minutes of quality sleep per night can be lost by women during their late reproductive years. Compromise in sleep quality at menopause has been linked with hormonal changes.
+
+Many times, the sleep disorders reported by menopausal women can be hard to categorize. These sleep difficulties are often complicated by mood disorders associated with menopause and poor sleep hygiene habits. It is common for these women to report nighttime awakenings, night sweats, and short sleep duration.
+
+They may also experience difficulties in falling asleep, staying asleep and early awakenings.  Insomnia, sleep apnea, and restless leg syndrome are the commonly identified sleep disorders in menopausal women. The clinical burden of menopause-induced sleep disorders can be very huge. These women experience daytime fatigue, sleepiness, generalized body weakness, and restlessness.
+
+<br>
+
+4.  **Depression and Adverse Mood**
+
+Hormonal fluctuation during menopause has a bearing on mood. In its 157th annual general meeting, the American Psychiatric Association delivered an update on the risk factors and treatment approaches for perimenopause-related mood disturbances. This update suggested that an estimated 20% of women transitioning to menopause have depression at some point [@Santoro2016].
+
+Clinical studies have suggested that mood disorders are more noticeable at menopause and less during postmenopausal years. Menopausal-related depression is caused by fluctuations and a reduction in estrogen levels. Estrogen and steroid hormones are known to stimulate the synthesis of neurotransmitters in the central nervous system.
+
+Estrogen also increases the effects of serotonin and norepinephrine –hormones considered to be involved in the physiology of depression. The strongest risk factor of depression in these menopausal women is a prior history of depression, with consistent variabilities in the levels of reproductive and menopause regulatory hormones [@Albert2019].
+
+Other risk factors identified so far include poor sleep, high body mass index, low socioeconomic class, and race. Other menopausal symptoms commonly reported include osteoporosis and changes in cognitive function.
+
+<br>
+
+## **Correcting Menopausal Symptoms with an Optimized Thyroid**
+
+May women would choose to bypass the undesired symptoms of menopause if they could. In addition to reducing life quality during menopause, these menopausal symptoms make menopause a terrible experience for many women. Treating these symptoms is a big topic in human medicine. Hormone replacement therapy has long been used in reducing the effects of these symptoms.
+
+However, there have been many controversies surrounding this therapy option. Except that it is contraindicated in many women, there are also many studies linking it with cancer, stroke, cognitive decline, thromboembolism, and cardiovascular diseases.
+
+Optimizing the thyroid and another hormonal complex regulating the events at menopause has been proposed as a viable approach to managing these symptoms. Supplying the body with enough dietary iodine is a cheap and clinically friendly way of optimizing thyroid health. On average, the Recommended Daily Allowance of iodine for menopausal women is 150 micrograms per day [@Brough2017].
+
+This micronutrient is primarily needed by the thyroid gland for the production of thyroid hormones. Menopausal syndromes have been linked with thyroid dysfunctions and a decline in thyroid hormone levels. Improving thyroid functioning with iodine supplements can help manage these symptoms better in women.
+
+Seafood is the largest reservoir of dietary iodine on earth. Consuming seafood can give the body a moderate quantity of iodine for optimizing thyroid health [@Sprague2021]. Menopausal women who are vegans or do not use iodized salts are at a greater risk of these symptoms. Vegans' meals contain no iodine, making it hard for menopausal women who are vegans to have a healthy thyroid as they age.
+
+Many women may also choose to get their daily iodine portions to form iodine supplements. Iodine products formulated for menopausal women supply 12.5mg of iodine to the body. At this quantity, the recommended daily iodine intake requirements are met and the thyroid gland has a good reservoir of dietary iodine.
+
+<br>
+
+## **Bottom Line**
+
+Menopause is an important part of a woman’s reproductive life. On average, it takes up about one-third of a woman’s lifetime. The menopausal transition is characterized by fluctuations in the levels of reproductive hormone and other regulatory hormones n the body.
+
+These hormonal variations affect the physiology of menopausal women, causing different symptoms that makes menopause a terrible experience for many. Optimizing the thyroid gland by supplying the body with adequate dietary iodine can help reduce the severity and frequency of these symptoms.
+
+## Cited Works
